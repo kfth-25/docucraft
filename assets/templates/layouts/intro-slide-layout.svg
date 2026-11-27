@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1280 720"
+     data-pptx-layout="intro-slide-layout"
+     data-pptx-theme-color-primary="accent1"
+     data-pptx-theme-font-major="major">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720"
+        fill="url(#slideBgGradient)"
+        data-pptx-object="shape" data-pptx-prst="rect"/>
+
+  <!-- Header Bar -->
+  <g data-pptx-slot="header" data-pptx-object="group">
+    <!-- Company Name -->
+    <text x="96" y="48" width="400" height="40"
+          data-pptx-slot="companyName"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="tx1"
+          font-size="16" font-weight="normal">
+      {{companyName}}
+    </text>
+
+    <!-- Separator Line -->
+    <line x1="320" y1="52" x2="540" y2="52"
+          stroke="var(--theme-accent1)" stroke-width="2"
+          data-pptx-object="shape" data-pptx-prst="rect"/>
+
+    <!-- Counter -->
+    <text x="560" y="58" width="60" height="24"
+          data-pptx-slot="counter"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="accent1"
+          font-size="18" font-weight="bold">
+      {{counter}}
+    </text>
+  </g>
+
+  <!-- Main Content Grid (2 columns) -->
+  <g data-pptx-slot="mainContent" data-pptx-object="group">
+    <!-- Left Column: Media/Image -->
+    <g data-pptx-slot="media" data-pptx-object="group">
+      <rect x="0" y="100" width="640" height="620"
+            fill="var(--theme-background-text)"
+            data-pptx-object="shape" data-pptx-prst="rect"/>
+      <image x="0" y="100" width="640" height="620"
+             data-pptx-slot="image"
+             data-pptx-object="image"
+             href="{{imageUrl}}"
+             preserveAspectRatio="xMidYMid slice"/>
+    </g>
+
+    <!-- Right Column: Text Content -->
+    <g data-pptx-slot="textContent" data-pptx-object="group">
+      <rect x="640" y="100" width="640" height="620"
+            fill="var(--theme-card-color)"
+            data-pptx-object="shape" data-pptx-prst="rect"/>
+
+      <!-- Title -->
+      <text x="736" y="180" width="448" height="140"
+            data-pptx-slot="title"
+            data-pptx-object="text"
+            data-pptx-theme-font="major"
+            data-pptx-theme-color="dk1"
+            font-size="64" font-weight="bold" line-height="1.06">
+        {{title}}
+      </text>
+
+      <!-- Paragraph -->
+      <text x="736" y="340" width="448" height="120"
+            data-pptx-slot="paragraph"
+            data-pptx-object="text"
+            data-pptx-theme-font="minor"
+            data-pptx-theme-color="tx1"
+            font-size="16" line-height="1.75">
+        {{paragraph}}
+      </text>
+
+      <!-- Intro Card (optional) -->
+      <g data-pptx-slot="introCard" data-pptx-object="group"
+         visibility="{{introCard.enabled ? 'visible' : 'hidden'}}">
+        <rect x="736" y="480" width="400" height="80"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="8" ry="8"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+
+        <!-- Circle with Initials -->
+        <circle cx="760" cy="520" r="32"
+                fill="var(--theme-primary-color)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <text x="760" y="532" text-anchor="middle" dominant-baseline="central"
+              data-pptx-slot="introCard.initials"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              fill="var(--theme-primary-text)"
+              font-size="22" font-weight="bold">
+          {{introCard.initials}}
+        </text>
+
+        <!-- Name and Date -->
+        <text x="810" y="508"
+              data-pptx-slot="introCard.name"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              fill="var(--theme-dk1)"
+              font-size="22" font-weight="bold">
+          {{introCard.name}}
+        </text>
+        <text x="810" y="538"
+              data-pptx-slot="introCard.date"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              fill="var(--theme-primary-color)"
+              font-size="15">
+          {{introCard.date}}
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Chart Slot (optional, for data slides) -->
+  <g data-pptx-slot="chart" data-pptx-object="chart" data-pptx-replace-with="chart"
+     visibility="{{chartData ? 'visible' : 'hidden'}}">
+    <metadata type="application/json" data-pptx-kind="chart">{{chartDataJson}}</metadata>
+    <!-- Visual fallback -->
+    <rect x="96" y="400" width="500" height="250" fill="#F0F0F0"/>
+    <text x="346" y="525" text-anchor="middle" fill="#999" font-size="14">[Chart: {{chartTitle}}]</text>
+  </g>
+
+  <!-- Table Slot (optional) -->
+  <g data-pptx-slot="table" data-pptx-object="table" data-pptx-replace-with="table"
+     visibility="{{tableData ? 'visible' : 'hidden'}}">
+    <metadata type="application/json" data-pptx-kind="table">{{tableDataJson}}</metadata>
+    <!-- Visual fallback -->
+    <rect x="96" y="400" width="500" height="250" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="346" y="525" text-anchor="middle" fill="#999" font-size="14">[Table: {{tableTitle}}]</text>
+  </g>
+
+  <defs>
+    <linearGradient id="slideBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--theme-accent1)"/>
+      <stop offset="100%" stop-color="var(--theme-dk1)"/>
+    </linearGradient>
+  </defs>
+</svg>

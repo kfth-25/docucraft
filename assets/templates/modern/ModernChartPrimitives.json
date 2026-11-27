@@ -1,0 +1,16 @@
+{
+  "layoutId": "modern-chart-primitives",
+  "name": "Modernchartprimitives",
+  "description": "Modernchartprimitives",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [],
+  "_schema": {},
+  "_cssVars": {
+    "background-text": "#E5E7EB"
+  }
+}

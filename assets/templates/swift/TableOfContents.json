@@ -1,0 +1,798 @@
+{
+  "layoutId": "SwiftTableOfContents",
+  "name": "Table Of Contents",
+  "description": "Swift: Table of contents with up to 10 items (title + description)",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 84,
+        "width": 800,
+        "height": 106
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "semibold",
+        "lineHeight": 1.1
+      },
+      "content": "Table of Contents"
+    },
+    {
+      "id": "num_01",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 210,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "01"
+    },
+    {
+      "id": "toc_item_1_title",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 212,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Introduction"
+    },
+    {
+      "id": "toc_item_1_desc",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 246,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "A brief description of our company and goals."
+    },
+    {
+      "id": "toc_item_1_divider",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 284,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_02",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 302,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "02"
+    },
+    {
+      "id": "toc_item_2_title",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 304,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Our Team"
+    },
+    {
+      "id": "toc_item_2_desc",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 338,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Leadership and core contributors."
+    },
+    {
+      "id": "toc_item_2_divider",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 376,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_03",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 394,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "03"
+    },
+    {
+      "id": "toc_item_3_title",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 396,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Timeline"
+    },
+    {
+      "id": "toc_item_3_desc",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 430,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "High-level execution plan and milestones."
+    },
+    {
+      "id": "toc_item_3_divider",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 468,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_04",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 486,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "04"
+    },
+    {
+      "id": "toc_item_4_title",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 488,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Recommendations"
+    },
+    {
+      "id": "toc_item_4_desc",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 522,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Key suggestions based on initial requirements."
+    },
+    {
+      "id": "toc_item_4_divider",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 560,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_05",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 578,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "05"
+    },
+    {
+      "id": "toc_item_5_title",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 580,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Solution"
+    },
+    {
+      "id": "toc_item_5_desc",
+      "type": "text",
+      "position": {
+        "x": 136,
+        "y": 614,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "What we propose and why it works."
+    },
+    {
+      "id": "toc_item_5_divider",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 652,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_06",
+      "type": "text",
+      "position": {
+        "x": 624,
+        "y": 210,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "06"
+    },
+    {
+      "id": "toc_item_6_title",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 212,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Market"
+    },
+    {
+      "id": "toc_item_6_desc",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 246,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Audience, segments, and opportunity size."
+    },
+    {
+      "id": "toc_item_6_divider",
+      "type": "shape",
+      "position": {
+        "x": 624,
+        "y": 284,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_07",
+      "type": "text",
+      "position": {
+        "x": 624,
+        "y": 302,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "07"
+    },
+    {
+      "id": "toc_item_7_title",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 304,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Business Model"
+    },
+    {
+      "id": "toc_item_7_desc",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 338,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "How we create and capture value."
+    },
+    {
+      "id": "toc_item_7_divider",
+      "type": "shape",
+      "position": {
+        "x": 624,
+        "y": 376,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_08",
+      "type": "text",
+      "position": {
+        "x": 624,
+        "y": 394,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "08"
+    },
+    {
+      "id": "toc_item_8_title",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 396,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Conclusion"
+    },
+    {
+      "id": "toc_item_8_desc",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 430,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Closing notes and next steps."
+    },
+    {
+      "id": "toc_item_8_divider",
+      "type": "shape",
+      "position": {
+        "x": 624,
+        "y": 468,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_09",
+      "type": "text",
+      "position": {
+        "x": 624,
+        "y": 486,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "09"
+    },
+    {
+      "id": "toc_item_9_title",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 488,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Business Model"
+    },
+    {
+      "id": "toc_item_9_desc",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 522,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "How we create and capture value."
+    },
+    {
+      "id": "toc_item_9_divider",
+      "type": "shape",
+      "position": {
+        "x": 624,
+        "y": 560,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "num_10",
+      "type": "text",
+      "position": {
+        "x": 624,
+        "y": 578,
+        "width": 72,
+        "height": 50
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "fontSize": 48,
+        "fontWeight": "semibold"
+      },
+      "content": "10"
+    },
+    {
+      "id": "toc_item_10_title",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 580,
+        "width": 340,
+        "height": 28
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 22,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Conclusion"
+    },
+    {
+      "id": "toc_item_10_desc",
+      "type": "text",
+      "position": {
+        "x": 712,
+        "y": 614,
+        "width": 340,
+        "height": 24
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Closing notes and next steps."
+    },
+    {
+      "id": "toc_item_10_divider",
+      "type": "shape",
+      "position": {
+        "x": 624,
+        "y": 652,
+        "width": 544,
+        "height": 1
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Table of Contents",
+    "items": [
+      {
+        "title": "Introduction",
+        "description": "A brief description of our company and goals."
+      },
+      {
+        "title": "Our Team",
+        "description": "Leadership and core contributors."
+      },
+      {
+        "title": "Timeline",
+        "description": "High-level execution plan and milestones."
+      },
+      {
+        "title": "Recommendations",
+        "description": "Key suggestions based on initial requirements."
+      },
+      {
+        "title": "Solution",
+        "description": "What we propose and why it works."
+      },
+      {
+        "title": "Market",
+        "description": "Audience, segments, and opportunity size."
+      },
+      {
+        "title": "Business Model",
+        "description": "How we create and capture value."
+      },
+      {
+        "title": "Conclusion",
+        "description": "Closing notes and next steps."
+      },
+      {
+        "title": "Business Model",
+        "description": "How we create and capture value."
+      },
+      {
+        "title": "Conclusion",
+        "description": "Closing notes and next steps."
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

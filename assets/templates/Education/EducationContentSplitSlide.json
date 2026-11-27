@@ -1,0 +1,38 @@
+{
+  "layoutId": "content-split-slide",
+  "name": "Content Split Slide",
+  "description": "A left collage built from one repeated image and a right content block containing heading, tagline, and paragraph text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#E6E7E8",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#E6E7E8",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "images": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "__image_prompt__": "Business team around a laptop",
+    "heading": "Heading",
+    "description": "TAGLINE"
+  },
+  "_cssVars": {
+    "background-color": "#E6E7E8",
+    "body-font-family": "Source Serif 4",
+    "background-text": "#34394C"
+  }
+}

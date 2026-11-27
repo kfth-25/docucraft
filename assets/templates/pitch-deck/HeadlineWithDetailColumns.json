@@ -1,0 +1,53 @@
+{
+  "layoutId": "headline-with-detail-columns",
+  "name": "Headline with Detail Columns",
+  "description": "A layout with a large headline and detail columns containing markers, text, and bullets.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 36,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "highlighted": "false"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#ffffff",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d"
+  }
+}

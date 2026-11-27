@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: absolute top-16 right-6 ── */
+    .diamonds-right { position: absolute; top: 64px; right: 24px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+    /* ── TSX: relative px-12 pt-3 flex flex-col items-center ── */
+    .title-block { position: relative; padding: 12px 48px 0 48px; display: flex; flex-direction: column; align-items: center; }
+    .title { font-size: 48px; font-weight: 600; line-height: 1.1; color: #111827; text-align: center; margin: 0; }
+    /* ── TSX: mt-5 max-w-[720px] w-full rounded-md text-center px-6 py-3 ── */
+    .subtitle-banner {
+      margin-top: 20px; max-width: 720px; width: 100%;
+      border-radius: 6px; text-align: center; padding: 12px 24px;
+      border: 1px solid rgba(0,0,0,0.25);
+      background: #BFF4FF; color: #6B7280;
+    }
+    .subtitle-banner span { font-size: 16px; }
+    /* ── TSX: relative px-12 pt-10 ── */
+    .timeline-block { position: relative; padding: 40px 48px 0 48px; }
+    /* ── TSX: absolute left-12 right-12 top-1/2 h-[4px] ── */
+    .center-line { position: absolute; left: 48px; right: 48px; top: 50%; height: 4px; background: #BFF4FF; }
+    /* ── TSX: relative flex justify-center gap-10 ── */
+    .tl-row { position: relative; display: flex; justify-content: center; gap: 40px; }
+    .tl-col { display: flex; flex-direction: column; align-items: center; }
+    /* ── TSX: mb-2 px-5 py-2 rounded-md text-white text-[16px] font-semibold ── */
+    .year-badge {
+      margin-bottom: 8px; padding: 8px 20px; border-radius: 6px;
+      background: #111827; color: #FFFFFF; font-size: 16px; font-weight: 600;
+    }
+    /* ── TSX: w-5 h-5 rounded-full border-4 ── */
+    .dot { width: 20px; height: 20px; border-radius: 9999px; background: #FFFFFF; border: 4px solid #BFF4FF; }
+    /* ── TSX: mt-4 ── */
+    .tl-card-wrap { margin-top: 16px; }
+    /* ── TSX: rounded-[16px] bg-white shadow px-6 pt-6 pb-5 text-center w-[260px] ── */
+    .tl-card {
+      background: #FFFFFF; border-radius: 16px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+      padding: 24px 24px 20px 24px; text-align: center; width: 260px;
+    }
+    /* ── TSX: mx-auto w-12 h-12 rounded-full bg BFF4FF mb-4 ── */
+    .tl-icon {
+      margin: 0 auto 16px auto; width: 48px; height: 48px; border-radius: 9999px;
+      background: #BFF4FF; display: flex; align-items: center; justify-content: center;
+    }
+    .tl-icon svg { width: 24px; height: 24px; object-fit: contain; }
+    .tl-heading { font-size: 18px; font-weight: 600; color: #111827; }
+    .tl-body { font-size: 14px; color: #6B7280; margin: 12px 0 0 0; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; z-index: 2; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); z-index: 2; }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .diamonds-right { display: none; }
+      .title-block { padding: 12px 0 0 0; }
+      .title { font-size: 6.5vw; }
+      .subtitle-banner { max-width: 100%; padding: 10px 16px; }
+      .timeline-block { padding: 24px 0 0 0; }
+      .center-line { display: none; }
+      .tl-row { flex-direction: column; align-items: center; gap: 24px; }
+      .tl-card { width: 100%; max-width: 320px; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Right diamonds ── -->
+    <div class="diamonds-right">
+      <div class="diamond"></div><div class="diamond"></div><div class="diamond"></div>
+    </div>
+
+    <!-- ── Title + subtitle banner ── -->
+    <div class="title-block">
+      <h1 class="title">Our Journey at a Glance</h1>
+      <div class="subtitle-banner">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+      </div>
+    </div>
+
+    <!-- ── Timeline ── -->
+    <div class="timeline-block">
+      <div class="center-line"></div>
+      <div class="tl-row">
+        <!-- Item 1 -->
+        <div class="tl-col">
+          <div class="year-badge">2018</div>
+          <div class="dot"></div>
+          <div class="tl-card-wrap">
+            <div class="tl-card">
+              <div class="tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+              </div>
+              <div class="tl-heading">Founded in 2020</div>
+              <p class="tl-body">Lorem ipsum dolor</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="tl-col">
+          <div class="year-badge">2019</div>
+          <div class="dot"></div>
+          <div class="tl-card-wrap">
+            <div class="tl-card">
+              <div class="tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+              </div>
+              <div class="tl-heading">First Product in 2021</div>
+              <p class="tl-body">Lorem ipsum dolor</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="tl-col">
+          <div class="year-badge">2020</div>
+          <div class="dot"></div>
+          <div class="tl-card-wrap">
+            <div class="tl-card">
+              <div class="tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+              </div>
+              <div class="tl-heading">Key Milestone in 2022</div>
+              <p class="tl-body">Lorem ipsum dolor</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="tl-col">
+          <div class="year-badge">2021</div>
+          <div class="dot"></div>
+          <div class="tl-card-wrap">
+            <div class="tl-card">
+              <div class="tl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 12h6M9 16h6"/></svg>
+              </div>
+              <div class="tl-heading">Global Expansion in 2024</div>
+              <p class="tl-body">Lorem ipsum dolor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

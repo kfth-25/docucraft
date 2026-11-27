@@ -1,0 +1,139 @@
+{
+  "layoutId": "thank-you-contact-info-footer-image-slide",
+  "name": "Centered Title With Contact And Footer Image",
+  "description": "A conclusion slide featuring centered title with accent bar, description text on the left, contact information (phone, email, website) aligned right, and a full-width footer image.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9234EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 1098,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Thank you",
+    "contactTitle": "Contact Us",
+    "phone": "+977-98000000",
+    "email": "presenton@gmail.com",
+    "website": "www.presenton.com",
+    "footerImage": {}
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#D3CFCF",
+    "primary-color": "#9234EB"
+  }
+}

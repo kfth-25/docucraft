@@ -1,0 +1,55 @@
+{
+  "layoutId": "title-description-with-cards-slide",
+  "name": "Title Description with Cards Slide",
+  "description": "A team introduction slide with a title and intro text on top, followed by a grid of profile cards where one card can be highlighted with a footer style.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "decoration",
+      "position": {
+        "x": 64,
+        "y": 630,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "highlighted": "false",
+    "description": "https://i.pravatar.cc/600?img=12",
+    "__image_prompt__": "Professional male portrait with suit",
+    "image": {}
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#FEFEFF",
+    "primary-text": "#edf2f1"
+  }
+}

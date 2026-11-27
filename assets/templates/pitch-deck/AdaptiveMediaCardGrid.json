@@ -1,0 +1,67 @@
+{
+  "layoutId": "adaptive-media-card-grid",
+  "name": "Adaptive Media Card Grid",
+  "description": "A responsive media-card grid that supports compact and dense arrangements.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 436,
+        "y": 630,
+        "width": 844,
+        "height": 50
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "__image_prompt__": "Highlights",
+    "image": {}
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2",
+    "heading-font-family": "DM Serif Display"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "layoutId": "terminal-command-slide",
+  "name": "Terminal Block Slide",
+  "description": "A title and description layout with a terminal-style block and a short note.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Local Development Setup",
+    "description": "Run these commands to start the application locally with Docker.",
+    "terminal": {}
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#d2d9ff",
+    "card-color": "#0F172B80",
+    "stroke": "#1D293D80"
+  }
+}

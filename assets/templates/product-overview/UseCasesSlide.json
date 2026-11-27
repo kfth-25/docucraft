@@ -1,0 +1,54 @@
+{
+  "layoutId": "scenario-cards-slide",
+  "name": "Scenario Cards Slide",
+  "description": "A split title/content layout with scenario cards containing actor and outcome text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 220
+      },
+      "style": {
+        "color": "#15342D",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "user": "Use Cases",
+    "description": "Scenario cards show how different groups, workflows, or contexts connect to outcomes."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ffffff",
+    "stroke": "#c5cccb",
+    "primary-text": "#edf2f1"
+  }
+}

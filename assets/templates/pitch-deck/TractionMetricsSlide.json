@@ -1,0 +1,84 @@
+{
+  "layoutId": "traction-metrics-slide",
+  "name": "Traction Metrics Slide",
+  "description": "A pitch-deck layout with traction metrics and a compact milestone row.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 54,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 80,
+        "fontWeight": "normal"
+      },
+      "content": "Traction"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 72,
+        "width": 850,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Summary"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 42,
+        "y": 628,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Traction",
+    "description": "Early signals show repeatable demand, stronger retention, and a clear path to expansion."
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "stroke": "#8d8a7d",
+    "primary-color": "#dddac7"
+  }
+}

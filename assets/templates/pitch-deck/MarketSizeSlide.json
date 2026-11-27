@@ -1,0 +1,86 @@
+{
+  "layoutId": "market-size-slide",
+  "name": "Market Size Slide",
+  "description": "A pitch-deck layout with market size layers and supporting segment notes.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 56,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 78,
+        "fontWeight": "normal"
+      },
+      "content": "Market Size"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 74,
+        "width": 840,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Subtitle text here"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 26,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Segmentnote"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Market Size",
+    "description": "A focused view of the addressable market, reachable segment, and initial serviceable opportunity."
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#d7d3be",
+    "body-font-family": "DM Serif Display",
+    "stroke": "#8d8a7d",
+    "primary-color": "#dddac7"
+  }
+}

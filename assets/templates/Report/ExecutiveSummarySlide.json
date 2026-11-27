@@ -1,0 +1,82 @@
+{
+  "layoutId": "summary-cards-slide",
+  "name": "Summary Cards Slide",
+  "description": "A report slide with a title, short summary statement, compact metric cards, supporting highlight cards, and a concluding note.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Executive Summary",
+    "description": "A concise overview of the report context, main observations, and overall direction."
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "primary-text": "#ffffff",
+    "stroke": "#D6D9DE"
+  }
+}

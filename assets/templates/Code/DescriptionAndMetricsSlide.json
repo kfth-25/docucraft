@@ -1,0 +1,38 @@
+{
+  "layoutId": "description-and-metrics-slide",
+  "name": "Description and Metrics Slide",
+  "description": "A metrics slide with description text on the left and metric cards on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Metrics",
+    "description": "Explanation"
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#8fa2d8",
+    "stroke": "#1D293D80",
+    "card-color": "#0F172B80",
+    "graph-0": "#8bb4ff"
+  }
+}

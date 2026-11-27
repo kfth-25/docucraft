@@ -1,0 +1,55 @@
+{
+  "@@locale": "id",
+
+  "appTitle": "DocuCraft",
+
+  "aiChatGreeting": "Halo! Saya DocuCraft AI, siap bantu bikin presentasi keren.\n\n**Yang bisa saya lakukan:**\n✨ Buat slide dari teks biasa\n🔄 Redesign slide yang ada\n📊 Buat presentasi full dari outline\n🎨 Generate layout + konten otomatis\n🖼️ **AI dari Coretan** — coret di canvas, AI ubah jadi desain\n\n*Coba: \"Buat slide tentang strategi marketing\"*",
+
+  "aiSketchCanvasEmpty": "⚠️ Canvas kosong. Gambar coretan dulu di kanvas, lalu coba lagi.",
+
+  "aiSketchNoCanvas": "⚠️ Tidak ada canvas coretan yang tersedia.",
+
+  "aiSketchAnalyzing": "🧠 Menganalisis coretan dan merancang...",
+
+  "aiStorageNotReady": "Storage belum siap. Coba lagi.",
+
+  "aiErrorPlanningEmpty": "Planning tidak menghasilkan halaman; menggunakan outline demo.",
+
+  "aiErrorBackendOffline": "Backend offline: {error} — menggunakan outline demo.",
+
+  "aiErrorNoPages": "Tidak ada halaman untuk di-generate.",
+
+  "aiErrorGeneration": "Generation gagal: {error}",
+
+  "aiBlueprintForkedNoOutline": "Fork {name}: tidak ada outline tersimpan, replan dari awal.",
+
+  "aiBlueprintForkedEmpty": "Fork {name}: outline kosong, replan.",
+
+  "aiBlueprintForkedReady": "Fork {name} — edit lalu generate.",
+
+  "aiBlueprintLoaded": "Dimuat: {name}",
+
+  "aiSketchConvertFailed": "⚠️ Gagal convert sketch: {reason}",
+
+  "aiGenericError": "⚠️ Error: {message}",
+
+  "aiGenerateFailed": "⚠️ Gagal generate: tidak ada hasil",
+
+  "aiDesignGateIntro": "Saya akan buat desain dengan:\n• Topik: {topic}\n• Warna: {color}\n• Style: {style}\n\n[✅ Generate Sekarang] [✏️ Ubah Detail]",
+
+  "aiDesignSuccess": "✅ **Berhasil!** {count} elemen visual ditambahkan ke slide.\n\nDetail:\n• {textCount} teks\n• {shapeCount} bentuk\n• {imageCount} gambar\n\n[🔄 Coba Lagi] [✏️ Edit]",
+
+  "aiSketchConvertSuccess": "✅ **Coretan → Design berhasil!**\n\n",
+
+  "aiSketchConvertSuccessFallback": "✅ **Coretan → Design berhasil!** (fallback)\n\n",
+
+  "aiNoResult": "tidak ada hasil",
+
+  "uiRetry": "Coba Lagi",
+
+  "uiEditDesignDetail": "Edit Detail Desain",
+
+  "uiCancel": "Batal",
+
+  "uiGenerating": "Generating…"
+}

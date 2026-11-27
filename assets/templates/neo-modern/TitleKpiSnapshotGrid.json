@@ -1,0 +1,50 @@
+{
+  "layoutId": "title-kpi-snapshot-grid",
+  "name": "Title KPI Snapshot Grid",
+  "description": "A slide featuring a centered title with an 8-card grid below. Each card supports flexible formatting - value-first or label-first layouts, optional highlighting, and suffix text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 20,
+        "y": 20,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "KPI Snapshot"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "card-color": "#F7F8FF",
+    "stroke": "#F0F0F0"
+  }
+}

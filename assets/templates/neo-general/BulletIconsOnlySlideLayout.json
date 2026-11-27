@@ -1,0 +1,125 @@
+{
+  "layoutId": "bullet-icons-only-slide-layout",
+  "name": "Icon Bullet Grid With Image",
+  "description": "A layout featuring a large left-aligned title with a 2-4 icon bullet point grid, each with circular icon badge, title, and optional subtitle. A rounded supporting image sits on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Solutions"
+    },
+    {
+      "id": "txt_span_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "decoration",
+      "position": {
+        "x": 32,
+        "y": 64,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Solutions"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#4b5563",
+    "primary-color": "#9333ea",
+    "primary-text": "#ffffff"
+  }
+}

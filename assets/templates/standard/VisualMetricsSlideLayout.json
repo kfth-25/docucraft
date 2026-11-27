@@ -1,0 +1,116 @@
+{
+  "layoutId": "visual-metrics-slide-layout",
+  "name": "Visual Metrics",
+  "description": "A slide with a header bar, numeric marker, title, description, and grid of cards with headings, circular metrics, and texts",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Playfair Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 331,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 64,
+        "fontWeight": "normal"
+      },
+      "content": "Research"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 347,
+        "width": 1020,
+        "height": 26
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Abstract light background for slide header area"
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 18,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 220,
+        "height": 2
+      },
+      "style": {
+        "color": "#6B7280",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "__image_url__": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop",
+    "description": "Abstract light background for slide header area",
+    "title": "Research",
+    "topBar": {}
+  },
+  "_cssVars": {
+    "primary-color": "#1B8C2D",
+    "background-text": "#6B7280",
+    "background-color": "#FFFFFF",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

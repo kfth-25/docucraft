@@ -1,0 +1,95 @@
+{
+  "layoutId": "table-of-content-without-page-number",
+  "name": "Split Title With Two Column Numbered List",
+  "description": "A split layout with large title on the left and two-column numbered list on the right. Each item displays a numbered circle badge and label.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#703AC9",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#703AC9",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#703AC9",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Table of Content",
+    "items": "1",
+    "label": "Introduction"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#18181B",
+    "primary-color": "#703AC9",
+    "primary-text": "#FFFFFF"
+  }
+}

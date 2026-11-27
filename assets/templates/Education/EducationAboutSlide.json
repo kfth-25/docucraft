@@ -1,0 +1,97 @@
+{
+  "layoutId": "about-slide",
+  "name": "About Slide",
+  "description": "A left text column with company/instructor/presenter/institute name and title introduction and a right-side visual grid made from one repeated image and tinted text panels.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#efeff1",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#efeff1",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#28256f",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#28256f",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#28256f",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#28256f",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "topFeatureImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "__image_prompt__": "Office team collaboration",
+    "bottomFeatureImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    "name": "Company Name",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et."
+  },
+  "_cssVars": {
+    "background-color": "#efeff1",
+    "body-font-family": "Source Serif 4",
+    "primary-color": "#28256f",
+    "background-text": "#46474C",
+    "primary-text": "#f5f7ff"
+  }
+}

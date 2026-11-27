@@ -1,0 +1,14 @@
+{
+  "layoutId": "general-chart-primitives",
+  "name": "Generalchartprimitives",
+  "description": "Generalchartprimitives",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Poppins"
+  },
+  "elements": [],
+  "_schema": {},
+  "_cssVars": {}
+}

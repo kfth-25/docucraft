@@ -1,0 +1,85 @@
+{
+  "layoutId": "cards-with-chart-split",
+  "name": "Cards with Chart Split",
+  "description": "A split layout with cards on the left and a chart panel on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 337,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 36,
+        "y": 198,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "showAccentGlow": "true",
+    "description": "Highlights",
+    "icon": {}
+  },
+  "_cssVars": {
+    "stroke": "#8d8a7d",
+    "background-text": "#dddac7",
+    "primary-color": "#27292d",
+    "primary-text": "#27292d",
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "heading-font-family": "DM Serif Display"
+  }
+}

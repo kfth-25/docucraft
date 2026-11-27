@@ -1,0 +1,98 @@
+{
+  "layoutId": "title-badge-chart",
+  "name": "Title Badge Chart",
+  "description": "A slide featuring a centered title, a category badge, and a chart with supplementary labels, supporting bar, grouped bar, stacked bar, clustered bar, diverging bar, horizontal bar, line, area, pie, donut, and scatter chart types.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Playfair Display"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1F8A2E",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1F8A2E",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 1172,
+        "y": 666,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 20,
+        "y": 650,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Barchart",
+    "badgeText": "Campaign A",
+    "topDescription": "Top Campaign",
+    "bottomDescription": "Engangment Rate"
+  },
+  "_cssVars": {
+    "background-text": "#111827",
+    "graph-0": "#1F8A2E",
+    "graph-1": "#A7DBA8",
+    "background-color": "#FFFFFF",
+    "stroke": "#F0F0F0",
+    "primary-color": "#1F8A2E",
+    "primary-text": "#FFFFFF"
+  }
+}

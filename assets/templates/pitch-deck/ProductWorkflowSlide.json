@@ -1,0 +1,70 @@
+{
+  "layoutId": "product-workflow-slide",
+  "name": "Product Workflow Slide",
+  "description": "A pitch-deck layout with a product or workflow image and step-based explanation.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 76,
+        "fontWeight": "normal"
+      },
+      "content": "How It Works"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 18,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 26,
+        "fontWeight": "normal"
+      },
+      "content": "Summary"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "How It Works",
+    "description": "The workflow moves from source inputs to prioritized decisions and visible progress."
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "stroke": "#8d8a7d",
+    "primary-color": "#dddac7"
+  }
+}

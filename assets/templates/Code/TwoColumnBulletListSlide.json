@@ -1,0 +1,38 @@
+{
+  "layoutId": "bullet-list-slide",
+  "name": "Two Column Bullet List Slide",
+  "description": "A two-column numbered string list with items.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Usecase"
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#d5dcff",
+    "stroke": "#1D293D80",
+    "card-color": "#0F172B80",
+    "primary-color": "#2B7FFF33",
+    "primary-text": "#51A2FF"
+  }
+}

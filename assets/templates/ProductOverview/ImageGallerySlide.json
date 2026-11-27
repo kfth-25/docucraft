@@ -1,0 +1,43 @@
+{
+  "layoutId": "title-description-with-image-gallery-slide",
+  "name": "Title Description with Image Gallery Slide",
+  "description": "A text slide with a title on top and a description below, and a section containing a gallery of images.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "topCenterImage": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80",
+    "topRightImage": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80",
+    "bottomWideImage": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1300&q=80",
+    "bottomCenterImage": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    "bottomRightImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80",
+    "title": "Image Gallery",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+    "__image_prompt__": "Design team discussing project board"
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC"
+  }
+}

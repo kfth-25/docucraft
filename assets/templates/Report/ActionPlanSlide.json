@@ -1,0 +1,162 @@
+{
+  "layoutId": "action-plan-table-slide",
+  "name": "Action Plan Table Slide",
+  "description": "A report slide with a title, subtitle, and compact action table covering action, owner, timing, status, and measure.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 20,
+        "y": 13,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Action"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 20,
+        "y": 13,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Owner"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 20,
+        "y": 13,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Timing"
+    },
+    {
+      "id": "txt_p_3",
+      "type": "text",
+      "position": {
+        "x": 20,
+        "y": 13,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Status"
+    },
+    {
+      "id": "txt_p_4",
+      "type": "text",
+      "position": {
+        "x": 20,
+        "y": 13,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Measure"
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Action Plan",
+    "description": "A structured next-step table that connects recommended actions to owners, timing, status, and measures."
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "primary-text": "#ffffff",
+    "stroke": "#E3E4E8"
+  }
+}

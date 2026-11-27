@@ -1,0 +1,116 @@
+{
+  "layoutId": "challenge-and-outcome-with-one-stat",
+  "name": "Two Section Text With Highlight Card",
+  "description": "A two-section layout featuring title with accent bar, first section with heading and description, numbered list in the second section on the left, and a highlight card on the right with name, subtitle, icon badge, and prominent metric.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 420,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9134EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9134EB",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Customer Proof / Case Snapshot",
+    "challengeSectionTitle": "CHALLENGE",
+    "challengeContent": "Fragmented marketing operations across 12 regions leading to inefficient spend allocation and inconsistent messaging. CAC increased 43% YoY.",
+    "outcomeSectionTitle": "OUTCOME",
+    "customerName": "TechCorp Global",
+    "customerSubTitle": "Fortune 500 Technology Company",
+    "metricValue": "$4.2M",
+    "metricLabel": "incremental pipeline in Q4",
+    "metricIcon": {}
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#4D5463",
+    "primary-color": "#9134EB",
+    "card-color": "#FFFFFF",
+    "primary-text": "#ffffff"
+  }
+}

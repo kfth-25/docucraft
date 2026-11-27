@@ -1,0 +1,67 @@
+{
+  "layoutId": "workflow-slide",
+  "name": "Workflow Slide",
+  "description": "A workflow slide with cards and directional arrows between steps.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 500,
+        "height": 50
+      },
+      "style": {
+        "color": "#0F172B80",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 75
+      },
+      "style": {
+        "color": "#51A2FF",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Workflow",
+    "icon": {}
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#90A1B9",
+    "stroke": "#1D293D80",
+    "card-color": "#0F172B80",
+    "primary-color": "#51A2FF",
+    "primary-text": "#ffffff"
+  }
+}

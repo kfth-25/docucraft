@@ -1,0 +1,262 @@
+{
+  "layoutId": "icon-bullet-list-description-slide",
+  "name": "Icon Bullet List Description",
+  "description": "Bullet list with title, description, and icon",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 84,
+        "width": 900,
+        "height": 106
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "semibold",
+        "lineHeight": 1.1
+      },
+      "content": "Key Product Features"
+    },
+    {
+      "id": "txt_description",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 208,
+        "width": 760,
+        "height": 50
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor."
+    },
+    {
+      "id": "cyan_band",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 560,
+        "width": 1280,
+        "height": 160
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "card_1",
+      "type": "card",
+      "position": {
+        "x": 72,
+        "y": 320,
+        "width": 260,
+        "height": 210
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 22,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Customizable Workflows",
+          "line2": "",
+          "description": "Lorem ipsum dolor sit amet, dolor sit amet."
+        }
+      ]
+    },
+    {
+      "id": "card_2",
+      "type": "card",
+      "position": {
+        "x": 364,
+        "y": 320,
+        "width": 260,
+        "height": 210
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 22,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Multi-Device Access",
+          "line2": "",
+          "description": "Lorem ipsum dolor sit amet."
+        }
+      ]
+    },
+    {
+      "id": "card_3",
+      "type": "card",
+      "position": {
+        "x": 656,
+        "y": 320,
+        "width": 260,
+        "height": 210
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 22,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Scalable Architecture",
+          "line2": "",
+          "description": "Lorem ipsum dolor sit amet."
+        }
+      ]
+    },
+    {
+      "id": "card_4",
+      "type": "card",
+      "position": {
+        "x": 948,
+        "y": 320,
+        "width": 260,
+        "height": 210
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 22,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Detailed Reports",
+          "line2": "",
+          "description": "Lorem ipsum dolor sit amet."
+        }
+      ]
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Key Product Features",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.",
+    "features": [
+      {
+        "title": "Customizable Workflows",
+        "body": "Lorem ipsum dolor sit amet, dolor sit amet."
+      },
+      {
+        "title": "Multi-Device Access",
+        "body": "Lorem ipsum dolor sit amet."
+      },
+      {
+        "title": "Scalable Architecture",
+        "body": "Lorem ipsum dolor sit amet."
+      },
+      {
+        "title": "Detailed Reports",
+        "body": "Lorem ipsum dolor sit amet."
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

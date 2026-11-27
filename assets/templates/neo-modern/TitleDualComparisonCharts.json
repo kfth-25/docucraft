@@ -1,0 +1,80 @@
+{
+  "layoutId": "title-dual-comparison-charts",
+  "name": "Title Dual Comparison Charts",
+  "description": "A comparison slide with a main title and two side-by-side chart panels, each supporting bar, grouped bar, stacked bar, clustered bar, diverging bar, horizontal bar, line, area, pie, donut, and scatter chart types.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 12
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 1156,
+        "y": 654,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 20,
+        "y": 20,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Competitive Comparison",
+    "chart": {}
+  },
+  "_cssVars": {
+    "card-color": "#FFFFFF",
+    "stroke": "#F0F0F0",
+    "background-text": "#111827",
+    "primary-text": "#FFFFFF",
+    "background-color": "#FFFFFF"
+  }
+}

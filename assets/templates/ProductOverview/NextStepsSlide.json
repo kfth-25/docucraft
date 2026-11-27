@@ -1,0 +1,68 @@
+{
+  "layoutId": "closing-actions-contact-slide",
+  "name": "Closing Actions and Contact Slide",
+  "description": "A closing layout with a large message area, action cards, and contact details.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 50
+      },
+      "style": {
+        "color": "#15342D",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "name": "Next Steps",
+    "description": "Walk through the core workflows with your product and operations stakeholders.Move from overview to action with a guided demo, a focused pilot, and a clear evaluation plan."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "primary-text": "#edf2f1",
+    "card-color": "#ffffff",
+    "stroke": "#c5cccb",
+    "background-text": "#15342DCC"
+  }
+}

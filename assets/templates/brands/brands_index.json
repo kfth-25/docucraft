@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "id": "docucraft-default",
+      "name": "DocuCraft Default",
+      "colors": {
+        "dk1": "1A1A25",
+        "lt1": "FFFFFF",
+        "dk2": "6366F1",
+        "lt2": "9CA3AF",
+        "accent1": "6366F1",
+        "accent2": "A855F7",
+        "accent3": "10B981",
+        "accent4": "F59E0B",
+        "accent5": "3B82F6",
+        "accent6": "EC4899",
+        "hlink": "6366F1",
+        "folHlink": "4F46E5"
+      },
+      "fonts": {
+        "major": "DM Sans",
+        "minor": "DM Sans"
+      },
+      "effects": {
+        "shadow": "0 4px 24px rgba(0,0,0,0.08)",
+        "glow": "0 0 20px rgba(99,102,241,0.3)"
+      }
+    },
+    {
+      "id": "corporate-blue",
+      "name": "Corporate Blue",
+      "colors": {
+        "dk1": "0F172A",
+        "lt1": "FFFFFF",
+        "dk2": "1E40AF",
+        "lt2": "93C5FD",
+        "accent1": "3B82F6",
+        "accent2": "06B6D4",
+        "accent3": "10B981",
+        "accent4": "F59E0B",
+        "accent5": "8B5CF6",
+        "accent6": "EC4899",
+        "hlink": "3B82F6",
+        "folHlink": "1E40AF"
+      },
+      "fonts": {
+        "major": "Inter",
+        "minor": "Inter"
+      },
+      "effects": {
+        "shadow": "0 4px 24px rgba(0,0,0,0.1)",
+        "glow": "0 0 20px rgba(59,130,246,0.3)"
+      }
+    },
+    {
+      "id": "warm-sunset",
+      "name": "Warm Sunset",
+      "colors": {
+        "dk1": "1C1917",
+        "lt1": "FEFCE8",
+        "dk2": "EA580C",
+        "lt2": "FDE68A",
+        "accent1": "F97316",
+        "accent2": "EC4899",
+        "accent3": "84CC16",
+        "accent4": "06B6D4",
+        "accent5": "A855F7",
+        "accent6": "F43F5E",
+        "hlink": "F97316",
+        "folHlink": "EA580C"
+      },
+      "fonts": {
+        "major": "Playfair Display",
+        "minor": "DM Sans"
+      },
+      "effects": {
+        "shadow": "0 4px 24px rgba(234,88,12,0.15)",
+        "glow": "0 0 20px rgba(249,115,22,0.3)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "layoutId": "title-cards-list-with-text-slide",
+  "name": "Title with Cards List with Text",
+  "description": "A slide with a title on top and a content section containing a list of cards with text content.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "highlighted": "false",
+    "featureIcon": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "description": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "__icon_query__": "check icon"
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "card-color": "#ececee",
+    "primary-text": "#edf2f1",
+    "background-text": "#15342DCC"
+  }
+}

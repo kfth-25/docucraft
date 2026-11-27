@@ -1,0 +1,128 @@
+{
+  "layoutId": "horizontal-timeline",
+  "name": "Horizontal Timeline",
+  "description": "A horizontal timeline with step markers, item text, continuation state, and optional endpoint label.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 34,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Timeline"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 346,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 25,
+        "fontWeight": "normal"
+      },
+      "content": "Endlabel"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#dddac7",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 2
+      },
+      "style": {
+        "color": "#dddac7",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "isContinue": "false",
+    "showEndLabel": "true",
+    "title": "Timeline"
+  },
+  "_cssVars": {
+    "primary-color": "#dddac7",
+    "primary-text": "#d7d3be",
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "heading-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2"
+  }
+}

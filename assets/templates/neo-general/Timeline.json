@@ -1,0 +1,163 @@
+{
+  "layoutId": "timeline",
+  "name": "Horizontal Timeline With Cards",
+  "description": "A visual timeline layout featuring centered title, horizontal dashed axis line, and 2-6 milestone cards alternating above and below the axis. Each card shows a date label and description with colored accent dots.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9234EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 2
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F2",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_10",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Timeline"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#000000",
+    "primary-color": "#9234EB",
+    "card-color": "#F0F0F2"
+  }
+}

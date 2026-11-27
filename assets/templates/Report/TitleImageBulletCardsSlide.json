@@ -1,0 +1,98 @@
+{
+  "layoutId": "title-image-bullet-cards-slide",
+  "name": "Title Image Bullet Cards Slide",
+  "description": "A slide with optional image on the left and cards with bullet on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 50
+      },
+      "style": {
+        "color": "#4d4ef3",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ece8dd",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 534,
+        "height": 396
+      },
+      "style": {
+        "color": "#ece8dd",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "showImage": "true",
+    "featureImage": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/images/placeholder.jpg",
+    "__image_prompt__": "Thinking woman portrait on a neutral background",
+    "description": "Solution"
+  },
+  "_cssVars": {
+    "graph-1": "#4d4ef3",
+    "primary-text": "#ffffff",
+    "background-color": "#F9F8F8",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "background-text": "#232223",
+    "card-color": "#ece8dd"
+  }
+}

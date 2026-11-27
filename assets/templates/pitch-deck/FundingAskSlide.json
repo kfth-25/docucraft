@@ -1,0 +1,103 @@
+{
+  "layoutId": "funding-ask-slide",
+  "name": "Funding Ask Slide",
+  "description": "A pitch-deck layout with funding ask, runway, allocation cards, and milestones unlocked.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 28,
+        "fontWeight": "normal"
+      },
+      "content": "Funding Ask"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 52,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 94,
+        "fontWeight": "normal"
+      },
+      "content": "Askamount"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 24,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Askcontext"
+    },
+    {
+      "id": "txt_p_3",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 28,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 25,
+        "fontWeight": "normal"
+      },
+      "content": "Runway"
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Funding Ask",
+    "description": "$2.5M"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d",
+    "stroke": "#8d8a7d"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "layoutId": "team-slide-layout",
+  "name": "Description With Photo Cards Grid",
+  "description": "A two-section layout with title, accent line, and description on the left, paired with a 2x2 or flexible grid of 2-4 person cards on the right. Each card displays photo, name, position, and bio.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#4b5563",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Companydescription"
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "description": "Our Team Members"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#4b5563",
+    "primary-color": "#9333ea",
+    "card-color": "#e5e7eb"
+  }
+}

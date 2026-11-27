@@ -1,0 +1,98 @@
+{
+  "layoutId": "team-slide-layout",
+  "name": "Team Slide",
+  "description": "A slide layout showcasing team members with photos, names, positions, and descriptions alongside company information.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#4b5563",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Companydescription"
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "description": "Our Team Members"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "background-text": "#4b5563",
+    "primary-color": "#9333ea",
+    "card-color": "#e5e7eb"
+  }
+}

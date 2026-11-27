@@ -1,0 +1,54 @@
+{
+  "layoutId": "numbered-multi-column-overview",
+  "name": "Numbered Multi-Column Overview",
+  "description": "A multi-column layout with numbered markers, short titles, and descriptive body text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "highlighted": "false"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2",
+    "heading-font-family": "DM Serif Display",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d"
+  }
+}

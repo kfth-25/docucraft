@@ -1,0 +1,70 @@
+{
+  "layoutId": "panel-list-with-media",
+  "name": "Panel List with Media",
+  "description": "A table layout with a left multi-column item list and a configurable right media or color panel.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 44,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 408,
+        "height": 50
+      },
+      "style": {
+        "color": "#d7d3be",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "sidePanelMode": "solid",
+    "__image_prompt__": "Skyscraper perspective photo",
+    "description": "List"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2",
+    "heading-font-family": "DM Serif Display",
+    "stroke": "#4c4e53",
+    "primary-color": "#d7d3be"
+  }
+}

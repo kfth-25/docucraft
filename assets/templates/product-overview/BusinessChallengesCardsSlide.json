@@ -1,0 +1,55 @@
+{
+  "layoutId": "title-description-with-cards-text-slide",
+  "name": "Title Description with Cards to Text Slide",
+  "description": "A slide with a title on top and a description below, and a content section containing cards of text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "decoration",
+      "position": {
+        "x": 1140,
+        "y": 598,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "dark": "false",
+    "description": "TAGLINE",
+    "__image_prompt__": "Team meeting and stressed analyst",
+    "heroImage": {}
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ebebee",
+    "primary-text": "#edf2f1"
+  }
+}

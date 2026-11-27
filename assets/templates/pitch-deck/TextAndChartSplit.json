@@ -1,0 +1,85 @@
+{
+  "layoutId": "text-and-chart-split-layout",
+  "name": "Text and Chart Split Layout",
+  "description": "A split layout with narrative text on the left and a configurable chart canvas on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 36,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 36,
+        "y": 76,
+        "width": 520,
+        "height": 26
+      },
+      "style": {
+        "color": "#d7d3be",
+        "fontSize": 32,
+        "fontWeight": "normal"
+      },
+      "content": "Leadtext"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 36,
+        "y": 38,
+        "width": 530,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 22,
+        "fontWeight": "normal"
+      },
+      "content": "Supportingtext"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "showAccentGlow": "true",
+    "label": "Highlights",
+    "description": "This is a sample text to tell story for audience is written here"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2"
+  }
+}

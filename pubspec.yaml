@@ -1,0 +1,98 @@
+name: docucraft_app
+description: "DocuCraft — Mobile PPT Editor with AI & Collaboration"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0-167.1.beta
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.0
+  dio: ^5.7.0
+  share_plus: ^10.1.0
+  path_provider: ^2.1.0
+  image_picker: ^1.1.2
+  uuid: ^4.5.0
+  http: ^1.2.0
+  cross_file: ^0.3.5+4
+  shared_preferences: ^2.5.5
+  archive: ^3.6.1
+  xml: ^6.5.0
+  file_picker: ^10.0.0
+  web_socket_channel: ^3.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  webview_flutter: ^4.14.1
+  flutter_svg: ^2.0.10+1
+  # Loro CRDT FFI
+  flutter_rust_bridge: ^2.0.0
+  ffi: ^2.1.0
+  flutter_markdown: ^0.7.7+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.8
+  integration_test:
+    sdk: flutter
+  test: ^1.24.0
+  # hive_generator excluded from dev_dependencies due to version conflicts with mockito/test/analyzer
+  # Run manually: flutter packages pub run build_runner build --delete-conflicting-outputs
+
+flutter:
+  uses-material-design: true
+  generate: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
+          weight: 400
+    - family: Carlito
+      fonts:
+        - asset: assets/fonts/Carlito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Carlito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Carlito-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Carlito-BoldItalic.ttf
+          weight: 700
+          style: italic
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/images/logo.jpeg
+    - assets/templates/
+    - assets/templates/swift-html/
+    - assets/templates/Code/
+    - assets/templates/Education/
+    - assets/templates/Report/
+    - assets/templates/general/
+    - assets/templates/modern/
+    - assets/templates/neo-general/
+    - assets/templates/neo-modern/
+    - assets/templates/neo-standard/
+    - assets/templates/neo-swift/
+    - assets/templates/pitch-deck/
+    - assets/templates/product-overview/
+    - assets/templates/standard/
+    - assets/templates/swift/
+    - assets/skills-md/
+    - assets/skills-md/workflows/
+    - assets/skills-md/workflows/profiles/
+    - assets/skills-md/workflows/stages/
+    - assets/skills-md/workflows/governance/
+    - assets/skills-md/workflows/create-template/
+    - assets/skills-md/references/

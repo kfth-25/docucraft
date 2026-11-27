@@ -1,0 +1,67 @@
+{
+  "layoutId": "file-tree-structure-slide",
+  "name": "File Tree with Notes Slide",
+  "description": "A title and description layout with a formatted tree block and adjacent notes.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#ffffff",
+        "fontSize": 19,
+        "fontWeight": "normal"
+      },
+      "content": "Notes"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1D293D4D",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Template Folder Structure",
+    "description": "This structure shows how layouts, schemas, settings, and shared utilities are organized."
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#aebbe5",
+    "card-color": "#1D293D4D",
+    "stroke": "#1D293D80"
+  }
+}

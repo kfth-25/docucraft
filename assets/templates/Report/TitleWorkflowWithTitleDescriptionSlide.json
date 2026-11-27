@@ -1,0 +1,53 @@
+{
+  "layoutId": "title-workflow-with-title-description-slide",
+  "name": "Title Workflow with Title Description Slide",
+  "description": "A slide with a title and a horizontal flow. Each step contains a circular icon area, a heading, and a description placed underneath. Directional connectors between the circles indicate sequence, and the activeIndex field determines which step is emphasized.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#f9f8f8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#f9f8f8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFE",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "icon": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "__icon_query__": "pulse icon",
+    "title": "Services"
+  },
+  "_cssVars": {
+    "background-color": "#f9f8f8",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFE",
+    "background-text": "#353538",
+    "primary-text": "#ffffff"
+  }
+}

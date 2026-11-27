@@ -1,0 +1,40 @@
+{
+  "layoutId": "two-panel-contrast-metrics-slide",
+  "name": "Two Panel Contrast with Metrics Slide",
+  "description": "A title and subtitle layout with contrasting content panels and a row of bottom metrics.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "value": "Problem and Solution",
+    "description": "A direct view of the customer pain point and how the product creates a clearer operating model."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ffffff",
+    "stroke": "#c5cccb",
+    "primary-text": "#edf2f1"
+  }
+}

@@ -1,0 +1,54 @@
+<!-- DocuCraft HTML Template -- IntroSlideLayout -->
+<!-- Mirrors Presenton Swift template: IntroSlideLayout.tsx -->
+<!-- Design: white bg, left text column, right image panel, diamond accents -->
+<!-- V2: Semua elemen memakai INLINE STYLE (position:absolute + left/top)
+     supaya parser HTML sederhana bisa membaca posisi tanpa CSS parsing. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Intro Slide</title>
+</head>
+<body>
+  <div class="slide" style="position:relative; width:1920px; height:1080px; background-color:#FFFFFF; font-family:'Albert Sans',sans-serif; overflow:hidden;">
+
+    <!-- Header: diamond + company name -->
+    <div class="header" style="position:absolute; top:60px; left:96px; display:flex; align-items:center;">
+      <div class="diamond-small" style="width:12px; height:12px; transform:rotate(45deg); background-color:#111827;"></div>
+      <span class="company-name" style="position:absolute; top:60px; left:120px; font-size:16px; color:#6B7280; font-weight:500;">__COMPANY_NAME__</span>
+    </div>
+
+    <!-- Right image panel -->
+    <div class="image-panel" style="position:absolute; top:0; right:0; width:691px; height:1080px; overflow:hidden;">
+      <img src="__IMAGE_URL__" alt="__IMAGE_PROMPT__" style="position:absolute; top:0; right:0; width:691px; height:1080px; object-fit:cover;" />
+    </div>
+
+    <!-- Vertical diamond decorations -->
+    <div class="diamond-column" style="position:absolute; top:64px; right:691px; width:24px; display:flex; flex-direction:column; align-items:center;">
+      <div class="diamond-small" style="position:absolute; top:64px; right:691px; width:12px; height:12px; transform:rotate(45deg); background-color:#111827;"></div>
+      <div class="diamond-small" style="position:absolute; top:88px; right:691px; width:12px; height:12px; transform:rotate(45deg); background-color:#111827;"></div>
+      <div class="diamond-small" style="position:absolute; top:112px; right:691px; width:12px; height:12px; transform:rotate(45deg); background-color:#111827;"></div>
+    </div>
+
+    <!-- Content column -->
+    <div class="content" style="position:absolute; left:96px; top:220px; width:52%; display:flex; flex-direction:column;">
+      <h1 class="title" style="position:absolute; left:96px; top:220px; width:900px; font-size:64px; line-height:1.05; font-weight:600; color:#111827; margin:0;">__TITLE__</h1>
+      <p class="paragraph" style="position:absolute; left:96px; top:340px; width:620px; font-size:16px; line-height:1.6; color:#6B7280;">__PARAGRAPH__</p>
+
+      <div class="intro-card" style="position:absolute; left:96px; top:470px; width:380px; height:48px; background-color:#BFF4FF; border-radius:2px; padding:12px 16px;">
+        <div class="accent-bar" style="position:absolute; left:112px; top:482px; width:8px; height:24px; background-color:#111827;"></div>
+        <span class="card-name" style="position:absolute; left:132px; top:486px; font-size:16px; font-weight:600; color:#111827;">__CARD_NAME__</span>
+        <span class="card-date" style="position:absolute; left:230px; top:488px; font-size:14px; color:#6B7280;">__CARD_DATE__</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" style="position:absolute; bottom:56px; left:96px; right:96px; display:flex; align-items:center;">
+      <span class="website" style="position:absolute; left:96px; top:1000px; font-size:14px; color:#6B7280;">__WEBSITE__</span>
+      <div class="footer-line" style="position:absolute; left:250px; top:1008px; width:1200px; height:2px; background-color:#E5E7EB;"></div>
+      <div class="diamond-large" style="position:absolute; right:24px; top:996px; width:32px; height:32px; transform:rotate(45deg); background-color:#111827;"></div>
+    </div>
+  </div>
+</body>
+</html>

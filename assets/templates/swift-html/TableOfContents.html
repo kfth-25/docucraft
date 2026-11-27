@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: px-12 pt-3 ── */
+    .title-block { padding: 12px 48px 0 48px; }
+    .title { font-size: 48px; font-weight: 600; line-height: 1.1; color: #111827; margin: 0; }
+    /* ── TSX: px-12 pt-8 + grid grid-cols-2 gap-x-12 gap-y-6 max-w-[1180px] ── */
+    .list-block { padding: 32px 48px 0 48px; }
+    .list-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; row-gap: 24px; max-width: 1180px; }
+    .toc-item { position: relative; }
+    .toc-item-row { display: flex; align-items: flex-start; gap: 24px; }
+    /* ── TSX: fontSize 48, color BFF4FF, leading-none ── */
+    .toc-num { flex: none; font-size: 48px; line-height: 1; font-weight: 600; color: #BFF4FF; }
+    /* ── TSX: min-w-0 flex-1 pt-1 ── */
+    .toc-content { min-width: 0; flex: 1; padding-top: 4px; }
+    .toc-title { font-size: 22px; line-height: 1.2; font-weight: 600; color: #111827; }
+    .toc-desc { font-size: 14px; line-height: 1.6; color: #6B7280; margin-top: 8px; }
+    /* ── TSX: mt-4 h-px bg E5E7EB ── */
+    .toc-divider { margin-top: 16px; height: 1px; background: #E5E7EB; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .title-block { padding: 12px 0 0 0; }
+      .title { font-size: 6.5vw; }
+      .list-block { padding: 24px 0 0 0; }
+      .list-grid { grid-template-columns: 1fr; }
+      .toc-num { font-size: 8vw; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Title ── -->
+    <div class="title-block">
+      <h1 class="title">Table of Contents</h1>
+    </div>
+
+    <!-- ── 2-col list (10 items) ── -->
+    <div class="list-block">
+      <div class="list-grid">
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">01</div>
+            <div class="toc-content">
+              <div class="toc-title">Introduction</div>
+              <div class="toc-desc">A brief description of our company and goals.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">02</div>
+            <div class="toc-content">
+              <div class="toc-title">Our Team</div>
+              <div class="toc-desc">Leadership and core contributors.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">03</div>
+            <div class="toc-content">
+              <div class="toc-title">Timeline</div>
+              <div class="toc-desc">High-level execution plan and milestones.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">04</div>
+            <div class="toc-content">
+              <div class="toc-title">Recommendations</div>
+              <div class="toc-desc">Key suggestions based on initial requirements.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">05</div>
+            <div class="toc-content">
+              <div class="toc-title">Solution</div>
+              <div class="toc-desc">What we propose and why it works.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">06</div>
+            <div class="toc-content">
+              <div class="toc-title">Market</div>
+              <div class="toc-desc">Audience, segments, and opportunity size.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">07</div>
+            <div class="toc-content">
+              <div class="toc-title">Business Model</div>
+              <div class="toc-desc">How we create and capture value.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">08</div>
+            <div class="toc-content">
+              <div class="toc-title">Conclusion</div>
+              <div class="toc-desc">Closing notes and next steps.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">09</div>
+            <div class="toc-content">
+              <div class="toc-title">Business Model</div>
+              <div class="toc-desc">How we create and capture value.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-item-row">
+            <div class="toc-num">10</div>
+            <div class="toc-content">
+              <div class="toc-title">Conclusion</div>
+              <div class="toc-desc">Closing notes and next steps.</div>
+            </div>
+          </div>
+          <div class="toc-divider"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

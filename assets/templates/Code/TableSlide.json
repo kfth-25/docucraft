@@ -1,0 +1,51 @@
+{
+  "layoutId": "table-slide",
+  "name": "Table Slide",
+  "description": "A slide with title and a table.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#0F172BCC",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Comparison"
+  },
+  "_cssVars": {
+    "graph-2": "#37f08e",
+    "background-text": "#ffffff",
+    "background-color": "#101B37",
+    "card-color": "#0F172BCC",
+    "stroke": "#1D293D80"
+  }
+}

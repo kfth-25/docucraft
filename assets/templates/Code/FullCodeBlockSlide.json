@@ -1,0 +1,36 @@
+{
+  "layoutId": "full-code-block-slide",
+  "name": "Full Width Code Block Slide",
+  "description": "A title and description layout with a large formatted code block as the primary content area.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Core Implementation",
+    "description": "This slide highlights the main implementation block with syntax-aware formatting.",
+    "codeSnippet": {}
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#CAD5E2"
+  }
+}

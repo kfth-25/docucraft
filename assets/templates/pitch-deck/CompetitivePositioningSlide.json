@@ -1,0 +1,374 @@
+{
+  "layoutId": "competitive-positioning-slide",
+  "name": "Competitive Positioning Slide",
+  "description": "A pitch-deck layout with a simple positioning quadrant and competitor comparison rows.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 54,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 74,
+        "fontWeight": "normal"
+      },
+      "content": "Positioning"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 72,
+        "width": 820,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Summary"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 17,
+        "fontWeight": "normal"
+      },
+      "content": "High"
+    },
+    {
+      "id": "txt_p_3",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 7,
+        "width": 190,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 20,
+        "fontWeight": "normal"
+      },
+      "content": "Axes"
+    },
+    {
+      "id": "txt_p_4",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 17,
+        "fontWeight": "normal"
+      },
+      "content": "Low"
+    },
+    {
+      "id": "txt_p_5",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 17,
+        "fontWeight": "normal"
+      },
+      "content": "Low"
+    },
+    {
+      "id": "txt_p_6",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 7,
+        "width": 170,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 18,
+        "fontWeight": "normal"
+      },
+      "content": "Axes"
+    },
+    {
+      "id": "txt_p_7",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 17,
+        "fontWeight": "normal"
+      },
+      "content": "High"
+    },
+    {
+      "id": "txt_p_8",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 7,
+        "width": 170,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 18,
+        "fontWeight": "normal"
+      },
+      "content": "Axes"
+    },
+    {
+      "id": "txt_p_9",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 20,
+        "fontWeight": "normal"
+      },
+      "content": "Simple but shallow"
+    },
+    {
+      "id": "txt_p_10",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 20,
+        "fontWeight": "normal"
+      },
+      "content": "Deep but harder to adopt"
+    },
+    {
+      "id": "txt_p_11",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Target position"
+    },
+    {
+      "id": "txt_p_12",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 26,
+        "fontWeight": "normal"
+      },
+      "content": "Positionlabel"
+    },
+    {
+      "id": "el_14",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_15",
+      "type": "shape",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "width": 1,
+        "height": 50
+      },
+      "style": {
+        "color": "#8d8a7d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_16",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 4,
+        "width": 100,
+        "height": 1
+      },
+      "style": {
+        "color": "#8d8a7d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_17",
+      "type": "decoration",
+      "position": {
+        "x": 18,
+        "y": 16,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_18",
+      "type": "decoration",
+      "position": {
+        "x": 18,
+        "y": 654,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_19",
+      "type": "decoration",
+      "position": {
+        "x": 282,
+        "y": 654,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_20",
+      "type": "decoration",
+      "position": {
+        "x": 1162,
+        "y": 654,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_21",
+      "type": "decoration",
+      "position": {
+        "x": 54,
+        "y": 238,
+        "width": 150,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_22",
+      "type": "decoration",
+      "position": {
+        "x": 1086,
+        "y": 238,
+        "width": 160,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_23",
+      "type": "shape",
+      "position": {
+        "x": 1046,
+        "y": 54,
+        "width": 190,
+        "height": 50
+      },
+      "style": {
+        "color": "#dddac7",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Positioning",
+    "description": "The opportunity is to combine workflow depth with a simpler operating layer for teams.",
+    "name": "Focused operating layer"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "stroke": "#8d8a7d",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d"
+  }
+}

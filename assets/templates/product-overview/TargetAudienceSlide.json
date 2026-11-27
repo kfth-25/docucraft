@@ -1,0 +1,54 @@
+{
+  "layoutId": "segment-cards-slide",
+  "name": "Segment Cards Slide",
+  "description": "A title and subtitle layout with segment cards containing profile, need, and priority text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#c5cccb",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "painPoint": "Key Segments",
+    "description": "Need a trusted view of priorities, dependencies, and delivery risk.A grouped view of important segments, their context, needs, and priorities."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ffffff",
+    "stroke": "#c5cccb",
+    "primary-text": "#edf2f1"
+  }
+}

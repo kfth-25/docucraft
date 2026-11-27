@@ -1,0 +1,115 @@
+{
+  "layoutId": "table-info-slide-layout",
+  "name": "Table with Info",
+  "description": "A slide layout with a title at the top, structured table in the middle, and descriptive text at the bottom.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Market Comparison"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#4b5563",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "This comparison shows our competitive position in the market. While we currently have a smaller market share, our growth rate significantly exceeds competitors, indicating strong potential for future expansion."
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Market Comparison",
+    "description": "This comparison shows our competitive position in the market. While we currently have a smaller market share, our growth rate significantly exceeds competitors, indicating strong potential for future expansion."
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "background-text": "#4b5563",
+    "primary-color": "#9333ea",
+    "card-color": "#f3f4f6",
+    "stroke": "#e5e7eb",
+    "primary-text": "#ffffff"
+  }
+}

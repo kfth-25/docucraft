@@ -1,0 +1,70 @@
+{
+  "layoutId": "indexed-three-column-list",
+  "name": "Three Columns With Index Numbers",
+  "description": "A layout featuring bold title with accent bar, followed by three indexed columns each containing large index number, heading, and two labeled content sections.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9234EB",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Target Audience Breakdown",
+    "columns": "01",
+    "heading": "C-Suite Executives",
+    "labelOne": "KEY NEED",
+    "contentOne": "Strategic growth & competitive advantage",
+    "labelTwo": "PRIMARY CHANNEL",
+    "contentTwo": "LinkedIn, executive events"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#000000",
+    "primary-color": "#9234EB"
+  }
+}

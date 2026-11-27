@@ -1,0 +1,129 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "DocuCraft",
+  "@appTitle": {
+    "description": "App name shown in titles and the AppBar"
+  },
+
+  "aiChatGreeting": "Hi! I'm DocuCraft AI, ready to help you craft a great deck.\n\n**What I can do:**\n✨ Create slides from plain text\n🔄 Redesign an existing slide\n📊 Build a full presentation from an outline\n🎨 Auto-generate layout + content\n🖼️ **AI from Sketches** — sketch on the canvas, AI turns it into a design\n\n*Try: \"Make a slide about marketing strategy\"*",
+  "@aiChatGreeting": {
+    "description": "Opening greeting shown in the AI chat panel"
+  },
+
+  "aiSketchCanvasEmpty": "⚠️ Canvas is empty. Draw a sketch on the canvas first, then try again.",
+  "@aiSketchCanvasEmpty": {},
+
+  "aiSketchNoCanvas": "⚠️ No sketch canvas available.",
+  "@aiSketchNoCanvas": {},
+
+  "aiSketchAnalyzing": "🧠 Analyzing sketch and planning layout...",
+  "@aiSketchAnalyzing": {},
+
+  "aiStorageNotReady": "Storage not ready. Try again.",
+  "@aiStorageNotReady": {},
+
+  "aiErrorPlanningEmpty": "Planning returned no pages; using demo outline.",
+  "@aiErrorPlanningEmpty": {},
+
+  "aiErrorBackendOffline": "Backend offline: {error} — using demo outline.",
+  "@aiErrorBackendOffline": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "aiErrorNoPages": "No pages to generate.",
+  "@aiErrorNoPages": {},
+
+  "aiErrorGeneration": "Generation failed: {error}",
+  "@aiErrorGeneration": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "aiBlueprintForkedNoOutline": "Forked {name}: no saved outline, replan from scratch.",
+  "@aiBlueprintForkedNoOutline": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "aiBlueprintForkedEmpty": "Forked {name}: saved outline was empty, replan.",
+  "@aiBlueprintForkedEmpty": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "aiBlueprintForkedReady": "Forked {name} — edit and generate.",
+  "@aiBlueprintForkedReady": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "aiBlueprintLoaded": "Loaded: {name}",
+  "@aiBlueprintLoaded": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+
+  "aiSketchConvertFailed": "⚠️ Failed to convert sketch: {reason}",
+  "@aiSketchConvertFailed": {
+    "placeholders": {
+      "reason": {"type": "String"}
+    }
+  },
+
+  "aiGenericError": "⚠️ Error: {message}",
+  "@aiGenericError": {
+    "placeholders": {
+      "message": {"type": "String"}
+    }
+  },
+
+  "aiGenerateFailed": "⚠️ Failed to generate: no result",
+  "@aiGenerateFailed": {},
+
+  "aiDesignGateIntro": "I'll design with:\n• Topic: {topic}\n• Color: {color}\n• Style: {style}\n\n[✅ Generate Now] [✏️ Edit Details]",
+  "@aiDesignGateIntro": {
+    "placeholders": {
+      "topic": {"type": "String"},
+      "color": {"type": "String"},
+      "style": {"type": "String"}
+    }
+  },
+
+  "aiDesignSuccess": "✅ **Success!** {count} visual elements added to the slide.\n\nDetails:\n• {textCount} text\n• {shapeCount} shapes\n• {imageCount} images\n\n[🔄 Try Again] [✏️ Edit]",
+  "@aiDesignSuccess": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "textCount": {"type": "int"},
+      "shapeCount": {"type": "int"},
+      "imageCount": {"type": "int"}
+    }
+  },
+
+  "aiSketchConvertSuccess": "✅ **Sketch → Design successful!**\n\n",
+  "@aiSketchConvertSuccess": {},
+
+  "aiSketchConvertSuccessFallback": "✅ **Sketch → Design successful!** (fallback)\n\n",
+  "@aiSketchConvertSuccessFallback": {},
+
+  "aiNoResult": "no result",
+  "@aiNoResult": {},
+
+  "uiRetry": "Try Again",
+  "@uiRetry": {},
+
+  "uiEditDesignDetail": "Edit Design Detail",
+  "@uiEditDesignDetail": {},
+
+  "uiCancel": "Cancel",
+  "@uiCancel": {},
+
+  "uiGenerating": "Generating…"
+}

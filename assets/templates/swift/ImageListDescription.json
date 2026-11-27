@@ -1,0 +1,343 @@
+{
+  "layoutId": "image-list-description-slide",
+  "name": "Image List Description",
+  "description": "List of Images with subtitle and description with one description for the entire page",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_titleLine1",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 92,
+        "width": 356,
+        "height": 62
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 56,
+        "fontWeight": "semibold",
+        "lineHeight": 1.05
+      },
+      "content": "Meet Our"
+    },
+    {
+      "id": "txt_titleLine2",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 154,
+        "width": 356,
+        "height": 62
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 56,
+        "fontWeight": "semibold",
+        "lineHeight": 1.05
+      },
+      "content": "Team"
+    },
+    {
+      "id": "txt_description",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 278,
+        "width": 300,
+        "height": 80
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "lineHeight": 1.8
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "img_card_1_photo",
+      "type": "image",
+      "position": {
+        "x": 445,
+        "y": 92,
+        "width": 341,
+        "height": 180
+      },
+      "style": {},
+      "content": "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1200&q=80&auto=format&fit=crop"
+    },
+    {
+      "id": "card_1_panel",
+      "type": "shape",
+      "position": {
+        "x": 445,
+        "y": 272,
+        "width": 341,
+        "height": 88
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 28
+      }
+    },
+    {
+      "id": "txt_card_1_title",
+      "type": "text",
+      "position": {
+        "x": 469,
+        "y": 282,
+        "width": 293,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 20,
+        "fontWeight": "semibold"
+      },
+      "content": "Sample Title"
+    },
+    {
+      "id": "txt_card_1_desc",
+      "type": "text",
+      "position": {
+        "x": 469,
+        "y": 312,
+        "width": 293,
+        "height": 28
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.7
+      },
+      "content": "Short description for the image or item."
+    },
+    {
+      "id": "img_card_2_photo",
+      "type": "image",
+      "position": {
+        "x": 826,
+        "y": 92,
+        "width": 341,
+        "height": 180
+      },
+      "style": {},
+      "content": "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1200&q=80&auto=format&fit=crop"
+    },
+    {
+      "id": "card_2_panel",
+      "type": "shape",
+      "position": {
+        "x": 826,
+        "y": 272,
+        "width": 341,
+        "height": 88
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 28
+      }
+    },
+    {
+      "id": "txt_card_2_title",
+      "type": "text",
+      "position": {
+        "x": 850,
+        "y": 282,
+        "width": 293,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 20,
+        "fontWeight": "semibold"
+      },
+      "content": "Another Item"
+    },
+    {
+      "id": "txt_card_2_desc",
+      "type": "text",
+      "position": {
+        "x": 850,
+        "y": 312,
+        "width": 293,
+        "height": 28
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.7
+      },
+      "content": "Concise supporting text."
+    },
+    {
+      "id": "img_card_3_photo",
+      "type": "image",
+      "position": {
+        "x": 1207,
+        "y": 92,
+        "width": 341,
+        "height": 180
+      },
+      "style": {},
+      "content": "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1200&q=80&auto=format&fit=crop"
+    },
+    {
+      "id": "card_3_panel",
+      "type": "shape",
+      "position": {
+        "x": 1207,
+        "y": 272,
+        "width": 341,
+        "height": 88
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 28
+      }
+    },
+    {
+      "id": "txt_card_3_title",
+      "type": "text",
+      "position": {
+        "x": 1231,
+        "y": 282,
+        "width": 293,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 20,
+        "fontWeight": "semibold"
+      },
+      "content": "Third Item"
+    },
+    {
+      "id": "txt_card_3_desc",
+      "type": "text",
+      "position": {
+        "x": 1231,
+        "y": 312,
+        "width": 293,
+        "height": 28
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.7
+      },
+      "content": "Concise supporting text."
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "titleLine1": "Meet Our",
+    "titleLine2": "Team",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "items": [
+      {
+        "title": "Sample Title",
+        "description": "Short description for the image or item."
+      },
+      {
+        "title": "Another Item",
+        "description": "Concise supporting text."
+      },
+      {
+        "title": "Third Item",
+        "description": "Concise supporting text."
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

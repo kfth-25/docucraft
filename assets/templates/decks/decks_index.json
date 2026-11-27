@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "default-pitch-deck",
+      "name": "Default Pitch Deck",
+      "description": "Standard pitch deck structure",
+      "layoutId": "intro-slide-layout",
+      "styleId": "modern-minimal",
+      "brandId": "docucraft-default",
+      "slideLayoutIds": [
+        "intro-slide-layout",
+        "metrics-numbers",
+        "simple-bullet-points-layout",
+        "timeline",
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "quarterly-report",
+      "name": "Quarterly Report",
+      "description": "Business quarterly review deck",
+      "layoutId": "metrics-numbers",
+      "styleId": "swiss-grid",
+      "brandId": "corporate-blue",
+      "slideLayoutIds": [
+        "intro-slide-layout",
+        "metrics-numbers",
+        "metrics-numbers",
+        "simple-bullet-points-layout",
+        "timeline"
+      ]
+    },
+    {
+      "id": "creative-portfolio",
+      "name": "Creative Portfolio",
+      "description": "Visual portfolio presentation",
+      "layoutId": "intro-slide-layout",
+      "styleId": "glassmorphism",
+      "brandId": "warm-sunset",
+      "slideLayoutIds": [
+        "intro-slide-layout",
+        "simple-bullet-points-layout",
+        "metrics-numbers",
+        "table-of-contents"
+      ]
+    }
+  ]
+}

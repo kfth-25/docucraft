@@ -1,0 +1,365 @@
+{
+  "layoutId": "bullet-with-icons-title-description",
+  "name": "Bullet With Icons Title Description",
+  "description": "Bullet with icons with title and description and title and description for whole",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_title_left",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 96,
+        "width": 652,
+        "height": 106
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 56,
+        "fontWeight": "semibold",
+        "lineHeight": 1.05
+      },
+      "content": "Our Infographic"
+    },
+    {
+      "id": "txt_sideHeading",
+      "type": "text",
+      "position": {
+        "x": 736,
+        "y": 100,
+        "width": 300,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold"
+      },
+      "content": "Lorem ipsum dolor sit amet,"
+    },
+    {
+      "id": "txt_sideParagraph",
+      "type": "text",
+      "position": {
+        "x": 736,
+        "y": 132,
+        "width": 300,
+        "height": 56
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Concise paragraph describing context. Keep it short and readable across one or two lines."
+    },
+    {
+      "id": "circle_icon_1",
+      "type": "shape",
+      "position": {
+        "x": 122,
+        "y": 310,
+        "width": 160,
+        "height": 160
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "txt_icon_title_1",
+      "type": "text",
+      "position": {
+        "x": 72,
+        "y": 486,
+        "width": 260,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "Lorem ipsum dolor"
+    },
+    {
+      "id": "txt_icon_desc_1",
+      "type": "text",
+      "position": {
+        "x": 72,
+        "y": 512,
+        "width": 260,
+        "height": 48
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "textAlign": "center",
+        "lineHeight": 1.6
+      },
+      "content": "Concise supporting text under the first icon explaining the point."
+    },
+    {
+      "id": "circle_icon_2",
+      "type": "shape",
+      "position": {
+        "x": 414,
+        "y": 310,
+        "width": 160,
+        "height": 160
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "txt_icon_title_2",
+      "type": "text",
+      "position": {
+        "x": 364,
+        "y": 486,
+        "width": 260,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "Lorem ipsum dolor"
+    },
+    {
+      "id": "txt_icon_desc_2",
+      "type": "text",
+      "position": {
+        "x": 364,
+        "y": 512,
+        "width": 260,
+        "height": 48
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "textAlign": "center",
+        "lineHeight": 1.6
+      },
+      "content": "Concise supporting text under the second icon explaining the point."
+    },
+    {
+      "id": "circle_icon_3",
+      "type": "shape",
+      "position": {
+        "x": 706,
+        "y": 310,
+        "width": 160,
+        "height": 160
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "txt_icon_title_3",
+      "type": "text",
+      "position": {
+        "x": 656,
+        "y": 486,
+        "width": 260,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "Lorem ipsum dolor"
+    },
+    {
+      "id": "txt_icon_desc_3",
+      "type": "text",
+      "position": {
+        "x": 656,
+        "y": 512,
+        "width": 260,
+        "height": 48
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "textAlign": "center",
+        "lineHeight": 1.6
+      },
+      "content": "Concise supporting text under the third icon explaining the point."
+    },
+    {
+      "id": "circle_icon_4",
+      "type": "shape",
+      "position": {
+        "x": 998,
+        "y": 310,
+        "width": 160,
+        "height": 160
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "txt_icon_title_4",
+      "type": "text",
+      "position": {
+        "x": 948,
+        "y": 486,
+        "width": 260,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "Lorem ipsum dolor"
+    },
+    {
+      "id": "txt_icon_desc_4",
+      "type": "text",
+      "position": {
+        "x": 948,
+        "y": 512,
+        "width": 260,
+        "height": 48
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 13,
+        "fontWeight": "normal",
+        "textAlign": "center",
+        "lineHeight": 1.6
+      },
+      "content": "Concise supporting text under the fourth icon explaining the point."
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Our Infographic",
+    "sideHeading": "Lorem ipsum dolor sit amet,",
+    "sideParagraph": "Concise paragraph describing context. Keep it short and readable across one or two lines.",
+    "items": [
+      {
+        "title": "Lorem ipsum dolor",
+        "description": "Concise supporting text under the first icon explaining the point."
+      },
+      {
+        "title": "Lorem ipsum dolor",
+        "description": "Concise supporting text under the second icon explaining the point."
+      },
+      {
+        "title": "Lorem ipsum dolor",
+        "description": "Concise supporting text under the third icon explaining the point."
+      },
+      {
+        "title": "Lorem ipsum dolor",
+        "description": "Concise supporting text under the fourth icon explaining the point."
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

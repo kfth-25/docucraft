@@ -1,0 +1,506 @@
+{
+  "layoutId": "Timeline",
+  "name": "Timeline",
+  "description": "Timeline of cards with title, subtitle banner",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "diamond_right_1",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 64,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "diamond_right_2",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 88,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "diamond_right_3",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 112,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "position": {
+        "x": 240,
+        "y": 92,
+        "width": 800,
+        "height": 106
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "semibold",
+        "textAlign": "center",
+        "lineHeight": 1.1
+      },
+      "content": "Our Journey at a Glance"
+    },
+    {
+      "id": "subtitle_banner",
+      "type": "shape",
+      "position": {
+        "x": 280,
+        "y": 220,
+        "width": 720,
+        "height": 44
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 6
+      }
+    },
+    {
+      "id": "txt_subtitle",
+      "type": "text",
+      "position": {
+        "x": 300,
+        "y": 231,
+        "width": 680,
+        "height": 22
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "textAlign": "center"
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+    },
+    {
+      "id": "timeline_line",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 420,
+        "width": 1184,
+        "height": 4
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "year_badge_1",
+      "type": "shape",
+      "position": {
+        "x": 150,
+        "y": 340,
+        "width": 80,
+        "height": 36
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 6
+      }
+    },
+    {
+      "id": "txt_year_1",
+      "type": "text",
+      "position": {
+        "x": 162,
+        "y": 348,
+        "width": 56,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "2018"
+    },
+    {
+      "id": "dot_1",
+      "type": "shape",
+      "position": {
+        "x": 180,
+        "y": 412,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "card_1",
+      "type": "card",
+      "position": {
+        "x": 60,
+        "y": 448,
+        "width": 260,
+        "height": 150
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 16,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Founded in 2020",
+          "line2": "",
+          "description": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "id": "year_badge_2",
+      "type": "shape",
+      "position": {
+        "x": 450,
+        "y": 340,
+        "width": 80,
+        "height": 36
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 6
+      }
+    },
+    {
+      "id": "txt_year_2",
+      "type": "text",
+      "position": {
+        "x": 462,
+        "y": 348,
+        "width": 56,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "2019"
+    },
+    {
+      "id": "dot_2",
+      "type": "shape",
+      "position": {
+        "x": 480,
+        "y": 412,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "card_2",
+      "type": "card",
+      "position": {
+        "x": 360,
+        "y": 448,
+        "width": 260,
+        "height": 150
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 16,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "First Product in 2021",
+          "line2": "",
+          "description": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "id": "year_badge_3",
+      "type": "shape",
+      "position": {
+        "x": 750,
+        "y": 340,
+        "width": 80,
+        "height": 36
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 6
+      }
+    },
+    {
+      "id": "txt_year_3",
+      "type": "text",
+      "position": {
+        "x": 762,
+        "y": 348,
+        "width": 56,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "2020"
+    },
+    {
+      "id": "dot_3",
+      "type": "shape",
+      "position": {
+        "x": 780,
+        "y": 412,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "card_3",
+      "type": "card",
+      "position": {
+        "x": 660,
+        "y": 448,
+        "width": 260,
+        "height": 150
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 16,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Key Milestone in 2022",
+          "line2": "",
+          "description": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "id": "year_badge_4",
+      "type": "shape",
+      "position": {
+        "x": 1050,
+        "y": 340,
+        "width": 80,
+        "height": 36
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 6
+      }
+    },
+    {
+      "id": "txt_year_4",
+      "type": "text",
+      "position": {
+        "x": 1062,
+        "y": 348,
+        "width": 56,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": "semibold",
+        "textAlign": "center"
+      },
+      "content": "2021"
+    },
+    {
+      "id": "dot_4",
+      "type": "shape",
+      "position": {
+        "x": 1080,
+        "y": 412,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "card_4",
+      "type": "card",
+      "position": {
+        "x": 960,
+        "y": 448,
+        "width": 260,
+        "height": 150
+      },
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": 16,
+        "color": "#111827",
+        "fontSize": 18
+      },
+      "items": [
+        {
+          "value": "",
+          "line1": "Global Expansion in 2024",
+          "line2": "",
+          "description": "Lorem ipsum dolor"
+        }
+      ]
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Our Journey at a Glance",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+    "items": [
+      {
+        "year": "2018",
+        "heading": "Founded in 2020",
+        "body": "Lorem ipsum dolor"
+      },
+      {
+        "year": "2019",
+        "heading": "First Product in 2021",
+        "body": "Lorem ipsum dolor"
+      },
+      {
+        "year": "2020",
+        "heading": "Key Milestone in 2022",
+        "body": "Lorem ipsum dolor"
+      },
+      {
+        "year": "2021",
+        "heading": "Global Expansion in 2024",
+        "body": "Lorem ipsum dolor"
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

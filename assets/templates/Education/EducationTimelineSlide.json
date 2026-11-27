@@ -1,0 +1,163 @@
+{
+  "layoutId": "timeline-slide",
+  "name": "Timeline Slide",
+  "description": "A slide with a title, a horizontal progress line, and short heading and description pairs.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#efeff1",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#efeff1",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 22,
+        "height": 22
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 3
+      },
+      "style": {
+        "color": "#d8d8dd",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 1101,
+        "y": 10,
+        "width": 139,
+        "height": 228
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 22,
+        "height": 22
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 226,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_10",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 22,
+        "height": 22
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "description": "Timeline"
+  },
+  "_cssVars": {
+    "background-color": "#efeff1",
+    "body-font-family": "Source Serif 4",
+    "primary-color": "#272272",
+    "stroke": "#d8d8dd",
+    "background-text": "#3a3d4c"
+  }
+}

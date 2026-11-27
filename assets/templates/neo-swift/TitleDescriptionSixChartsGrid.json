@@ -1,0 +1,98 @@
+{
+  "layoutId": "title-description-six-charts-grid",
+  "name": "Title Description Six Charts Grid",
+  "description": "Neo Swift layout with a title, description, and a responsive grid of up to 6 charts (bar, line, area, pie, donut, scatter, etc.). Ideal for dashboards and data overviews.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 12
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 65,
+        "y": 52,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 72,
+        "y": 650,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#4D5463",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "colorPalette": "vibrant",
+    "showLegend": "true",
+    "showGrid": "true",
+    "title": "Chart Title",
+    "type": "bar-vertical",
+    "value": "vibrant",
+    "description": "Comprehensive overview of key metrics and performance indicators across multiple data dimensions."
+  },
+  "_cssVars": {
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB",
+    "background-text": "#4D5463",
+    "background-color": "#FFFFFF"
+  }
+}

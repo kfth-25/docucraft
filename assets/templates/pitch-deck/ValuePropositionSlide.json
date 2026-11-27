@@ -1,0 +1,86 @@
+{
+  "layoutId": "value-proposition-slide",
+  "name": "Value Proposition Slide",
+  "description": "A pitch-deck layout with a clear value statement and supporting value pillars.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 98,
+        "width": 1030,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 36,
+        "fontWeight": "normal"
+      },
+      "content": "Valuestatement"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 56,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 28,
+        "fontWeight": "normal"
+      },
+      "content": "Solution"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 80,
+        "width": 780,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 24,
+        "fontWeight": "normal"
+      },
+      "content": "Supportingtext"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Solution",
+    "description": "One focused workspace that turns scattered inputs into clear priorities, ownership, and progress."
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "primary-color": "#dddac7",
+    "stroke": "#8d8a7d"
+  }
+}

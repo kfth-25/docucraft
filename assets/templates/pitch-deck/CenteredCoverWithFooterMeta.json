@@ -1,0 +1,81 @@
+{
+  "layoutId": "centered-cover-with-footer-meta",
+  "name": "Centered Cover with Footer Metadata",
+  "description": "A single-focus cover layout with centered title, subtitle, and footer metadata groups.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 331,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 124,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 369,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#d7d3be",
+        "fontSize": 33,
+        "fontWeight": "normal"
+      },
+      "content": "Subtitle text here"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 36,
+        "y": 636,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "description": "Presentation"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#cbc7b2"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "layoutId": "title-description-multi-chart-grid-with-bullets",
+  "name": "Title Description With Multi-Chart Grid + Bullets",
+  "description": "A dashboard layout featuring a title and description, up to 4 bullet points, and 1-4 auto-arranged charts in a responsive grid. Supports bar (vertical, horizontal, grouped, stacked, clustered, diverging), line, area, pie, donut, and scatter charts.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_span_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 12
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#e5e7eb",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#8B5CF6",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 300,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "colorPalette": "vibrant",
+    "showLegend": "true",
+    "showGrid": "true",
+    "x": "Chart Title",
+    "type": "bar-vertical",
+    "value": "vibrant",
+    "title": "Data Analytics Dashboard",
+    "description": "Comprehensive overview of key metrics and performance indicators across multiple data dimensions."
+  },
+  "_cssVars": {
+    "card-color": "#ffffff",
+    "stroke": "#e5e7eb",
+    "background-text": "#4B5563",
+    "heading-font-family": "Poppins",
+    "primary-color": "#8B5CF6"
+  }
+}

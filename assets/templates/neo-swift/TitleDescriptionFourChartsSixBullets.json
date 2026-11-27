@@ -1,0 +1,113 @@
+{
+  "layoutId": "title-description-four-charts-six-bullets",
+  "name": "Title Description Four Charts Six Bullets",
+  "description": "Neo Swift layout with title, description, a grid of up to 4 charts, and up to 6 bullet points in a sidebar. Ideal for data plus key takeaways, like neo-general Chart Grid + Bullets.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 12
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 65,
+        "y": 52,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 300,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 72,
+        "y": 650,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#4D5463",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "colorPalette": "vibrant",
+    "showLegend": "true",
+    "showGrid": "true",
+    "title": "Chart Title",
+    "type": "bar-vertical",
+    "value": "vibrant",
+    "description": "Comprehensive overview of key metrics and performance indicators across multiple data dimensions."
+  },
+  "_cssVars": {
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB",
+    "background-text": "#4D5463",
+    "background-color": "#FFFFFF",
+    "primary-color": "#4169E1"
+  }
+}

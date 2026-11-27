@@ -1,0 +1,38 @@
+{
+  "layoutId": "intro-slide",
+  "name": "Intro/Cover Slide",
+  "description": "A cover/intro slide with a two-line title section, a divider directly beneath the title, and a presenter information block below the divider containing a name line and a supporting role or company line.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 67,
+        "height": 50
+      },
+      "style": {
+        "color": "#CD7721",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "titleFirstLine": "Annual Report",
+    "description": "John Doe"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#147CFE",
+    "background-text": "#232223",
+    "graph-2": "#CD7721"
+  }
+}

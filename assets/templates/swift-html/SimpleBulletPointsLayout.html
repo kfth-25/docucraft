@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── Subtle radial background motif ── */
+    .motif {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      bottom: 140px; width: 900px; height: 260px;
+      background: radial-gradient(closest-side, rgba(17,24,39,0.06), transparent 70%);
+      filter: blur(0.2px); pointer-events: none;
+    }
+    /* ── TSX: grid grid-cols-[48%_52%] gap-10 px-12 pt-4 ── */
+    .content-grid { display: grid; grid-template-columns: 48% 52%; gap: 40px; padding: 16px 48px 0 48px; }
+    .left-title { font-size: 56px; font-weight: 600; line-height: 1.05; color: #111827; margin: 0; }
+    .left-statement { font-size: 16px; line-height: 1.8; color: #6B7280; margin: 40px 0 0 0; max-width: 520px; }
+    /* ── TSX: flex flex-col gap-6 ── */
+    .points-col { display: flex; flex-direction: column; gap: 24px; }
+    .point-title { font-size: 24px; font-weight: 600; color: #111827; margin: 0; }
+    .point-body { font-size: 16px; line-height: 1.8; color: #6B7280; margin: 12px 0 0 0; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .motif { display: none; }
+      .content-grid { grid-template-columns: 1fr; padding: 16px 0 0 0; gap: 32px; }
+      .left-title { font-size: 7.5vw; }
+      .left-statement { max-width: 100%; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Subtle background motif ── -->
+    <div class="motif"></div>
+
+    <!-- ── Grid: 48% / 52% ── -->
+    <div class="content-grid">
+
+      <!-- Left: heading + statement -->
+      <div>
+        <div class="left-title">Our Commitment</div>
+        <p class="left-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Right: 4 points -->
+      <div class="points-col">
+        <div>
+          <div class="point-title">Your Title Here</div>
+          <p class="point-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div>
+          <div class="point-title">Your Title Here</div>
+          <p class="point-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div>
+          <div class="point-title">Your Title Here</div>
+          <p class="point-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div>
+          <div class="point-title">Your Title Here</div>
+          <p class="point-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

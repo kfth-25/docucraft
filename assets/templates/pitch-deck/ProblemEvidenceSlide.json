@@ -1,0 +1,87 @@
+{
+  "layoutId": "problem-evidence-slide",
+  "name": "Problem Evidence Slide",
+  "description": "A pitch-deck layout with a headline problem statement, pain point list, and compact evidence cards.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 44,
+        "y": 42,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 32,
+        "fontWeight": "normal"
+      },
+      "content": "Problemstatement"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 44,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 28,
+        "fontWeight": "normal"
+      },
+      "content": "Problem"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 44,
+        "y": 34,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 24,
+        "fontWeight": "normal"
+      },
+      "content": "Audience"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Problem",
+    "description": "Teams rely on disconnected tools, slow handoffs, and incomplete context to make important decisions."
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d",
+    "stroke": "#8d8a7d"
+  }
+}

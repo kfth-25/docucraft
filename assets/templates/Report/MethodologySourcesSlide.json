@@ -1,0 +1,156 @@
+{
+  "layoutId": "method-source-panels-slide",
+  "name": "Method and Source Panels Slide",
+  "description": "A report slide with method steps, source panels, and compact assumptions or scope parameters.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "fontSize": 15,
+        "fontWeight": "normal"
+      },
+      "content": "Method"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "fontSize": 15,
+        "fontWeight": "normal"
+      },
+      "content": "Sources"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Methodology",
+    "description": "This slide explains the inputs, source groups, and method used to structure the report analysis."
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "primary-text": "#ffffff",
+    "stroke": "#D6D9DE"
+  }
+}

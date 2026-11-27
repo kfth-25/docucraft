@@ -1,0 +1,85 @@
+{
+  "layoutId": "data-analysis-dashboard-slide",
+  "name": "Data Analysis Dashboard Slide",
+  "description": "A dashboard-style slide with a title, summary cards, and a responsive grid of chart panels (1-9). Each panel uses the same flexible chart types as other report slides; labels and margins are compact for small cells.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "icon": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "__icon_query__": "pulse icon",
+    "label": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "type": "bar",
+    "value": "Data Analysis"
+  },
+  "_cssVars": {
+    "primary-color": "#157CFF",
+    "stroke": "#ECF5FE",
+    "primary-text": "#000000",
+    "background-text": "#232223",
+    "background-color": "#F9F8F8",
+    "body-font-family": "Source Sans 3",
+    "card-color": "#ffffff"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "layoutId": "title-description-bullet-list",
+  "name": "Title Description Bullet List",
+  "description": "A clean two-column layout with a main title and description on the left, and up to 5 bullet points on the right. Each bullet has a heading and a short description. Ideal for key takeaways, feature highlights, or structured lists with context.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Key Takeaways",
+    "description": "Focus on companies with 500+ employees in Financial Services, Healthcare, and Technology sectors. Target $3.5M in new pipeline with sub-$150 CAC through account-based marketing and content-led strategies."
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#002BB2",
+    "card-color": "#F7F8FF",
+    "stroke": "#4C68DF"
+  }
+}

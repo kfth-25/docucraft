@@ -1,0 +1,54 @@
+{
+  "layoutId": "module-grid-slide",
+  "name": "Multi Column Module Grid Slide",
+  "description": "A title and subtitle layout with vertical cards containing a label, heading, description, and item list.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#efeff1",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#efeff1",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#d8d8dd",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "subjects": "Module Structure",
+    "description": "A structured overview of grouped content across stages, periods, or categories."
+  },
+  "_cssVars": {
+    "background-color": "#efeff1",
+    "body-font-family": "Source Serif 4",
+    "primary-color": "#272272",
+    "background-text": "#34394c",
+    "card-color": "#FFFFFF80",
+    "stroke": "#d8d8dd",
+    "primary-text": "#ffffff"
+  }
+}

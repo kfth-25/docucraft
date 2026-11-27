@@ -1,0 +1,35 @@
+{
+  "layoutId": "description-text-slide",
+  "name": "Description Text Slide",
+  "description": "A text-only description slide tihe title/heading.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Code + Explanation",
+    "description": "Explanation"
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#d2d9ff"
+  }
+}

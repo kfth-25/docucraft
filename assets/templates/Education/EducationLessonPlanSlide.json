@@ -1,0 +1,96 @@
+{
+  "layoutId": "agenda-timeline-slide",
+  "name": "Agenda Timeline Slide",
+  "description": "A split layout with a left metadata panel and a vertical sequence of timed agenda cards.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#efeff1",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#efeff1",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF80",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 3,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#272272",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "method": "Session Agenda",
+    "description": "A structured agenda showing sequence, timing, format, and key activity details.",
+    "sessionInfo": {}
+  },
+  "_cssVars": {
+    "background-color": "#efeff1",
+    "body-font-family": "Source Serif 4",
+    "card-color": "#FFFFFF80",
+    "primary-color": "#272272",
+    "background-text": "#3a3d4c",
+    "stroke": "#d8d8dd"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "layoutId": "title-kpi-grid",
+  "name": "Title KPI Grid",
+  "description": "A slide featuring a centered title followed by a flexible grid of up to 8 KPI metric boxes with values and descriptions, perfect for dashboards and reports.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Playfair Display"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 116,
+        "height": 50
+      },
+      "style": {
+        "color": "#1F8A2E",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 20,
+        "y": 650,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "KPI Snapshot"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "primary-color": "#1F8A2E",
+    "background-text": "#111827",
+    "primary-text": "#FFFFFF",
+    "stroke": "#F0F0F0"
+  }
+}

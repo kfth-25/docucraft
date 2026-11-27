@@ -1,0 +1,134 @@
+{
+  "layoutId": "chart-with-bullets-slide-layout",
+  "name": "Chart With Bullet Cards",
+  "description": "A split layout with title, description, and a versatile chart on the left, paired with 1-3 colored icon bullet cards on the right. Supports bar, grouped, stacked, clustered, diverging, line, area, pie, and scatter charts.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#4b5563",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Businesses face challenges with outdated technology and rising costs, limiting efficiency and growth in competitive markets."
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9333ea",
+        "borderRadius": 12
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F8F9FA",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 460
+      },
+      "style": {
+        "color": "#9333ea",
+        "borderRadius": 12
+      }
+    }
+  ],
+  "_schema": {
+    "chartData": "bar",
+    "colorPalette": "vibrant",
+    "showLegend": "false",
+    "showTooltip": "true",
+    "x": "Market Size",
+    "description": "Businesses face challenges with outdated technology and rising costs, limiting efficiency and growth in competitive markets."
+  },
+  "_cssVars": {
+    "card-color": "#9333ea",
+    "stroke": "#F8F9FA",
+    "background-text": "#ffffff",
+    "text-body-color": "#4b5563",
+    "background-color": "#ffffff",
+    "primary-color": "#9333ea",
+    "primary-text": "#ffffff"
+  }
+}

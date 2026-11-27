@@ -1,0 +1,114 @@
+{
+  "layoutId": "api-request-response-slide",
+  "name": "API Request Response Slide",
+  "description": "An API-focused slide with endpoint metadata, request payload, and response payload.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 361,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#90a1d8",
+        "fontSize": 18,
+        "fontWeight": "normal"
+      },
+      "content": "Headers"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1D293D80",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1D293D80",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1D293D80",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1D293D80",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "method": "POST",
+    "title": "API Request / Response",
+    "description": "POST",
+    "requestSnippet": {},
+    "responseSnippet": {}
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#ffffff",
+    "stroke": "#1D293D80",
+    "card-color": "#1D293D80",
+    "primary-color": "#2B7FFF33",
+    "primary-text": "#51A2FF"
+  }
+}

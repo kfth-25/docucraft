@@ -1,0 +1,39 @@
+{
+  "layoutId": "cards-grid-slide",
+  "name": "Cards Grid Slide",
+  "description": "A list of cards in grid with title, icon and compact description in each.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Feature Grid",
+    "icon": {}
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#90A1B9",
+    "stroke": "#1D293D80",
+    "card-color": "#0F172B80",
+    "primary-color": "#2B7FFF33",
+    "primary-text": "#ffffff"
+  }
+}

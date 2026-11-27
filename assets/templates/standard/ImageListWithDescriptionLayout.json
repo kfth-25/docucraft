@@ -1,0 +1,98 @@
+{
+  "layoutId": "image-list-with-description-layout",
+  "name": "Image List With Description",
+  "description": "A slide with a top utility bar, centered title, and a grid of cards with names, roles, and background images.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Playfair Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 331,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 64,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_span_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 18,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 300
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "__image_url__": "https://images.pexels.com/photos/31527637/pexels-photo-31527637.jpeg",
+    "description": "Portrait of a professional team member with subtle background, soft light, business attire",
+    "utilityBar": "8",
+    "__icon_query__": "Our Professional Team"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#E5E7EB",
+    "card-color": "#FFFFFF"
+  }
+}

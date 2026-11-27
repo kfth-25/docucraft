@@ -1,0 +1,54 @@
+{
+  "layoutId": "title-description-with-table-slide",
+  "name": "Title Description with Table Slide",
+  "description": "A comparison table slide with a title, a subtitle, column headers, and rows of text content.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#c3cccc",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#c3cccc",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Comparison Table",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+  },
+  "_cssVars": {
+    "background-color": "#c3cccc",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#123f38",
+    "background-text": "#2d5d56",
+    "card-color": "#ffffff",
+    "stroke": "#bcc3c3",
+    "primary-text": "#eef2f0"
+  }
+}

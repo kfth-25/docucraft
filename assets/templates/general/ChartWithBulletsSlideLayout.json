@@ -1,0 +1,88 @@
+{
+  "layoutId": "chart-with-bullets-slide-layout",
+  "name": "Chart with Bullet Boxes",
+  "description": "A slide layout with title, description, chart on the left and colored bullet boxes with icons on the right. Only choose this if data is available.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#4b5563",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Market Size"
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "chartData": "{\n        type: 'bar',\n        data: [\n            { name: 'Q1', value: 5 },\n            { name: 'Q1', value: 5 },\n            { name: 'Q1', value: 5 },\n        ]\n    }",
+    "showLegend": "false",
+    "showTooltip": "true",
+    "description": "Market Size"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "background-text": "#4b5563",
+    "stroke": "#F8F9FA",
+    "primary-color": "#9333ea",
+    "primary-text": "#ffffff"
+  }
+}

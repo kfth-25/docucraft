@@ -1,0 +1,68 @@
+{
+  "layoutId": "title-description-chart-slide",
+  "name": "Title Description Chart Slide",
+  "description": "A slide with a title at the top, description text in left and chart in the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#f9f8f8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#f9f8f8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 55,
+        "height": 55
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "__icon_query__": "pulse icon",
+    "title": "Data Analysis",
+    "description": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/icons/placeholder.svg",
+    "data": "Traditional Workflow"
+  },
+  "_cssVars": {
+    "background-color": "#f9f8f8",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "background-text": "#232223",
+    "primary-text": "#ffffff"
+  }
+}

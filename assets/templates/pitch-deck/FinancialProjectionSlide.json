@@ -1,0 +1,102 @@
+{
+  "layoutId": "financial-projection-slide",
+  "name": "Financial Projection Slide",
+  "description": "A pitch-deck layout with a compact projection table and supporting assumptions.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 54,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 74,
+        "fontWeight": "normal"
+      },
+      "content": "Financial Plan"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 42,
+        "y": 72,
+        "width": 840,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 27,
+        "fontWeight": "normal"
+      },
+      "content": "Subtitle text here"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 21,
+        "fontWeight": "normal"
+      },
+      "content": "Metric"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#dddac7",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Financial Plan",
+    "description": "A simple projection view of revenue growth, margin movement, and operating assumptions.",
+    "periods": {}
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "background-text": "#cbc7b2",
+    "body-font-family": "DM Serif Display",
+    "stroke": "#8d8a7d",
+    "primary-color": "#dddac7",
+    "primary-text": "#27292d"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "layoutId": "appendix-notes-slide",
+  "name": "Appendix Notes Slide",
+  "description": "A report slide with appendix notes, supporting details, and compact footnotes or reference statements.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Note"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 64,
+        "y": 632,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Appendix Notes",
+    "description": "Additional context, definitions, references, or caveats that support the main report narrative."
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "stroke": "#D6D9DE",
+    "primary-text": "#ffffff"
+  }
+}

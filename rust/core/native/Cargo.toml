@@ -1,0 +1,38 @@
+[package]
+name = "docucraft_crdt"
+version = "0.1.0"
+edition = "2021"
+description = "DocuCraft CRDT Engine — Loro wrapper for Flutter via FFI"
+license = "MIT"
+
+[lib]
+name = "docucraft_crdt"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+loro = { version = "1.13", features = [] }
+loro-internal = { version = "1.13", features = [] }
+loro-common = { version = "1.13", features = [] }
+flutter_rust_bridge = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+bytes = "1.0"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+base64 = "0.21"
+
+[build-dependencies]
+flutter_rust_bridge_codegen = "2.0"
+
+[features]
+default = []
+android = []
+ios = []
+macos = []
+windows = []
+linux = []

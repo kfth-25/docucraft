@@ -1,0 +1,14 @@
+{
+  "name": "flutter-aion-bridge",
+  "version": "1.0.0",
+  "description": "Bridge server connecting Flutter app to AION UI",
+  "main": "aion-bridge.js",
+  "scripts": {
+    "start": "node aion-bridge.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "uuid": "^9.0.0"
+  }
+}

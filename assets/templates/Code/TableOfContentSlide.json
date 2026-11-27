@@ -1,0 +1,36 @@
+{
+  "layoutId": "table-of-content-slide",
+  "name": "Table Of Content Slide",
+  "description": "A two-column table of contents with numbered entries, labels and description.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Table of Content"
+  },
+  "_cssVars": {
+    "background-text": "#f2f4ff",
+    "primary-color": "#51A2FF",
+    "primary-text": "#8EC5FF",
+    "background-color": "#101B37"
+  }
+}

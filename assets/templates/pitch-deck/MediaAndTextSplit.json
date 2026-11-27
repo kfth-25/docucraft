@@ -1,0 +1,102 @@
+{
+  "layoutId": "media-and-text-split",
+  "name": "Media and Text Split",
+  "description": "A split composition with a title and media block on the left and supporting narrative plus footer text on the right.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Overview"
+    },
+    {
+      "id": "txt_h3_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 610,
+        "height": 38
+      },
+      "style": {
+        "color": "#d7d3be",
+        "fontSize": 32,
+        "fontWeight": "normal"
+      },
+      "content": "Headline"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 34,
+        "width": 610,
+        "height": 26
+      },
+      "style": {
+        "color": "#cbc7b2",
+        "fontSize": 22,
+        "fontWeight": "normal"
+      },
+      "content": "Body"
+    },
+    {
+      "id": "txt_p_3",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 100,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#dddac7",
+        "fontSize": 34,
+        "fontWeight": "normal"
+      },
+      "content": "Footertext"
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "sidePanelMode": "image",
+    "__image_prompt__": "Glass skyscraper perspective",
+    "title": "Overview",
+    "description": "#d3d0bc"
+  },
+  "_cssVars": {
+    "background-color": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "background-text": "#dddac7"
+  }
+}

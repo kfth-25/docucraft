@@ -1,0 +1,256 @@
+{
+  "layoutId": "IntroSlideLayout",
+  "name": "Intro Slide Layout",
+  "description": "Intro slide with header, title, subtitle, body, image. If used for last slide, then intro card should be disabled.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 76,
+        "width": 664,
+        "height": 68
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 64,
+        "fontWeight": "semibold",
+        "lineHeight": 1.05
+      },
+      "content": "Pitch Deck"
+    },
+    {
+      "id": "txt_paragraph",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 164,
+        "width": 620,
+        "height": 52
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "lineHeight": 1.6
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": "introCard_bg",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 240,
+        "width": 300,
+        "height": 48
+      },
+      "style": {
+        "color": "#BFF4FF",
+        "borderRadius": 2
+      }
+    },
+    {
+      "id": "introCard_accent",
+      "type": "shape",
+      "position": {
+        "x": 64,
+        "y": 252,
+        "width": 8,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "txt_introCard_name",
+      "type": "text",
+      "position": {
+        "x": 88,
+        "y": 255,
+        "width": 140,
+        "height": 18
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "semibold"
+      },
+      "content": "John Doe"
+    },
+    {
+      "id": "txt_introCard_date",
+      "type": "text",
+      "position": {
+        "x": 175,
+        "y": 257,
+        "width": 100,
+        "height": 16
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Jan 1, 2025"
+    },
+    {
+      "id": "diamond_right_1",
+      "type": "shape",
+      "position": {
+        "x": 782,
+        "y": 32,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "diamond_right_2",
+      "type": "shape",
+      "position": {
+        "x": 782,
+        "y": 56,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "diamond_right_3",
+      "type": "shape",
+      "position": {
+        "x": 782,
+        "y": 80,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "img_right_panel",
+      "type": "image",
+      "position": {
+        "x": 819,
+        "y": 0,
+        "width": 461,
+        "height": 520
+      },
+      "style": {},
+      "content": "https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1200&q=80&auto=format&fit=crop"
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#E5E7EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Pitch Deck",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "introCard": {
+      "enabled": true,
+      "name": "John Doe",
+      "date": "Jan 1, 2025"
+    },
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

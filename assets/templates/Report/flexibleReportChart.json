@@ -1,0 +1,22 @@
+{
+  "layoutId": "simpleDataSchema",
+  "name": "Flexiblereportchart",
+  "description": "Flexiblereportchart",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [],
+  "_schema": {
+    "type": "bar"
+  },
+  "_cssVars": {
+    "background-text": "#232223",
+    "body-font-family": "Source Sans 3",
+    "stroke": "#9CA3AF",
+    "graph-0": "#9fb6ff",
+    "graph-1": "#4d4ef3"
+  }
+}

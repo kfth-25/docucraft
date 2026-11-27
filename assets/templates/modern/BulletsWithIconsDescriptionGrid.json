@@ -1,0 +1,141 @@
+{
+  "layoutId": "bullets-with-icons-description-grid",
+  "name": "Bullet With Icons Description Grid",
+  "description": "A bullet with icons description grid slide layout",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#1E4CD9",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Businesses struggle"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#334155",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Maindescription"
+    },
+    {
+      "id": "txt_span_2",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 50
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F5F8FE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1E4CD9",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 1180,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1E4CD9",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Businesses struggle",
+    "description": "Show that we offer a solution that solves the problems previously described and identified. Make sure that the solutions we offer uphold the values of effectiveness, efficiency, and are highly relevant to the market situation and society is here and what is hsd sdksdf klfdslkf lkflkfsldkf."
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#234CD9",
+    "card-color": "#F5F8FE",
+    "primary-color": "#1E4CD9"
+  }
+}

@@ -1,0 +1,23 @@
+# flutter_rust_bridge configuration for DocuCraft
+# Place in project root: /c/Users/Pongo/docucraft_app/flutter_rust_bridge.yaml
+
+rust_input: "rust/core/native/src/api.rs"
+dart_output: "lib/src/ffi/docucraft_ffi.dart"
+dart_decl_output: "lib/src/ffi/docucraft_ffi_decl.dart"
+c_output: "rust/core/native/src/bridge_generated.h"
+c_output_test: "rust/core/native/src/bridge_generated_test.h"
+
+dart_package_name: "docucraft_ffi"
+
+dart_format_line_length: 100
+rust_crate_name: "docucraft_crdt"
+
+exclude:
+  - "DocHandle"
+
+async_runtime: "tokio"
+wasm:
+  enabled: false
+
+generate_getter_for_struct: true
+generate_setter_for_struct: false

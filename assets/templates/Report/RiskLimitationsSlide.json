@@ -1,0 +1,204 @@
+{
+  "layoutId": "risk-limitation-matrix-slide",
+  "name": "Risk and Limitation Matrix Slide",
+  "description": "A report slide with a compact risk matrix and a side panel for assumptions, caveats, or limitations.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 18,
+        "y": 12,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Risk"
+    },
+    {
+      "id": "txt_p_1",
+      "type": "text",
+      "position": {
+        "x": 18,
+        "y": 12,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Level"
+    },
+    {
+      "id": "txt_p_2",
+      "type": "text",
+      "position": {
+        "x": 18,
+        "y": 12,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Impact"
+    },
+    {
+      "id": "txt_p_3",
+      "type": "text",
+      "position": {
+        "x": 18,
+        "y": 12,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 16,
+        "fontWeight": "normal"
+      },
+      "content": "Response"
+    },
+    {
+      "id": "txt_p_4",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "fontSize": 15,
+        "fontWeight": "normal"
+      },
+      "content": "Limitations"
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_10",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_11",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_12",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 26,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Risks and Limitations",
+    "description": "A concise view of the main risks, expected impacts, responses, and limitations that shape interpretation."
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "primary-text": "#ffffff",
+    "stroke": "#D6D9DE"
+  }
+}

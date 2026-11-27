@@ -1,0 +1,20 @@
+{
+  "layoutId": "code-block-panel",
+  "name": "Codeblockpanel",
+  "description": "Codeblockpanel",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Inter"
+  },
+  "elements": [],
+  "_schema": {},
+  "_cssVars": {
+    "card-color": "#1D293D80",
+    "stroke": "#1D293D80",
+    "background-text": "#ffffff",
+    "primary-color": "#2B7FFF33",
+    "primary-text": "#51A2FF"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "layoutId": "cover-slide",
+  "name": "Cover Slide",
+  "description": "Opening/cover/intro slide with  organization/institution/presenter, presentation title/heading , and supporting subtitle.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "companyName": "COMPANY NAME",
+    "description": "Development Roadmap"
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#d8ddff"
+  }
+}

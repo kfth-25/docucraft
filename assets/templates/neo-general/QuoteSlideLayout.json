@@ -1,0 +1,153 @@
+{
+  "layoutId": "quote-slide-layout",
+  "name": "Centered Text On Image Overlay",
+  "description": "A full-screen layout with background image, semi-transparent overlay, centered heading with accent line, large quote icon, quote text, and author attribution with decorative lines.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#000000",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_h1_0",
+      "type": "text",
+      "position": {
+        "x": 440,
+        "y": 0,
+        "width": 400,
+        "height": 58
+      },
+      "style": {
+        "color": "#ffffff",
+        "fontSize": 48,
+        "fontWeight": "normal"
+      },
+      "content": "Words of Wisdom"
+    },
+    {
+      "id": "txt_span_1",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 348,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Company"
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_7",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_8",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_9",
+      "type": "decoration",
+      "position": {
+        "x": 4,
+        "y": 4,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "heading": "Words of Wisdom",
+    "description": "Success is not final, failure is not fatal: it is the courage to continue that counts. The future belongs to those who believe in the beauty of their dreams."
+  },
+  "_cssVars": {
+    "background-color": "#000000",
+    "stroke": "#F0F0F0",
+    "background-text": "#ffffff",
+    "primary-color": "#9333ea"
+  }
+}

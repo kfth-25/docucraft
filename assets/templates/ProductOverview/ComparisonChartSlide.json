@@ -1,0 +1,56 @@
+{
+  "layoutId": "comparison-status-table-slide",
+  "name": "Comparison Status Table Slide",
+  "description": "A slide with a title on top and a description below, and a content section containing a table with column headers and rows of check, cross and empty state content.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "__icon_url__": "DEFAULT_CROSS_ICON.__icon_url__",
+    "__icon_query__": "DEFAULT_CROSS_ICON.__icon_query__",
+    "cell4": "Feature Comparison",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+  },
+  "_cssVars": {
+    "stroke": "#c5cccb",
+    "background-color": "#DAE1DE",
+    "primary-color": "#15342D",
+    "primary-text": "#edf2f1",
+    "body-font-family": "Bricolage Grotesque",
+    "background-text": "#15342DCC",
+    "card-color": "#ffffff"
+  }
+}

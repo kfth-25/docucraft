@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "modern-minimal",
+      "name": "Modern Minimal",
+      "description": "Clean, spacious layout with subtle accents",
+      "brandId": "docucraft-default",
+      "cssVars": {
+        "--background-color": "#FFFFFF",
+        "--background-text": "#1A1A25",
+        "--card-color": "#FFFFFF",
+        "--stroke": "#E5E7EB",
+        "--primary-color": "#6366F1",
+        "--primary-text": "#FFFFFF",
+        "--heading-font-family": "DM Sans",
+        "--body-font-family": "DM Sans"
+      }
+    },
+    {
+      "id": "glassmorphism",
+      "name": "Glassmorphism",
+      "description": "Translucent layers with frosted glass effect",
+      "brandId": "docucraft-default",
+      "cssVars": {
+        "--background-color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "--background-text": "#1A1A25",
+        "--card-color": "rgba(255,255,255,0.15)",
+        "--stroke": "rgba(255,255,255,0.2)",
+        "--primary-color": "#6366F1",
+        "--primary-text": "#FFFFFF",
+        "--heading-font-family": "DM Sans",
+        "--body-font-family": "DM Sans"
+      }
+    },
+    {
+      "id": "swiss-grid",
+      "name": "Swiss Grid",
+      "description": "Strict modular grid, restrained typography, red accent",
+      "brandId": "corporate-blue",
+      "cssVars": {
+        "--background-color": "#FFFFFF",
+        "--background-text": "#0F172A",
+        "--card-color": "#F8FAFC",
+        "--stroke": "#E2E8F0",
+        "--primary-color": "#EF4444",
+        "--primary-text": "#FFFFFF",
+        "--heading-font-family": "Inter",
+        "--body-font-family": "Inter"
+      }
+    },
+    {
+      "id": "memphis-pop",
+      "name": "Memphis Pop",
+      "description": "Bold primaries, geometric patterns, playful energy",
+      "brandId": "warm-sunset",
+      "cssVars": {
+        "--background-color": "#FEFCE8",
+        "--background-text": "#1C1917",
+        "--card-color": "#FFFFFF",
+        "--stroke": "#FDE68A",
+        "--primary-color": "#F97316",
+        "--primary-text": "#FFFFFF",
+        "--heading-font-family": "Playfair Display",
+        "--body-font-family": "DM Sans"
+      }
+    }
+  ]
+}

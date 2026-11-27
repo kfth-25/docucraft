@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1280 720"
+     data-pptx-layout="metrics-numbers"
+     data-pptx-theme-color-primary="accent1"
+     data-pptx-theme-font-major="major">
+
+  <rect x="0" y="0" width="1280" height="720"
+        fill="url(#slideBgGradient)"
+        data-pptx-object="shape" data-pptx-prst="rect"/>
+
+  <g data-pptx-slot="header" data-pptx-object="group">
+    <text x="96" y="48" width="400" height="40"
+          data-pptx-slot="companyName"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="tx1"
+          font-size="16" font-weight="normal">
+      {{companyName}}
+    </text>
+  </g>
+
+  <g data-pptx-slot="mainContent" data-pptx-object="group">
+    <!-- Left Column: Title + Description -->
+    <g data-pptx-slot="leftColumn" data-pptx-object="group">
+      <rect x="96" y="140" width="500" height="500"
+            fill="var(--theme-card-color)"
+            data-pptx-object="shape" data-pptx-prst="rect"/>
+
+      <text x="146" y="200" width="400" height="80"
+            data-pptx-slot="title"
+            data-pptx-object="text"
+            data-pptx-theme-font="major"
+            data-pptx-theme-color="dk1"
+            font-size="48" font-weight="bold">
+        {{title}}
+      </text>
+
+      <text x="146" y="300" width="400" height="120"
+            data-pptx-slot="paragraph"
+            data-pptx-object="text"
+            data-pptx-theme-font="minor"
+            data-pptx-theme-color="tx1"
+            font-size="18" line-height="1.5">
+        {{paragraph}}
+      </text>
+
+      <text x="146" y="460" width="400" height="40"
+            data-pptx-slot="leftTitle"
+            data-pptx-object="text"
+            data-pptx-theme-font="major"
+            data-pptx-theme-color="dk1"
+            font-size="24" font-weight="bold">
+        {{leftTitle}}
+      </text>
+
+      <text x="146" y="510" width="400" height="80"
+            data-pptx-slot="leftBody"
+            data-pptx-object="text"
+            data-pptx-theme-font="minor"
+            data-pptx-theme-color="tx1"
+            font-size="16" line-height="1.5">
+        {{leftBody}}
+      </text>
+    </g>
+
+    <!-- Right Column: 3 Metric Cards -->
+    <g data-pptx-slot="metrics" data-pptx-object="group">
+      <g data-pptx-slot="metric-0" data-pptx-object="group" transform="translate(700, 140)">
+        <rect x="0" y="0" width="320" height="150"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="160" y="50" text-anchor="middle"
+              data-pptx-slot="metrics[0].value"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="48" font-weight="bold">
+          {{metrics[0].value}}
+        </text>
+        <text x="160" y="90" text-anchor="middle"
+              data-pptx-slot="metrics[0].line1"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="14">
+          {{metrics[0].line1}}
+        </text>
+        <text x="160" y="120" text-anchor="middle"
+              data-pptx-slot="metrics[0].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="accent1"
+              font-size="12">
+          {{metrics[0].description}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="metric-1" data-pptx-object="group" transform="translate(700, 320)">
+        <rect x="0" y="0" width="320" height="150"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="160" y="50" text-anchor="middle"
+              data-pptx-slot="metrics[1].value"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="48" font-weight="bold">
+          {{metrics[1].value}}
+        </text>
+        <text x="160" y="90" text-anchor="middle"
+              data-pptx-slot="metrics[1].line1"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="14">
+          {{metrics[1].line1}}
+        </text>
+        <text x="160" y="120" text-anchor="middle"
+              data-pptx-slot="metrics[1].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="accent1"
+              font-size="12">
+          {{metrics[1].description}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="metric-2" data-pptx-object="group" transform="translate(700, 500)">
+        <rect x="0" y="0" width="320" height="150"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="160" y="50" text-anchor="middle"
+              data-pptx-slot="metrics[2].value"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="48" font-weight="bold">
+          {{metrics[2].value}}
+        </text>
+        <text x="160" y="90" text-anchor="middle"
+              data-pptx-slot="metrics[2].line1"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="14">
+          {{metrics[2].line1}}
+        </text>
+        <text x="160" y="120" text-anchor="middle"
+              data-pptx-slot="metrics[2].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="accent1"
+              font-size="12">
+          {{metrics[2].description}}
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="slideBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--theme-accent1)"/>
+      <stop offset="100%" stop-color="var(--theme-dk1)"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "layoutId": "education-chart-primitives",
+  "name": "Educationchartprimitives",
+  "description": "Educationchartprimitives",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Times New Roman"
+  },
+  "elements": [],
+  "_schema": {},
+  "_cssVars": {
+    "graph-0": "#4A15A8",
+    "graph-1": "#5B45AD",
+    "graph-2": "#7E6CC0",
+    "graph-3": "#9F94CD",
+    "graph-4": "#6A31B8",
+    "graph-5": "#4D2A97",
+    "graph-6": "#8357C7",
+    "graph-7": "#A178D8",
+    "graph-8": "#C0A5E8",
+    "graph-9": "#DDCFF5",
+    "background-text": "#3E3C45",
+    "stroke": "#CFCBD8",
+    "body-font-family": "Times New Roman",
+    "primary-text": "#ffffff"
+  }
+}

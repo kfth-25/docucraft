@@ -1,0 +1,55 @@
+{
+  "layoutId": "title-description-with-image-block-slide",
+  "name": "Title Description with Image Block Slide",
+  "description": "A slide with a title on top and a description below, and a content section containing an image and a grid of cards of text.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 650,
+        "height": 326
+      },
+      "style": {
+        "color": "#15342D",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "isHighlighted": "false",
+    "description": "TAGLINE",
+    "__image_prompt__": "Customer support team in office",
+    "featureImage": {}
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ececee",
+    "primary-text": "#edf2f1"
+  }
+}

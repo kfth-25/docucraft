@@ -1,0 +1,97 @@
+{
+  "items": [
+    {
+      "id": "intro-slide-layout",
+      "name": "Intro Slide",
+      "description": "Two-column layout with media panel and text content, optional intro card",
+      "styleId": "modern-minimal",
+      "svgTemplate": "assets/templates/layouts/intro-slide-layout.svg",
+      "slots": [
+        { "id": "companyName", "type": "text", "label": "Company Name", "required": false },
+        { "id": "counter", "type": "text", "label": "Slide Counter", "required": false, "defaultValue": "1" },
+        { "id": "imageUrl", "type": "image", "label": "Background Image", "required": false },
+        { "id": "title", "type": "text", "label": "Main Title", "required": true },
+        { "id": "paragraph", "type": "text", "label": "Description", "required": false },
+        { "id": "introCard.enabled", "type": "boolean", "label": "Show Intro Card", "required": false, "defaultValue": false },
+        { "id": "introCard.initials", "type": "text", "label": "Initials", "required": false, "defaultValue": "PDT" },
+        { "id": "introCard.name", "type": "text", "label": "Name", "required": false, "defaultValue": "Team" },
+        { "id": "introCard.date", "type": "text", "label": "Date", "required": false },
+        { "id": "chartData", "type": "chart", "label": "Chart Data", "required": false },
+        { "id": "tableData", "type": "table", "label": "Table Data", "required": false }
+      ]
+    },
+    {
+      "id": "metrics-numbers",
+      "name": "Metrics Numbers",
+      "description": "Title + left text + 3 metric cards with values and descriptions",
+      "styleId": "modern-minimal",
+      "svgTemplate": "assets/templates/layouts/metrics-numbers.svg",
+      "slots": [
+        { "id": "companyName", "type": "text", "label": "Company Name", "required": false },
+        { "id": "title", "type": "text", "label": "Title", "required": true },
+        { "id": "paragraph", "type": "text", "label": "Description", "required": false },
+        { "id": "leftTitle", "type": "text", "label": "Left Section Title", "required": false },
+        { "id": "leftBody", "type": "text", "label": "Left Section Body", "required": false },
+        { "id": "metrics", "type": "array", "label": "Metrics (3 items)", "required": true,
+          "defaultValue": [
+            { "value": "100%", "line1": "Uptime", "description": "System reliability" },
+            { "value": "99.9%", "line1": "SLA", "description": "Service level" },
+            { "value": "24/7", "line1": "Support", "description": "Always available" }
+          ] }
+      ]
+    },
+    {
+      "id": "simple-bullet-points-layout",
+      "name": "Bullet Points",
+      "description": "Title + statement + 3 numbered bullet points with title/body",
+      "styleId": "modern-minimal",
+      "svgTemplate": "assets/templates/layouts/simple-bullet-points-layout.svg",
+      "slots": [
+        { "id": "companyName", "type": "text", "label": "Company Name", "required": false },
+        { "id": "title", "type": "text", "label": "Title", "required": true },
+        { "id": "statement", "type": "text", "label": "Opening Statement", "required": false },
+        { "id": "points", "type": "array", "label": "Points (3 items)", "required": true,
+          "defaultValue": [
+            { "title": "First Point", "body": "Description of the first point" },
+            { "title": "Second Point", "body": "Description of the second point" },
+            { "title": "Third Point", "body": "Description of the third point" }
+          ] }
+      ]
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "description": "Chronological timeline with 4 event cards",
+      "styleId": "modern-minimal",
+      "svgTemplate": "assets/templates/layouts/timeline.svg",
+      "slots": [
+        { "id": "title", "type": "text", "label": "Title", "required": true },
+        { "id": "subtitle", "type": "text", "label": "Subtitle", "required": false },
+        { "id": "events", "type": "array", "label": "Events (4 items)", "required": true,
+          "defaultValue": [
+            { "year": "2024", "heading": "Q1 Launch", "body": "Initial product release", "icon": "rocket" },
+            { "year": "2024", "heading": "Q2 Growth", "body": "User base expansion", "icon": "chart-up" },
+            { "year": "2024", "heading": "Q3 Scale", "body": "Infrastructure scaling", "icon": "server" },
+            { "year": "2025", "heading": "Q4 Maturity", "body": "Market leadership", "icon": "trophy" }
+          ] }
+      ]
+    },
+    {
+      "id": "table-of-contents",
+      "name": "Table of Contents",
+      "description": "Numbered list of sections",
+      "styleId": "modern-minimal",
+      "svgTemplate": "assets/templates/layouts/table-of-contents.svg",
+      "slots": [
+        { "id": "title", "type": "text", "label": "Title", "required": true },
+        { "id": "items", "type": "array", "label": "TOC Items", "required": true,
+          "defaultValue": [
+            { "number": "01", "title": "Introduction", "description": "Overview and objectives" },
+            { "number": "02", "title": "Methodology", "description": "Approach and framework" },
+            { "number": "03", "title": "Results", "description": "Key findings and data" },
+            { "number": "04", "title": "Conclusion", "description": "Summary and next steps" }
+          ] }
+      ]
+    }
+  ]
+}

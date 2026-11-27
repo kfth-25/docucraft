@@ -1,0 +1,80 @@
+{
+  "layoutId": "metrics-slide",
+  "name": "Metrics Slide",
+  "description": "A slide with a title and explanatory text on the left, an optional bulleted list underneath the text, and metric cards on the right. Each metric card contains two stacked metric blocks.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#f9f8f8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 438
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#f9f8f8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 8,
+        "height": 8
+      },
+      "style": {
+        "color": "#232223",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Introduction",
+    "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut alut enim ad minima veniam, quis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut alut enim ad minima veniam, quis"
+  },
+  "_cssVars": {
+    "primary-color": "#157CFF",
+    "primary-text": "#ffffff",
+    "background-color": "#f9f8f8",
+    "body-font-family": "Source Sans 3",
+    "background-text": "#232223"
+  }
+}

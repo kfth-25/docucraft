@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: px-12 pt-3 ── */
+    .title-block { padding: 12px 48px 0 48px; }
+    .title { font-size: 48px; font-weight: 600; line-height: 1.1; color: #111827; margin: 0; }
+    .description { font-size: 16px; color: #6B7280; margin: 12px 0 0 0; max-width: 760px; }
+    /* ── TSX: absolute left-0 right-0 bottom-20 h-[160px] ── */
+    .cyan-band { position: absolute; left: 0; right: 0; bottom: 80px; height: 160px; background: #BFF4FF; }
+    /* ── TSX: relative px-12 mt-8 + grid-flow-col auto-cols-[260px] gap-6 justify-center ── */
+    .cards-row { position: relative; display: flex; justify-content: center; gap: 24px; padding: 32px 48px 0 48px; }
+    .feature-card {
+      width: 260px; border-radius: 22px; overflow: hidden;
+      background: #BFF4FF; box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
+    .feature-card-inner { padding: 20px 24px; }
+    /* ── TSX: w-10 h-10 rounded-sm bg white ── */
+    .icon-box {
+      width: 40px; height: 40px; border-radius: 2px;
+      background: #FFFFFF; display: flex; align-items: center; justify-content: center;
+    }
+    .feature-title { font-size: 18px; font-weight: 600; color: #111827; margin: 16px 0 0 0; white-space: pre-line; }
+    .feature-body { font-size: 14px; line-height: 1.7; color: #6B7280; margin: 12px 0 0 0; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; z-index: 2; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); z-index: 2; }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .title-block { padding: 12px 0 0 0; }
+      .title { font-size: 6.5vw; }
+      .description { max-width: 100%; }
+      .cards-row { flex-wrap: wrap; padding: 24px 0 0 0; gap: 16px; }
+      .feature-card { width: 45%; }
+      .cyan-band { display: none; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Title + description ── -->
+    <div class="title-block">
+      <h1 class="title">Key Product Features</h1>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
+    </div>
+
+    <!-- ── Cyan band ── -->
+    <div class="cyan-band"></div>
+
+    <!-- ── Feature cards ── -->
+    <div class="cards-row">
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <div class="icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+          </div>
+          <div class="feature-title">Customizable Workflows</div>
+          <p class="feature-body">Lorem ipsum dolor sit amet, dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <div class="icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="feature-title">Multi-Device Access</div>
+          <p class="feature-body">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <div class="icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
+          </div>
+          <div class="feature-title">Scalable Architecture</div>
+          <p class="feature-body">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-inner">
+          <div class="icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <div class="feature-title">Detailed Reports</div>
+          <p class="feature-body">Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

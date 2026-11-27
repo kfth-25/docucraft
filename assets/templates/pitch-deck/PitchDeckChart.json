@@ -1,0 +1,17 @@
+{
+  "layoutId": "pitch-deck-chart",
+  "name": "Pitchdeckchart",
+  "description": "Pitchdeckchart",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Inter"
+  },
+  "elements": [],
+  "_schema": {},
+  "_cssVars": {
+    "background-text": "#585a61",
+    "primary-text": "#ffffff"
+  }
+}

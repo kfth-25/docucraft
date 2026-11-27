@@ -1,0 +1,65 @@
+{
+  "layoutId": "title-metrics-slide",
+  "name": "Title Metrics Slide",
+  "description": "A slide with a title at the top and tall metric cards arranged horizontally below it. Each card can contain one or two stacked metric blocks, and each block includes a main value, a label, and a supporting description.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#f9f8f8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 248,
+        "height": 438
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#f9f8f8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Performance Snapshot"
+  },
+  "_cssVars": {
+    "primary-color": "#157CFF",
+    "primary-text": "#ffffff",
+    "background-color": "#f9f8f8",
+    "body-font-family": "Source Sans 3",
+    "background-text": "#232223"
+  }
+}

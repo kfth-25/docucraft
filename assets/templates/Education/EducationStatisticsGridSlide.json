@@ -1,0 +1,38 @@
+{
+  "layoutId": "statistics-grid-slide",
+  "name": "Statistics Grid Slide",
+  "description": "A left text column with a title, description and a right-side grid of statistics cards,value and label each in a card",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#efeff1",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#efeff1",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "label": "Statistics",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "_cssVars": {
+    "background-color": "#efeff1",
+    "body-font-family": "Source Serif 4",
+    "primary-color": "#1a1752",
+    "background-text": "#434A63",
+    "card-color": "#5C0FD908"
+  }
+}

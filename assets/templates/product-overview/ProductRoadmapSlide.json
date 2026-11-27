@@ -1,0 +1,82 @@
+{
+  "layoutId": "phase-timeline-cards-slide",
+  "name": "Phase Timeline Cards Slide",
+  "description": "A title and subtitle layout with a horizontal sequence of phase cards connected by a timeline line.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#c5cccb",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 40,
+        "y": 24,
+        "width": 100,
+        "height": 3
+      },
+      "style": {
+        "color": "#c5cccb",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 18,
+        "y": 0,
+        "width": 52,
+        "height": 52
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 9999
+      }
+    }
+  ],
+  "_schema": {
+    "deliverables": "Roadmap",
+    "description": "A staged view of how work progresses across phases, periods, or milestones."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "stroke": "#c5cccb",
+    "card-color": "#ffffff",
+    "primary-text": "#edf2f1"
+  }
+}

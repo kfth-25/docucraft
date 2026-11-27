@@ -1,0 +1,112 @@
+{
+  "layoutId": "title-metric-value-metric-label-funnel-stages",
+  "name": "Metric With Funnel Bars",
+  "description": "A layout featuring title with accent bar, left-side key metric with label, and horizontal funnel visualization on the right. Each funnel stage shows labeled pill, connector line, and colored bar with value and rate.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "txt_span_0",
+      "type": "text",
+      "position": {
+        "x": 0,
+        "y": 696,
+        "width": 400,
+        "height": 24
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Conversion"
+    },
+    {
+      "id": "el_2",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 116,
+        "height": 6
+      },
+      "style": {
+        "color": "#9134EB",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 127,
+        "height": 60
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "el_6",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 45,
+        "height": 50
+      },
+      "style": {
+        "color": "#9134EB",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Funnel Performance",
+    "metricValue": "0.24%",
+    "metricLabel": "Overall\\nVisit → Customer"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "stroke": "#F0F0F0",
+    "background-text": "#000000",
+    "primary-color": "#9134EB",
+    "card-color": "#FFFFFF",
+    "primary-text": "#FFFFFF"
+  }
+}

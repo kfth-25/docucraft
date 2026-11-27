@@ -1,0 +1,84 @@
+{
+  "layoutId": "recommendation-cards-slide",
+  "name": "Recommendation Cards Slide",
+  "description": "A report slide with a title, subtitle, and recommendation cards that include priority, action, rationale, and impact.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F1F5FA",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "txt_p_0",
+      "type": "text",
+      "position": {
+        "x": 16,
+        "y": 12,
+        "width": 400,
+        "height": 26
+      },
+      "style": {
+        "color": "#157CFF",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "Impact"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F1F5FA",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F1F5FA",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Recommendations",
+    "description": "A prioritized set of recommended actions based on the findings and available evidence."
+  },
+  "_cssVars": {
+    "background-color": "#F1F5FA",
+    "background-text": "#4A4D53",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "card-color": "#ffffff",
+    "stroke": "#D6D9DE",
+    "primary-text": "#ffffff"
+  }
+}

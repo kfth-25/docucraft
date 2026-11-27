@@ -1,0 +1,52 @@
+{
+  "layoutId": "milestone-slide",
+  "name": "Milestone Slide",
+  "description": "A slide with a title at the top and a single horizontal milestone sequence below it. The sequence contains five circular markers aligned in one row, and each marker has a heading and description placed directly underneath. The activeIndex field controls which marker is emphasized while the remaining markers stay in the default state.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#F9F8F8",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#F9F8F8",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 42,
+        "height": 50
+      },
+      "style": {
+        "color": "#157CFF",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Milestone"
+  },
+  "_cssVars": {
+    "background-color": "#F9F8F8",
+    "body-font-family": "Source Sans 3",
+    "primary-color": "#157CFF",
+    "background-text": "#232223",
+    "card-color": "#ffffff",
+    "primary-text": "#ffffff"
+  }
+}

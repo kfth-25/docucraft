@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: px-12 pt-2 grid grid-cols-[1.2fr_1fr] gap-10 ── */
+    .content-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; padding: 8px 48px 0 48px; }
+    .left-title { font-size: 56px; font-weight: 600; line-height: 1.05; color: #111827; margin: 0; }
+    .side-heading { font-size: 16px; font-weight: 600; color: #111827; margin: 0 0 8px 0; }
+    .side-paragraph { font-size: 14px; line-height: 1.6; color: #6B7280; margin: 0; }
+    /* ── TSX: px-12 pt-12 + grid-flow-col auto-cols-[260px] gap-8 justify-center ── */
+    .icons-row {
+      display: flex; justify-content: center; gap: 32px;
+      padding: 48px 48px 0 48px;
+    }
+    .icon-col { width: 260px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    /* ── TSX: w-40 h-40 rounded-full shadow bg BFF4FF ── */
+    .icon-circle {
+      width: 160px; height: 160px; border-radius: 9999px;
+      background: #BFF4FF; box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .icon-title { font-size: 16px; font-weight: 600; color: #111827; margin: 20px 0 8px 0; }
+    .icon-desc { font-size: 13px; line-height: 1.6; color: #6B7280; margin: 0; max-width: 260px; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .content-grid { grid-template-columns: 1fr; padding: 8px 0 0 0; gap: 24px; }
+      .left-title { font-size: 7.5vw; }
+      .icons-row { flex-wrap: wrap; padding: 24px 0 0 0; gap: 20px; }
+      .icon-col { width: 45%; }
+      .icon-circle { width: 110px; height: 110px; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Grid: 1.2fr / 1fr ── -->
+    <div class="content-grid">
+      <div>
+        <div class="left-title">Our Infographic</div>
+      </div>
+      <div>
+        <div class="side-heading">Lorem ipsum dolor sit amet,</div>
+        <p class="side-paragraph">Concise paragraph describing context. Keep it short and readable across one or two lines.</p>
+      </div>
+    </div>
+
+    <!-- ── 4 icon cards ── -->
+    <div class="icons-row">
+      <div class="icon-col">
+        <div class="icon-circle">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="icon-title">Lorem ipsum dolor</div>
+        <p class="icon-desc">Concise supporting text under the first icon explaining the point.</p>
+      </div>
+      <div class="icon-col">
+        <div class="icon-circle">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="icon-title">Lorem ipsum dolor</div>
+        <p class="icon-desc">Concise supporting text under the second icon explaining the point.</p>
+      </div>
+      <div class="icon-col">
+        <div class="icon-circle">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <div class="icon-title">Lorem ipsum dolor</div>
+        <p class="icon-desc">Concise supporting text under the third icon explaining the point.</p>
+      </div>
+      <div class="icon-col">
+        <div class="icon-circle">
+          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </div>
+        <div class="icon-title">Lorem ipsum dolor</div>
+        <p class="icon-desc">Concise supporting text under the fourth icon explaining the point.</p>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

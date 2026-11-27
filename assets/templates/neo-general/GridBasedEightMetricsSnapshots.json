@@ -1,0 +1,65 @@
+{
+  "layoutId": "grid-based-eight-metrics-snapshots",
+  "name": "Metric Cards Grid",
+  "description": "A centered layout with bold title and accent bar, followed by a 4x2 grid of up to 8 metric cards. Each card displays a value, label, and subtext. Cards can optionally be highlighted with colored background.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#fefefd",
+    "fontFamily": "Poppins"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "decoration",
+      "position": {
+        "x": 1180,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#9234EB",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Campaign Performance Snapshot"
+  },
+  "_cssVars": {
+    "background-text": "#101828",
+    "card-color": "#9810FA",
+    "background-color": "#fefefd",
+    "stroke": "#F0F0F0",
+    "primary-color": "#9234EB"
+  }
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1280 720"
+     data-pptx-layout="table-of-contents"
+     data-pptx-theme-color-primary="accent1"
+     data-pptx-theme-font-major="major">
+
+  <rect x="0" y="0" width="1280" height="720"
+        fill="url(#slideBgGradient)"
+        data-pptx-object="shape" data-pptx-prst="rect"/>
+
+  <g data-pptx-slot="header" data-pptx-object="group">
+    <text x="96" y="48" width="400" height="40"
+          data-pptx-slot="companyName"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="tx1"
+          font-size="16" font-weight="normal">
+      {{companyName}}
+    </text>
+  </g>
+
+  <g data-pptx-slot="mainContent" data-pptx-object="group">
+    <text x="96" y="140" width="1088" height="80"
+          data-pptx-slot="title"
+          data-pptx-object="text"
+          data-pptx-theme-font="major"
+          data-pptx-theme-color="dk1"
+          font-size="56" font-weight="bold">
+      {{title}}
+    </text>
+
+    <g data-pptx-slot="items" data-pptx-object="group">
+      <g data-pptx-slot="item-0" data-pptx-object="group" transform="translate(96, 240)">
+        <!-- Number circle -->
+        <circle cx="40" cy="40" r="32"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <text x="40" y="48" text-anchor="middle"
+              fill="white" font-size="18" font-weight="bold"
+              data-pptx-slot="items[0].number"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{items[0].number}}
+        </text>
+
+        <!-- Item content -->
+        <text x="100" y="30" width="1000" height="40"
+              data-pptx-slot="items[0].title"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="28" font-weight="bold">
+          {{items[0].title}}
+        </text>
+        <text x="100" y="75" width="1000" height="40"
+              data-pptx-slot="items[0].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{items[0].description}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="item-1" data-pptx-object="group" transform="translate(96, 360)">
+        <circle cx="40" cy="40" r="32"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <text x="40" y="48" text-anchor="middle"
+              fill="white" font-size="18" font-weight="bold"
+              data-pptx-slot="items[1].number"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{items[1].number}}
+        </text>
+        <text x="100" y="30" width="1000" height="40"
+              data-pptx-slot="items[1].title"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="28" font-weight="bold">
+          {{items[1].title}}
+        </text>
+        <text x="100" y="75" width="1000" height="40"
+              data-pptx-slot="items[1].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{items[1].description}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="item-2" data-pptx-object="group" transform="translate(96, 480)">
+        <circle cx="40" cy="40" r="32"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <text x="40" y="48" text-anchor="middle"
+              fill="white" font-size="18" font-weight="bold"
+              data-pptx-slot="items[2].number"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{items[2].number}}
+        </text>
+        <text x="100" y="30" width="1000" height="40"
+              data-pptx-slot="items[2].title"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="28" font-weight="bold">
+          {{items[2].title}}
+        </text>
+        <text x="100" y="75" width="1000" height="40"
+              data-pptx-slot="items[2].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{items[2].description}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="item-3" data-pptx-object="group" transform="translate(96, 600)">
+        <circle cx="40" cy="40" r="32"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <text x="40" y="48" text-anchor="middle"
+              fill="white" font-size="18" font-weight="bold"
+              data-pptx-slot="items[3].number"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{items[3].number}}
+        </text>
+        <text x="100" y="30" width="1000" height="40"
+              data-pptx-slot="items[3].title"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="28" font-weight="bold">
+          {{items[3].title}}
+        </text>
+        <text x="100" y="75" width="1000" height="40"
+              data-pptx-slot="items[3].description"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{items[3].description}}
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="slideBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--theme-accent1)"/>
+      <stop offset="100%" stop-color="var(--theme-dk1)"/>
+    </linearGradient>
+  </defs>
+</svg>

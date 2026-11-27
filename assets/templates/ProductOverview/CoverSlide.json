@@ -1,0 +1,52 @@
+{
+  "layoutId": "cover-slide",
+  "name": "Cover Slide",
+  "description": "A cover slide with a compact logo in the top-left, a date/text/label in the top-right, a centered title, and a image anchored to the bottom with a soft fade into the background.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "label": "MARCH 2026",
+    "description": "Social Media",
+    "__image_prompt__": "Tall glass buildings from street view",
+    "backgroundImage": {}
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D"
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: absolute top-0 left-1/2 w-[1px] h-full ── */
+    .center-separator { position: absolute; top: 0; left: 50%; width: 1px; height: 100%; background: rgba(0,0,0,0.1); }
+    /* ── TSX: px-12 pt-3 grid grid-cols-[42%_58%] gap-8 ── */
+    .content-grid { display: grid; grid-template-columns: 42% 58%; gap: 32px; padding: 12px 48px 0 48px; }
+    .title { font-size: 48px; font-weight: 600; line-height: 1.1; color: #111827; margin: 0; max-width: 420px; }
+    /* ── TSX: mt-8 inline-flex gap-3 ── */
+    .left-subtitle-row { display: inline-flex; align-items: center; gap: 12px; margin-top: 32px; }
+    .dot { width: 20px; height: 20px; background: #111827; border-radius: 9999px; flex-shrink: 0; }
+    .left-title { font-size: 20px; font-weight: 600; color: #111827; white-space: pre-line; }
+    .left-body { font-size: 16px; line-height: 1.8; color: #6B7280; margin: 20px 0 0 0; max-width: 360px; }
+    /* ── TSX: relative ── */
+    .right-col { position: relative; }
+    /* ── TSX: absolute top-6 -right-24 w-[220px] h-[220px] rounded-full border ── */
+    .circle-decor { position: absolute; top: 24px; right: -96px; width: 220px; height: 220px; border-radius: 9999px; border: 1px solid rgba(0,0,0,0.2); }
+    /* ── TSX: flex flex-col gap-6 ── */
+    .cards-col { display: flex; flex-direction: column; gap: 24px; }
+    /* ── TSX: rounded-[18px] px-6 py-5 grid grid-cols-[38%_62%] shadow ── */
+    .metric-card {
+      border-radius: 18px; padding: 20px 24px;
+      display: grid; grid-template-columns: 38% 62%; align-items: start;
+      background: #BFF4FF; box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
+    .metric-value { font-size: 40px; font-weight: 600; color: #111827; }
+    .metric-line1 { font-size: 16px; font-weight: 600; color: #111827; }
+    .metric-line2 { font-size: 16px; font-weight: 600; color: #111827; margin-top: -4px; }
+    .metric-desc { font-size: 12px; line-height: 1.6; color: #6B7280; margin-top: 12px; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; }
+    .footer-line { height: 2px; flex: 1; background: #111827; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .center-separator { display: none; }
+      .content-grid { grid-template-columns: 1fr; padding: 12px 0 0 0; gap: 24px; }
+      .circle-decor { display: none; }
+      .title { font-size: 6.5vw; max-width: 100%; }
+      .metric-card { grid-template-columns: 1fr; gap: 8px; }
+      .metric-value { font-size: 8vw; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Center separator line ── -->
+    <div class="center-separator"></div>
+
+    <!-- ── Grid: 42% / 58% ── -->
+    <div class="content-grid">
+
+      <!-- Left column -->
+      <div>
+        <h1 class="title">Our Impact in Numbers</h1>
+        <div class="left-subtitle-row">
+          <div class="dot"></div>
+          <div class="left-title">Proven Results<br/>Through Data</div>
+        </div>
+        <p class="left-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Right column -->
+      <div class="right-col">
+        <div class="circle-decor"></div>
+        <div class="cards-col">
+          <!-- Card 1 -->
+          <div class="metric-card">
+            <div class="metric-value">10K+</div>
+            <div>
+              <div class="metric-line1">Total</div>
+              <div class="metric-line2">Users</div>
+              <p class="metric-desc">active users across multiple industries</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="metric-card">
+            <div class="metric-value">150%</div>
+            <div>
+              <div class="metric-line1">Revenue</div>
+              <div class="metric-line2">Growth</div>
+              <p class="metric-desc">year-over-year revenue growth</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="metric-card">
+            <div class="metric-value">95%</div>
+            <div>
+              <div class="metric-line1">Customer</div>
+              <div class="metric-line2">Satisfaction</div>
+              <p class="metric-desc">retention rate with an average rating of 4.8/5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

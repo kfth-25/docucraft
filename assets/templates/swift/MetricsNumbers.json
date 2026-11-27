@@ -1,0 +1,288 @@
+{
+  "layoutId": "metrics-numbers",
+  "name": "Metrics Numbers",
+  "description": "Swift: Our Impact in Numbers with three stacked metric cards",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Albert Sans"
+  },
+  "elements": [
+    {
+      "id": "bg_white",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "header_diamond",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 24,
+        "width": 12,
+        "height": 12
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    },
+    {
+      "id": "line_center_separator",
+      "type": "shape",
+      "position": {
+        "x": 640,
+        "y": 0,
+        "width": 1,
+        "height": 720
+      },
+      "style": {
+        "color": "#0000001A",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "txt_title",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 84,
+        "width": 420,
+        "height": 106
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 48,
+        "fontWeight": "semibold",
+        "lineHeight": 1.1
+      },
+      "content": "Our Impact in Numbers"
+    },
+    {
+      "id": "dot_left_circle",
+      "type": "shape",
+      "position": {
+        "x": 48,
+        "y": 240,
+        "width": 20,
+        "height": 20
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 9999
+      }
+    },
+    {
+      "id": "txt_leftTitle",
+      "type": "text",
+      "position": {
+        "x": 84,
+        "y": 236,
+        "width": 280,
+        "height": 48
+      },
+      "style": {
+        "color": "#111827",
+        "fontSize": 20,
+        "fontWeight": "semibold",
+        "lineHeight": 1.2
+      },
+      "content": "Proven Results\nThrough Data"
+    },
+    {
+      "id": "txt_leftBody",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 300,
+        "width": 360,
+        "height": 58
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 16,
+        "fontWeight": "normal",
+        "lineHeight": 1.8
+      },
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": "circle_decor",
+      "type": "decoration",
+      "position": {
+        "x": 1168,
+        "y": 80,
+        "width": 220,
+        "height": 220
+      },
+      "style": {
+        "color": "#00000033",
+        "borderRadius": 9999,
+        "borderColor": "#00000033",
+        "borderWidth": 1
+      }
+    },
+    {
+      "id": "metric_card_1",
+      "type": "card",
+      "position": {
+        "x": 563,
+        "y": 84,
+        "width": 669,
+        "height": 160
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 18,
+        "color": "#111827",
+        "fontSize": 16
+      },
+      "items": [
+        {
+          "value": "10K+",
+          "line1": "Total",
+          "line2": "Users",
+          "description": "active users across multiple industries"
+        }
+      ]
+    },
+    {
+      "id": "metric_card_2",
+      "type": "card",
+      "position": {
+        "x": 563,
+        "y": 268,
+        "width": 669,
+        "height": 160
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 18,
+        "color": "#111827",
+        "fontSize": 16
+      },
+      "items": [
+        {
+          "value": "150%",
+          "line1": "Revenue",
+          "line2": "Growth",
+          "description": "year-over-year revenue growth"
+        }
+      ]
+    },
+    {
+      "id": "metric_card_3",
+      "type": "card",
+      "position": {
+        "x": 563,
+        "y": 452,
+        "width": 669,
+        "height": 160
+      },
+      "style": {
+        "backgroundColor": "#BFF4FF",
+        "borderRadius": 18,
+        "color": "#111827",
+        "fontSize": 16
+      },
+      "items": [
+        {
+          "value": "95%",
+          "line1": "Customer",
+          "line2": "Satisfaction",
+          "description": "retention rate with an average rating of 4.8/5"
+        }
+      ]
+    },
+    {
+      "id": "txt_website",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 674,
+        "width": 140,
+        "height": 14
+      },
+      "style": {
+        "color": "#6B7280",
+        "fontSize": 14,
+        "fontWeight": "normal"
+      },
+      "content": "www.yourwebsite.com"
+    },
+    {
+      "id": "line_footer",
+      "type": "shape",
+      "position": {
+        "x": 212,
+        "y": 687,
+        "width": 1020,
+        "height": 2
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "diamond_bottom_right",
+      "type": "shape",
+      "position": {
+        "x": 1224,
+        "y": 660,
+        "width": 32,
+        "height": 32
+      },
+      "style": {
+        "color": "#111827",
+        "borderRadius": 0
+      },
+      "rotation": "45deg"
+    }
+  ],
+  "_schema": {
+    "title": "Our Impact in Numbers",
+    "leftTitle": "Proven Results\nThrough Data",
+    "leftBody": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "metrics": [
+      {
+        "value": "10K+",
+        "line1": "Total",
+        "line2": "Users",
+        "description": "active users across multiple industries"
+      },
+      {
+        "value": "150%",
+        "line1": "Revenue",
+        "line2": "Growth",
+        "description": "year-over-year revenue growth"
+      },
+      {
+        "value": "95%",
+        "line1": "Customer",
+        "line2": "Satisfaction",
+        "description": "retention rate with an average rating of 4.8/5"
+      }
+    ],
+    "website": "www.yourwebsite.com"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "primary-color": "#BFF4FF",
+    "primary-text": "#111827",
+    "card-color": "#FFFFFF",
+    "stroke": "#E5E7EB"
+  }
+}

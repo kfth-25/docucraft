@@ -1,0 +1,2346 @@
+﻿<!-- User Profile -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-ai-suggestion {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 175, 254, 0.3);
+        }
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary-fixed-dim": "#bac3ff",
+                      "surface-container": "#edeeef",
+                      "on-error-container": "#93000a",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#f8f9fa",
+                      "on-tertiary-fixed": "#021355",
+                      "inverse-primary": "#bac3ff",
+                      "on-secondary": "#ffffff",
+                      "outline": "#757684",
+                      "tertiary-fixed": "#dee1ff",
+                      "surface-container-low": "#f3f4f5",
+                      "on-error": "#ffffff",
+                      "surface": "#f8f9fa",
+                      "outline-variant": "#c5c5d4",
+                      "background": "#f8f9fa",
+                      "on-surface": "#191c1d",
+                      "on-tertiary-fixed-variant": "#354282",
+                      "primary-fixed": "#dee0ff",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#4355b9",
+                      "secondary-container": "#00affe",
+                      "on-tertiary-container": "#c9d0ff",
+                      "on-primary-container": "#cacfff",
+                      "on-secondary-container": "#003f5f",
+                      "secondary": "#006493",
+                      "on-secondary-fixed-variant": "#004b70",
+                      "inverse-surface": "#2e3132",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#b9c3ff",
+                      "surface-dim": "#d9dadb",
+                      "primary-container": "#3f51b5",
+                      "on-surface-variant": "#454652",
+                      "tertiary-container": "#495697",
+                      "on-background": "#191c1d",
+                      "surface-container-highest": "#e1e3e4",
+                      "primary": "#24389c",
+                      "inverse-on-surface": "#f0f1f2",
+                      "surface-container-high": "#e7e8e9",
+                      "error": "#ba1a1a",
+                      "surface-variant": "#e1e3e4",
+                      "secondary-fixed": "#cae6ff",
+                      "on-secondary-fixed": "#001e30",
+                      "on-primary-fixed-variant": "#293ca0",
+                      "secondary-fixed-dim": "#8dcdff",
+                      "on-primary-fixed": "#00105c",
+                      "tertiary": "#313e7e",
+                      "surface-container-lowest": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "stack-md": "16px",
+                      "gutter": "16px",
+                      "margin-tablet": "24px",
+                      "stack-lg": "32px",
+                      "margin-mobile": "16px",
+                      "stack-sm": "8px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-sm": ["Inter"],
+                      "title-lg": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "label-md": ["Geist"],
+                      "headline-lg": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                      "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                      "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-surface flex items-center justify-between px-margin-mobile h-16">
+<div class="flex items-center gap-4">
+<button class="hover:bg-surface-container-low transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary">KEKO</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a modern technology executive named Alex Keko. He has a friendly, intelligent expression, wearing a minimalist dark navy blazer over a light grey shirt. The lighting is soft and high-key, set against a pristine, slightly cool-toned architectural background. The overall aesthetic is clean, sophisticated, and conveys a 'Quiet Intelligence' brand identity with high-utility professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9DquOPS3Osc-CLyzulyqXhN2rxKb3Wrk0Q9bklsvgywCZnczlL-NBDbaOERmUe3hGvpSy7kVZvf2V1ErtuLBFQHb-CvXh7y9J6sHc8xnBaY24Ti3CrJ_tcKcr8FUosPxmaRiBn38mvLYOkYs1aVfjSQyUVGUEGKqki7uUUKRReB4Xshm3jHgy8oPgMQTu0EPTMF0r3taWORP75Y3oPq2FB7EFQ-qgY4_qnIf-J6mHu8kH6DFU_xhE"/>
+</div>
+</header>
+<main class="px-margin-mobile py-stack-lg flex flex-col gap-stack-lg max-w-2xl mx-auto">
+<!-- Profile Header Section -->
+<section class="flex flex-col items-center text-center gap-stack-md">
+<div class="relative">
+<div class="w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-primary to-secondary-container">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-surface bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Close up professional avatar of Alex Keko, a tech-forward professional. The lighting is crisp and modern, featuring subtle blue and indigo reflections that match the KEKO AI app branding. The background is a soft-focus minimalist office with clean glass surfaces and airy white space, emphasizing a reliable and smart professional persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNg1Iam9AEVfBq2bnLbLsvFGoPfcHs-syZmLV7j5Gg1hUW6VTY81GX1wDG0xsMrjHkbjk5H7GvbfiI3wuE1aiOfh2QeS9Odi9sEJf2mykvbnHumvH6I6ckA3RYH8P-7FQsVa_UyBHegXQ0aH6q_QXX82_7GUNstSUBugrW4uLamSBdz6FdtNiOsdSx8ILD2G9-QP3cAPEzIVPmHJnte5nezFT_2UIgFgxYn4tAV0pKFYumAPoLR2ht"/>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 bg-secondary-container text-on-secondary-container p-1 rounded-full border-2 border-surface shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Alex Keko</h2>
+<span class="font-label-md text-label-md px-3 py-1 bg-primary-container text-on-primary-container rounded-full inline-block self-center">Pro AI Plan</span>
+</div>
+</section>
+<!-- Statistical Summary (Bento-lite) -->
+<section class="grid grid-cols-3 gap-stack-sm">
+<div class="bg-surface-container-low p-stack-md rounded-xl flex flex-col items-center justify-center text-center">
+<span class="font-title-lg text-title-lg text-primary">128</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Docs</span>
+</div>
+<div class="bg-surface-container-low p-stack-md rounded-xl flex flex-col items-center justify-center text-center">
+<span class="font-title-lg text-title-lg text-primary">42</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Presentations</span>
+</div>
+<div class="bg-surface-container-low p-stack-md rounded-xl flex flex-col items-center justify-center text-center">
+<span class="font-title-lg text-title-lg text-primary">75%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Storage</span>
+</div>
+</section>
+<!-- AI Insights Tip (Special Component) -->
+<div class="glass-ai-suggestion p-stack-md rounded-xl flex items-start gap-4">
+<div class="bg-secondary-container/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div class="flex flex-col gap-1">
+<p class="font-body-md text-body-md font-bold text-on-surface">Smart Tip</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-tight">Your storage is 75% full. AI suggests archiving old project drafts to free up 4GB.</p>
+</div>
+</div>
+<!-- Settings List -->
+<section class="flex flex-col gap-1">
+<h3 class="font-label-md text-label-md text-primary font-bold px-1 mb-2">GENERAL SETTINGS</h3>
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low">
+<button class="flex items-center justify-between p-stack-md hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+<span class="font-body-lg text-body-lg text-on-surface">Account Information</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-active:translate-x-1">chevron_right</span>
+</button>
+<div class="h-px bg-outline-variant/30 mx-stack-md"></div>
+<button class="flex items-center justify-between p-stack-md hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+<span class="font-body-lg text-body-lg text-on-surface">Notification Settings</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-active:translate-x-1">chevron_right</span>
+</button>
+<div class="h-px bg-outline-variant/30 mx-stack-md"></div>
+<button class="flex items-center justify-between p-stack-md hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">security</span>
+<span class="font-body-lg text-body-lg text-on-surface">Privacy &amp; Security</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-active:translate-x-1">chevron_right</span>
+</button>
+<div class="h-px bg-outline-variant/30 mx-stack-md"></div>
+<button class="flex items-center justify-between p-stack-md hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">card_membership</span>
+<span class="font-body-lg text-body-lg text-on-surface">Subscription Plan</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-active:translate-x-1">chevron_right</span>
+</button>
+<div class="h-px bg-outline-variant/30 mx-stack-md"></div>
+<button class="flex items-center justify-between p-stack-md hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant">help_center</span>
+<span class="font-body-lg text-body-lg text-on-surface">Help &amp; Support</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform group-active:translate-x-1">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Log Out Button -->
+<button class="mt-4 w-full flex items-center justify-center gap-2 p-stack-md border border-error rounded-xl text-error font-body-lg text-body-lg hover:bg-error-container/20 active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined">logout</span>
+            Log Out
+        </button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-surface-container-low flex justify-around items-center h-20 px-gutter pb-safe rounded-t-xl shadow-sm">
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1 hover:text-primary transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1 hover:text-primary transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined">cloud</span>
+<span class="font-label-md text-label-md">Storage</span>
+</button>
+<!-- Profile Active State -->
+<button class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-5 py-1 active:scale-90 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</button>
+</nav>
+<script>
+        // Simple micro-interaction for storage card
+        const storageCard = document.querySelectorAll('section > div.bg-surface-container-low')[2];
+        if(storageCard) {
+            storageCard.addEventListener('click', () => {
+                storageCard.style.transition = 'transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                storageCard.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    storageCard.style.transform = 'scale(1)';
+                }, 150);
+            });
+        }
+    </script>
+</body></html>
+
+<!-- AI Editor & Collaboration -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO - AI Document Generator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 175, 254, 0.1);
+        }
+        .ai-gradient-btn {
+            background: linear-gradient(135deg, #24389c 0%, #00affe 100%);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .ai-gradient-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 175, 254, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c5c5d4;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#354282",
+                        "inverse-surface": "#2e3132",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface": "#f8f9fa",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#293ca0",
+                        "surface-container": "#edeeef",
+                        "surface-dim": "#d9dadb",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface-variant": "#454652",
+                        "background": "#f8f9fa",
+                        "surface-tint": "#4355b9",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#003f5f",
+                        "primary-fixed": "#dee0ff",
+                        "on-secondary-fixed": "#001e30",
+                        "secondary-container": "#00affe",
+                        "on-primary-fixed": "#00105c",
+                        "tertiary-fixed-dim": "#b9c3ff",
+                        "on-tertiary-container": "#c9d0ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "inverse-primary": "#bac3ff",
+                        "surface-container-high": "#e7e8e9",
+                        "outline-variant": "#c5c5d4",
+                        "outline": "#757684",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#313e7e",
+                        "tertiary-fixed": "#dee1ff",
+                        "tertiary-container": "#495697",
+                        "primary-container": "#3f51b5",
+                        "on-secondary-fixed-variant": "#004b70",
+                        "secondary-fixed-dim": "#8dcdff",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary": "#006493",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed": "#021355",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#24389c",
+                        "on-surface": "#191c1d",
+                        "primary-fixed-dim": "#bac3ff",
+                        "on-primary-container": "#cacfff",
+                        "on-background": "#191c1d",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed": "#cae6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "stack-md": "16px",
+                        "unit": "4px",
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "margin-tablet": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Geist"],
+                        "title-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                        "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body-md text-body-md overflow-hidden h-screen flex flex-col">
+<!-- Top App Bar -->
+<header class="flex justify-between items-center px-margin-mobile h-16 w-full bg-surface dark:bg-surface-dim z-50">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">menu</button>
+<h1 class="font-display-lg text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed tracking-tight">KEKO</h1>
+</div>
+<!-- Collaboration Avatars -->
+<div class="flex items-center gap-3">
+<div class="flex -space-x-3 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface border-2 border-primary" data-alt="Close-up studio portrait of a professional woman with a warm smile, wearing a charcoal blazer, soft natural lighting against a minimalist gray background, high-end corporate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxyqdbDk3jSDiboxAdkfI9yFnXa4bgm-_PQ4Dv-Z-hqFpmNWPuJFdv8nt-NzfK24SrzXfHB1FmOA3Hm7R1ZX9wsD67qVWx-OjnMf56fi5fhVC-mYx948cnU2zRpIMdkj4ifwJO9bKdiUoCTpJT14pM_W1mVY9wfvuMngpuk-8oeQqQm5-51mNJwFGWORaGYMF3PBy8Y3ZwCQL20xgjEikAP43fEcVMSWVfjWNXrYTywj-xzooCzwrT"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface border-2 border-secondary" data-alt="Close-up studio portrait of a creative man with glasses, wearing a simple white t-shirt, bright and airy lighting, minimalist aesthetic with a soft blue pastel background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4QjgJZQfwXTWcuheSvP1kfpjrsDrbRNqcWztJ47YZLHZpQHAzMJ-_-D-SDDrmF9AnSSsDfaiGCxuseg_3stc_O3Wbg1MxU1gko__MCI-3FuONINHLDWk59EwPix76pZJl0H_ilSDxs8FkR1DTr8-IbIOsUI21Q79o5uABt4w-S8651V0Gh9voA0PeEj9_EcbYLAuqoNrTIqvAhT7il4b68uVwdHtFRtWjfrS-5DBTrWcaqT2bab3"/>
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-surface-container-highest text-[10px] font-bold text-on-surface ring-2 ring-surface">+3</div>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant mx-1"></div>
+<button class="material-symbols-outlined text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">chat_bubble</button>
+<button class="material-symbols-outlined text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">history</button>
+<button class="material-symbols-outlined text-on-surface-variant p-2 rounded-full hover:bg-surface-container-high transition-colors">notifications</button>
+</div>
+</header>
+<main class="flex-1 flex overflow-hidden relative">
+<!-- Left Panel: AI Configuration (Step 1) -->
+<aside class="w-80 border-r border-outline-variant bg-surface-container-low p-6 flex flex-col gap-6 transition-transform duration-300" id="config-panel">
+<div>
+<h2 class="font-headline-sm text-headline-sm-mobile text-primary mb-2">Create New</h2>
+<p class="text-on-surface-variant font-label-md">Let's define your document's essence.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Project Topic</label>
+<input class="w-full bg-surface border-none rounded-xl focus:ring-2 focus:ring-secondary text-body-md py-3 px-4 shadow-sm" placeholder="e.g. Business Strategy 2024" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Document Type</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl border-2 border-primary bg-primary-container/10 text-primary">
+<span class="material-symbols-outlined">present_to_all</span>
+<span class="text-[10px] font-bold">SLIDES</span>
+</button>
+<button class="flex flex-col items-center gap-2 p-3 rounded-xl border border-outline-variant bg-surface hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant">description</span>
+<span class="text-[10px] font-bold text-on-surface-variant">DOCUMENT</span>
+</button>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Tone of Voice</label>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-medium cursor-pointer hover:bg-primary-container hover:text-white transition-colors">Professional</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-medium cursor-pointer hover:bg-primary-container hover:text-white transition-colors">Creative</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant text-[11px] font-medium cursor-pointer hover:bg-primary-container hover:text-white transition-colors">Concise</span>
+</div>
+</div>
+</div>
+<button class="ai-gradient-btn w-full py-4 rounded-xl text-white font-bold flex items-center justify-center gap-2 mt-auto" onclick="generateAI()">
+<span class="material-symbols-outlined">auto_awesome</span>
+                Generate Draft
+            </button>
+</aside>
+<!-- Center: Editor & Preview (Step 2) -->
+<section class="flex-1 bg-surface-dim p-8 flex flex-col items-center overflow-y-auto custom-scrollbar relative">
+<!-- Editor Toolbar -->
+<div class="glass-card flex items-center gap-1 p-1 rounded-full shadow-lg mb-8 sticky top-0 z-40">
+<button class="p-2 hover:bg-surface-container-high rounded-full material-symbols-outlined text-on-surface-variant">format_bold</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full material-symbols-outlined text-on-surface-variant">format_italic</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full material-symbols-outlined text-on-surface-variant">format_list_bulleted</button>
+<div class="h-6 w-[1px] bg-outline-variant mx-1"></div>
+<button class="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-full font-label-md hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">magic_button</span>
+                    AI Rewrite
+                </button>
+<div class="h-6 w-[1px] bg-outline-variant mx-1"></div>
+<button class="p-2 hover:bg-surface-container-high rounded-full material-symbols-outlined text-on-surface-variant">image</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full material-symbols-outlined text-on-surface-variant">table_chart</button>
+</div>
+<!-- Content Area (Slides / Pages) -->
+<div class="w-full max-w-4xl space-y-12 pb-32" id="editor-canvas">
+<!-- Slide 1 -->
+<div class="aspect-video w-full bg-white rounded-xl shadow-2xl p-12 relative overflow-hidden group">
+<div class="absolute top-4 left-4 text-[10px] text-outline font-bold">SLIDE 01 / 05</div>
+<div class="relative z-10 flex flex-col justify-center h-full">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6 border-l-4 border-secondary pl-6" contenteditable="true">Business Strategy 2024: The Digital Frontier</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed" contenteditable="true">
+                            In the upcoming fiscal year, our focus shifts towards hyper-automation and AI-driven customer experiences. We are set to redefine the market standards by leveraging data-centric decision-making frameworks.
+                        </p>
+</div>
+<!-- Background Visual Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10">
+<img class="w-full h-full object-cover" data-alt="Minimalist abstract high-tech pattern with glowing blue lines and geometric shapes on a white background, clean corporate aesthetic, soft depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6YV47pIcmkfR2Voyd_rvVnzCFJQJ3zq8g4N6br-gRjGRnJFdzSVJvHtZLMuNeQAbTEdQ9L4sbCTmb7Nj_iuKWGnpQGkEEE6DiKdADIEeIBqDX_UOjDu9OPy6UEks7li9Yh03FEAFuK0Q8nyxnjtxca1VLu8ZlqUZolJ7fB6IOrNO50LhsoJKDPqzffGuhnUg2kiGDGwWlUr6fu66pJZ8RE-BWdnhrpZMIsUXidsdm6ywz4ikwwX6t"/>
+</div>
+<button class="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity bg-primary-container text-white p-2 rounded-lg material-symbols-outlined">edit</button>
+</div>
+<!-- Slide 2 (Horizontal Layout) -->
+<div class="aspect-video w-full bg-white rounded-xl shadow-2xl overflow-hidden flex group">
+<div class="w-1/2 p-12 flex flex-col justify-center">
+<h3 class="font-title-lg text-title-lg text-secondary mb-4" contenteditable="true">Key Performance Indicators</h3>
+<ul class="space-y-4 text-on-surface-variant">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span contenteditable="true">45% increase in operational efficiency via AI tools.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span contenteditable="true">Reduction in CAC by 20% through smart targeting.</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span contenteditable="true">Employee satisfaction target: 90%+.</span>
+</li>
+</ul>
+</div>
+<div class="w-1/2 h-full bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Modern bright corporate office space with blurred background, focusing on a high-tech data dashboard displayed on a large screen, warm sunlight streaming through windows, 8k resolution professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu34ml2y6jev752Kg4mLuf4meD3Dn31dY2Zp6G_U5I4cu295DpSffr6g5tyG3mc9Dulkua99lb3ywIeqyTfXYbClvjx57pQwUp21B2R_5yTqQNiUh-GcCgSS7WAed6y0GolL2lN3TuKYubBId09wH2nNU3s5u_oTrLEy65BmMQ1Gwy679lQTKr913iKsAzKn_OcJ5HyGcrOqhkbd9qmXPzSYgMhQpCOwfp8YEwpB4iBZNHvEUyCS9v"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+</div>
+</div>
+<!-- AI Floating Suggestion Card -->
+<div class="fixed bottom-24 right-12 w-80 glass-card p-5 rounded-2xl shadow-xl animate-bounce-subtle z-50">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h4 class="font-bold text-xs uppercase tracking-widest text-primary">AI Suggestion</h4>
+</div>
+<p class="text-xs text-on-surface leading-relaxed mb-4 italic">"I've noticed your Slide 2 is text-heavy. Would you like me to convert those KPIs into a visual infographic chart?"</p>
+<div class="flex gap-2">
+<button class="flex-1 py-2 bg-primary text-white rounded-lg text-xs font-bold hover:scale-105 transition-transform">Visualize</button>
+<button class="px-3 py-2 bg-surface-container-highest text-on-surface rounded-lg text-xs font-bold material-symbols-outlined">close</button>
+</div>
+</div>
+</section>
+<!-- Right Side: Export & Actions -->
+<aside class="w-20 border-l border-outline-variant bg-surface flex flex-col items-center py-6 gap-8">
+<div class="flex flex-col gap-6">
+<button class="group relative">
+<div class="p-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">cloud_upload</span>
+</div>
+<span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-[10px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Save to Cloud</span>
+</button>
+<button class="group relative">
+<div class="p-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-secondary hover:text-white transition-all">
+<span class="material-symbols-outlined">picture_as_pdf</span>
+</div>
+<span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-[10px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Export PDF</span>
+</button>
+<button class="group relative">
+<div class="p-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-secondary-container hover:text-white transition-all">
+<span class="material-symbols-outlined">slideshow</span>
+</div>
+<span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-[10px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Export PPTX</span>
+</button>
+<button class="group relative">
+<div class="p-3 rounded-xl bg-surface-container-high text-on-surface hover:bg-on-tertiary-fixed-variant hover:text-white transition-all">
+<span class="material-symbols-outlined">article</span>
+</div>
+<span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-2 py-1 bg-inverse-surface text-inverse-on-surface text-[10px] rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Export DOCX</span>
+</button>
+</div>
+<div class="mt-auto flex flex-col gap-4">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-outline cursor-pointer hover:bg-outline-variant">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-outline cursor-pointer hover:bg-outline-variant">
+<span class="material-symbols-outlined text-[18px]">help</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- Bottom Navigation (Shared Component Integration) -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container dark:bg-inverse-surface rounded-t-xl shadow-sm md:hidden">
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-5 py-1" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1" href="#">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-label-md text-label-md">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1" href="#">
+<span class="material-symbols-outlined">cloud_queue</span>
+<span class="font-label-md text-label-md">Storage</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</a>
+</nav>
+<script>
+        function generateAI() {
+            const btn = event.currentTarget;
+            const originalHtml = btn.innerHTML;
+            btn.innerHTML = `
+                <svg class="animate-spin h-5 w-5 mr-3 text-white" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Processing...
+            `;
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHtml;
+                btn.disabled = false;
+                alert("AI Draft Generated Successfully! You can now edit the slides in the center canvas.");
+            }, 2000);
+        }
+
+        // Add bounce-subtle animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes bounce-subtle {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-10px); }
+            }
+            .animate-bounce-subtle {
+                animation: bounce-subtle 3s ease-in-out infinite;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body></html>
+
+<!-- Templates & Storage -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO - Templates &amp; Storage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#354282",
+                    "inverse-surface": "#2e3132",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#293ca0",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#454652",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#4355b9",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#003f5f",
+                    "primary-fixed": "#dee0ff",
+                    "on-secondary-fixed": "#001e30",
+                    "secondary-container": "#00affe",
+                    "on-primary-fixed": "#00105c",
+                    "tertiary-fixed-dim": "#b9c3ff",
+                    "on-tertiary-container": "#c9d0ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-primary": "#bac3ff",
+                    "surface-container-high": "#e7e8e9",
+                    "outline-variant": "#c5c5d4",
+                    "outline": "#757684",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#313e7e",
+                    "tertiary-fixed": "#dee1ff",
+                    "tertiary-container": "#495697",
+                    "primary-container": "#3f51b5",
+                    "on-secondary-fixed-variant": "#004b70",
+                    "secondary-fixed-dim": "#8dcdff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006493",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#021355",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#24389c",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#bac3ff",
+                    "on-primary-container": "#cacfff",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "margin-tablet": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Geist"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .active-tab { border-bottom: 2px solid #24389c; color: #24389c; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 175, 254, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-40 flex justify-between items-center px-margin-mobile h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 duration-100">menu</span>
+<h1 class="font-display-lg text-headline-lg-mobile font-bold text-primary tracking-tight">KEKO</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-[18px] text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Synced</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer active:scale-95 duration-100">notifications</span>
+</div>
+</header>
+<main class="px-margin-mobile pt-4">
+<!-- Search & Filter Section -->
+<section class="mb-stack-lg">
+<div class="relative flex items-center group">
+<span class="material-symbols-outlined absolute left-4 text-outline group-focus-within:text-secondary-container transition-colors">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-highest border-none rounded-xl focus:ring-2 focus:ring-secondary-container font-body-md text-body-md" placeholder="Search documents &amp; themes..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex gap-3 mt-4 overflow-x-auto no-scrollbar pb-2">
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">filter_list</span> All Files
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Date
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Type
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Shared
+                </button>
+</div>
+</section>
+<!-- Tab Navigation -->
+<div class="flex border-b border-outline-variant mb-6">
+<button class="flex-1 py-3 font-title-lg text-title-lg text-on-surface-variant border-b-2 border-transparent transition-all" id="btn-templates" onclick="switchTab('templates')">Templates</button>
+<button class="flex-1 py-3 font-title-lg text-title-lg text-primary border-b-2 border-primary transition-all" id="btn-storage" onclick="switchTab('storage')">Storage</button>
+</div>
+<!-- Templates View (Hidden by Default for this update) -->
+<div class="hidden space-y-stack-lg" id="view-templates">
+<div class="flex justify-between items-end">
+<h2 class="font-headline-sm text-headline-sm-mobile text-on-surface">Modern Themes</h2>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline">See all</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Template Card 1 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden hover:shadow-md transition-all cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Presentation preview" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZSyJudflN69f-eF8nc2azY0TuSoGebbpLHXtgWkIw18s9EnylnkUt2yYkNBrqAbxZ-8Va7ZzxvoZWk8-Sq-fP8cprjAITRKLKbeCnnQBzOWBE4XuYXLPDQO0eOE4z0tPs4R7MXvPP4VrwtzJojSFoHd6RjsOgfD1nPCwAk_UA06zYtuR7dtAo6VhYJwIZqpYy2444OWa14SXrKRsjscB0XULmO0KgFqdAYT95in4ZKmwdrB9MyrBN')">
+</div>
+<div class="p-3">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Visionary Deck</p>
+<p class="font-label-md text-[10px] text-outline">Presentation • 12 slides</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Storage View (Active by Default) -->
+<div class="space-y-6" id="view-storage">
+<!-- Storage Capacity Indicator -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm border border-outline-variant/30">
+<div class="flex justify-between items-center mb-2">
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Cloud Storage</h3>
+<span class="font-label-md text-[12px] text-primary font-semibold">24% Used</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden mb-2">
+<div class="h-full bg-primary rounded-full transition-all duration-1000" style="width: 24%"></div>
+</div>
+<p class="font-label-md text-[12px] text-on-surface-variant">12.4 GB of 50 GB used</p>
+</div>
+<!-- Folder Organization -->
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="font-headline-sm text-headline-sm-mobile text-on-surface">Folders</h2>
+<span class="material-symbols-outlined text-outline">more_horiz</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl border border-outline-variant/20 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">folder</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold truncate text-on-surface">Presentations</p>
+<p class="font-label-md text-[10px] text-outline">48 files</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl border border-outline-variant/20 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">folder</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold truncate text-on-surface">Documents</p>
+<p class="font-label-md text-[10px] text-outline">124 files</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl border border-outline-variant/20 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-secondary text-[24px]" style="font-variation-settings: 'FILL' 1;">group</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold truncate text-on-surface">Shared</p>
+<p class="font-label-md text-[10px] text-outline">12 folders</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-low rounded-xl border border-outline-variant/20 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-tertiary text-[24px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold truncate text-on-surface">Starred</p>
+<p class="font-label-md text-[10px] text-outline">15 files</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed File List -->
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="font-headline-sm text-headline-sm-mobile text-on-surface">Recent Files</h2>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-outline cursor-pointer">sort</span>
+<span class="material-symbols-outlined text-outline cursor-pointer">grid_view</span>
+</div>
+</div>
+<div class="space-y-3">
+<!-- File 1: PPTX -->
+<div class="flex items-center justify-between p-3 bg-surface rounded-2xl hover:bg-surface-container-low transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex items-center gap-4 flex-1 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden flex-shrink-0 flex items-center justify-center">
+<img alt="PPTX thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZSyJudflN69f-eF8nc2azY0TuSoGebbpLHXtgWkIw18s9EnylnkUt2yYkNBrqAbxZ-8Va7ZzxvoZWk8-Sq-fP8cprjAITRKLKbeCnnQBzOWBE4XuYXLPDQO0eOE4z0tPs4R7MXvPP4VrwtzJojSFoHd6RjsOgfD1nPCwAk_UA06zYtuR7dtAo6VhYJwIZqpYy2444OWa14SXrKRsjscB0XULmO0KgFqdAYT95in4ZKmwdrB9MyrBN"/>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-orange-500" style="font-variation-settings: 'FILL' 1;">present_to_all</span>
+<p class="font-body-md text-on-surface font-semibold truncate">Quarterly_Report_Q4.pptx</p>
+</div>
+<p class="font-label-md text-[12px] text-outline">Modified Oct 24 • 14.2 MB</p>
+</div>
+</div>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined text-outline">more_vert</span>
+</button>
+</div>
+<!-- File 2: DOCX -->
+<div class="flex items-center justify-between p-3 bg-surface rounded-2xl hover:bg-surface-container-low transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex items-center gap-4 flex-1 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden flex-shrink-0 flex items-center justify-center">
+<img alt="DOCX thumbnail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjDFNtLUj0IYir4nZj-6PryyZ49xZCZzUNNcHX3Dm26AAEoTGA-SHobhEmw80NEAteqRDU8spbCd1CS7KfQx2X0-xrf2Penlb42a17yPhckodh-llcc5Hv3hjHeHyZo8-EGdGA7ORgV1P1HNTBi8_xWrsJl1iC1y9omfiUtHF6wVgvMFR4BrNgiMCsXoA4G0jxC3H2pvXdLxTszHlKiloX6DviAz3sbXd138AykruG6bEoqRETCsJt"/>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-blue-500" style="font-variation-settings: 'FILL' 1;">description</span>
+<p class="font-body-md text-on-surface font-semibold truncate">Brand_Guidelines_v2.docx</p>
+</div>
+<p class="font-label-md text-[12px] text-outline">Modified yesterday • 5.1 MB</p>
+</div>
+</div>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined text-outline">more_vert</span>
+</button>
+</div>
+<!-- File 3: PDF -->
+<div class="flex items-center justify-between p-3 bg-surface rounded-2xl hover:bg-surface-container-low transition-all border border-transparent hover:border-outline-variant/30">
+<div class="flex items-center gap-4 flex-1 min-w-0">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-[32px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-red-500" style="font-variation-settings: 'FILL' 1;">picture_as_pdf</span>
+<p class="font-body-md text-on-surface font-semibold truncate">Contract_Project_Nebula.pdf</p>
+</div>
+<p class="font-label-md text-[12px] text-outline">Modified 2h ago • 1.8 MB</p>
+</div>
+</div>
+<button class="p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined text-outline">more_vert</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- FAB for Upload New Files -->
+<button class="fixed bottom-24 right-margin-mobile w-14 h-14 bg-primary text-on-primary rounded-[28px] shadow-lg flex items-center justify-center z-50 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[28px]">upload_file</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container dark:bg-inverse-surface rounded-t-xl shadow-sm">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#" id="nav-templates" onclick="switchTab('templates')">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-label-md text-label-md mt-1">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#" id="nav-storage" onclick="switchTab('storage')">
+<span class="material-symbols-outlined">cloud_queue</span>
+<span class="font-label-md text-label-md mt-1">Storage</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md mt-1">Profile</span>
+</a>
+</nav>
+<script>
+        function switchTab(tab) {
+            const templatesView = document.getElementById('view-templates');
+            const storageView = document.getElementById('view-storage');
+            const btnTemplates = document.getElementById('btn-templates');
+            const btnStorage = document.getElementById('btn-storage');
+            const navTemplates = document.getElementById('nav-templates');
+            const navStorage = document.getElementById('nav-storage');
+
+            const activeClassBottom = 'bg-primary-container text-on-primary-container rounded-full';
+            const inactiveClassBottom = 'text-on-surface-variant';
+
+            if (tab === 'templates') {
+                templatesView.classList.remove('hidden');
+                storageView.classList.add('hidden');
+                
+                btnTemplates.classList.add('text-primary', 'border-primary');
+                btnTemplates.classList.remove('text-on-surface-variant', 'border-transparent');
+                
+                btnStorage.classList.add('text-on-surface-variant', 'border-transparent');
+                btnStorage.classList.remove('text-primary', 'border-primary');
+
+                // Update bottom nav
+                navTemplates.className = `flex flex-col items-center justify-center ${activeClassBottom} px-5 py-1 transition-all active:scale-90 duration-200`;
+                navStorage.className = `flex flex-col items-center justify-center ${inactiveClassBottom} px-5 py-1 transition-all active:scale-90 duration-200`;
+            } else {
+                templatesView.classList.add('hidden');
+                storageView.classList.remove('hidden');
+                
+                btnStorage.classList.add('text-primary', 'border-primary');
+                btnStorage.classList.remove('text-on-surface-variant', 'border-transparent');
+                
+                btnTemplates.classList.add('text-on-surface-variant', 'border-transparent');
+                btnTemplates.classList.remove('text-primary', 'border-primary');
+
+                // Update bottom nav
+                navStorage.className = `flex flex-col items-center justify-center ${activeClassBottom} px-5 py-1 transition-all active:scale-90 duration-200`;
+                navTemplates.className = `flex flex-col items-center justify-center ${inactiveClassBottom} px-5 py-1 transition-all active:scale-90 duration-200`;
+            }
+        }
+
+        // Initialize with Storage view active per request
+        window.onload = () => {
+            switchTab('storage');
+        };
+    </script>
+</body></html>
+
+<!-- Login & Welcome -->
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO - Login &amp; Sign Up</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#354282",
+                    "inverse-surface": "#2e3132",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#293ca0",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#454652",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#4355b9",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#003f5f",
+                    "primary-fixed": "#dee0ff",
+                    "on-secondary-fixed": "#001e30",
+                    "secondary-container": "#00affe",
+                    "on-primary-fixed": "#00105c",
+                    "tertiary-fixed-dim": "#b9c3ff",
+                    "on-tertiary-container": "#c9d0ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-primary": "#bac3ff",
+                    "surface-container-high": "#e7e8e9",
+                    "outline-variant": "#c5c5d4",
+                    "outline": "#757684",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#313e7e",
+                    "tertiary-fixed": "#dee1ff",
+                    "tertiary-container": "#495697",
+                    "primary-container": "#3f51b5",
+                    "on-secondary-fixed-variant": "#004b70",
+                    "secondary-fixed-dim": "#8dcdff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006493",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#021355",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#24389c",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#bac3ff",
+                    "on-primary-container": "#cacfff",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "margin-tablet": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Geist"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Inter', sans-serif;
+        }
+        .ai-pattern {
+            background-image: radial-gradient(#24389c22 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        .transition-all-custom {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col justify-center items-center overflow-x-hidden relative">
+<!-- Subtle AI-inspired Background Pattern -->
+<div class="fixed inset-0 ai-pattern opacity-40 z-0 pointer-events-none"></div>
+<div class="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-secondary-container/10 blur-[120px] z-0 pointer-events-none"></div>
+<div class="fixed bottom-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-primary-container/10 blur-[120px] z-0 pointer-events-none"></div>
+<main class="w-full max-w-md px-margin-mobile z-10 py-stack-lg">
+<!-- Welcome Header -->
+<header class="flex flex-col items-center mb-stack-lg animate-in fade-in slide-in-from-bottom-4 duration-700">
+<div class="w-16 h-16 bg-primary-container rounded-xl flex items-center justify-center mb-4 shadow-sm">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">
+                    bolt
+                </span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile text-primary tracking-tight mb-2">KEKO</h1>
+<p class="font-body-md text-on-surface-variant text-center px-8">Intelligent productivity for the next generation of creators.</p>
+</header>
+<!-- Form Container -->
+<div class="glass-card p-6 md:p-8 rounded-[24px] shadow-sm border border-outline-variant/30 transition-all-custom">
+<!-- Tab Toggle (Minimalist) -->
+<div class="flex bg-surface-container-low p-1 rounded-xl mb-8">
+<button class="flex-1 py-2 text-label-md font-label-md rounded-lg bg-surface-container-highest text-on-surface shadow-sm transition-all duration-200" id="loginTab">Login</button>
+<button class="flex-1 py-2 text-label-md font-label-md rounded-lg text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-200" id="signupTab">Sign Up</button>
+</div>
+<!-- Login View -->
+<div class="space-y-stack-md" id="loginForm">
+<div class="space-y-2">
+<label class="block font-label-md text-on-surface-variant ml-1">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">mail</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface font-body-md transition-all" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center ml-1">
+<label class="block font-label-md text-on-surface-variant">Password</label>
+<a class="font-label-md text-primary hover:underline" href="#">Forgot Password?</a>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">lock</span>
+<input class="w-full pl-12 pr-12 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface font-body-md transition-all" placeholder="••••••••" type="password"/>
+<button class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline-variant hover:text-on-surface transition-colors">visibility</button>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-title-lg hover:bg-primary/90 active:scale-[0.98] transition-all-custom shadow-md mt-4">
+                    Login
+                </button>
+</div>
+<!-- Sign Up View (Hidden by default) -->
+<div class="hidden space-y-stack-md" id="signupForm">
+<div class="space-y-2">
+<label class="block font-label-md text-on-surface-variant ml-1">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">person</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface font-body-md transition-all" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label-md text-on-surface-variant ml-1">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">mail</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface font-body-md transition-all" placeholder="name@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label-md text-on-surface-variant ml-1">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">lock</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border border-outline-variant rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none text-on-surface font-body-md transition-all" placeholder="Create a password" type="password"/>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-title-lg hover:bg-primary/90 active:scale-[0.98] transition-all-custom shadow-md mt-4">
+                    Create Account
+                </button>
+</div>
+<!-- Divider -->
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant/30"></div>
+</div>
+<div class="relative flex justify-center text-label-md">
+<span class="bg-[#f8f9fa] px-4 text-on-surface-variant uppercase tracking-widest text-[10px]">Or continue with</span>
+</div>
+</div>
+<!-- Social Logins -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-3 py-3 border border-outline-variant rounded-xl font-label-md text-on-surface hover:bg-surface-container-high active:scale-95 transition-all-custom">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCubQirftM0A4HOEGlgA6lABgtbnqlbhz9JyFqaT-yj3Kc5oSBZjNklQdkR4x8G-g2JwoKxUAC7exIrpKaKzEA2b51tXd1WwQObHZAYuFGXVZdA3bTY0ogJ1TeatvMxlR_9H5tusX8DAqheozEcCMIcDcJAugEPudeqLwDIxwWK7fciGYNhXQi0ojAHdllHeFj1_ah5MIIjU5AKju01nAp6K226cxpii3zEM4fuDZM2JqbfzU1Ur5Sc"/>
+<span>Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 py-3 border border-outline-variant rounded-xl font-label-md text-on-surface hover:bg-surface-container-high active:scale-95 transition-all-custom">
+<img alt="Microsoft" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMjpsDNThK5KdvkzYEXHBPQJHMhDxB2ycZlh4F-qRE_B6WlTlI48Shg9OXQSJPzIUfIMdmOWbnGFAC4cmASUffJ3YmyLcP3F_BiAK9hP6rZOrUUQE9vmJQQ8o9sIb4FcavchgN5SEbvjl0endaSgkUcwxedI9aGIGDgHGRO22eaYL_l8o_FKdoIUzxIy3D4QPvBJWSOqDZE7_e0T7q9Zo__lf_WblSxPtTyCh9TODq79ASNZUG-Otz"/>
+<span>Microsoft</span>
+</button>
+</div>
+</div>
+<!-- Footer Help -->
+<footer class="mt-8 text-center space-y-2">
+<p class="font-body-md text-on-surface-variant">New to KEKO? <button class="text-primary font-semibold hover:underline" id="signupTrigger">Explore templates first</button></p>
+<div class="flex justify-center gap-4 text-label-md text-outline">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<span class="w-1 h-1 bg-outline-variant rounded-full self-center"></span>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</footer>
+</main>
+<!-- Success Modal Interaction Suggestion (JS) -->
+<script>
+        const loginTab = document.getElementById('loginTab');
+        const signupTab = document.getElementById('signupTab');
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+
+        function toggleState(isSignup) {
+            if(isSignup) {
+                signupTab.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+                signupTab.classList.remove('text-on-surface-variant');
+                loginTab.classList.remove('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+                loginTab.classList.add('text-on-surface-variant');
+                
+                loginForm.classList.add('hidden');
+                signupForm.classList.remove('hidden');
+                signupForm.classList.add('animate-in', 'fade-in', 'slide-in-from-right-4', 'duration-300');
+            } else {
+                loginTab.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+                loginTab.classList.remove('text-on-surface-variant');
+                signupTab.classList.remove('bg-surface-container-highest', 'text-on-surface', 'shadow-sm');
+                signupTab.classList.add('text-on-surface-variant');
+                
+                signupForm.classList.add('hidden');
+                loginForm.classList.remove('hidden');
+                loginForm.classList.add('animate-in', 'fade-in', 'slide-in-from-left-4', 'duration-300');
+            }
+        }
+
+        loginTab.addEventListener('click', () => toggleState(false));
+        signupTab.addEventListener('click', () => toggleState(true));
+
+        // Interaction: Hover effect on the card based on mouse position
+        const card = document.querySelector('.glass-card');
+        document.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Subtle tilt or glow follow could go here
+            // card.style.setProperty('--mouse-x', `${x}px`);
+            // card.style.setProperty('--mouse-y', `${y}px`);
+        });
+    </script>
+</body></html>
+
+<!-- AI Dashboard -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#354282",
+                    "inverse-surface": "#2e3132",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#293ca0",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#454652",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#4355b9",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#003f5f",
+                    "primary-fixed": "#dee0ff",
+                    "on-secondary-fixed": "#001e30",
+                    "secondary-container": "#00affe",
+                    "on-primary-fixed": "#00105c",
+                    "tertiary-fixed-dim": "#b9c3ff",
+                    "on-tertiary-container": "#c9d0ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-primary": "#bac3ff",
+                    "surface-container-high": "#e7e8e9",
+                    "outline-variant": "#c5c5d4",
+                    "outline": "#757684",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#313e7e",
+                    "tertiary-fixed": "#dee1ff",
+                    "tertiary-container": "#495697",
+                    "primary-container": "#3f51b5",
+                    "on-secondary-fixed-variant": "#004b70",
+                    "secondary-fixed-dim": "#8dcdff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006493",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#021355",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#24389c",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#bac3ff",
+                    "on-primary-container": "#cacfff",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "margin-tablet": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Geist"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f8f9fa;
+            color: #191c1d;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .ai-gradient-button {
+            background: linear-gradient(135deg, #24389c 0%, #00affe 100%);
+        }
+        .ai-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .7; }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 175, 254, 0.1);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col pb-24">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim flex justify-between items-center px-margin-mobile h-16 w-full docked full-width top-0 sticky z-40">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-100">
+            menu
+        </button>
+<span class="font-display-lg text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed tracking-tight">KEKO</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-100">
+            notifications
+        </button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzmRyMjuIR_JFKCrr8nC-76EgDQ2PeCPb93eY3E3yT2a2jIjd1NSYyeHLuOCuAxfS1P3rdglLbpLU4vmlE1MbdIWBh2n5Zf1PhqaFujROq6ibNYt_856yum33Y26pXtZXaIE8aRtD7SX1RNZDFpgScbz5Dwf8I0fkOaAr8Gyby8NUfKKVS_jmcqocTjSG7tjDWnUYMzw7sFpBWPd81fIqDI8y8XxO5c9tDey_G2fOL-DE0w6iOmGjg"/>
+</div>
+</div>
+</header>
+<main class="flex-grow px-margin-mobile pt-stack-md flex flex-col gap-stack-lg">
+<!-- Search/AI Prompt Section -->
+<section class="flex flex-col gap-stack-sm">
+<h1 class="font-headline-sm text-headline-sm-mobile text-on-surface">Good morning, Designer</h1>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary ai-pulse">auto_awesome</span>
+</div>
+<input class="w-full h-16 pl-12 pr-32 bg-surface-container-lowest border-2 border-transparent focus:border-primary-container rounded-2xl shadow-lg focus:ring-0 font-body-lg text-body-lg text-on-surface placeholder-outline transition-all" placeholder="What do you want to create today?" type="text"/>
+<button class="absolute inset-y-2 right-2 px-6 ai-gradient-button text-white rounded-xl font-label-md text-label-md flex items-center gap-2 active:scale-95 transition-transform">
+                Generate
+            </button>
+</div>
+</section>
+<!-- AI Suggestion Chip Bar -->
+<section class="flex gap-stack-sm overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">lightbulb</span>
+<span class="font-label-md text-label-md text-on-surface">Summarize meeting notes</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">auto_stories</span>
+<span class="font-label-md text-label-md text-on-surface">Create pitch deck</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">edit_note</span>
+<span class="font-label-md text-label-md text-on-surface">Polish technical spec</span>
+</button>
+</section>
+<!-- Quick Actions -->
+<section class="flex flex-col gap-stack-md">
+<h3 class="font-title-lg text-title-lg text-on-surface">Quick Actions</h3>
+<div class="grid grid-cols-4 gap-4">
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">upload_file</span>
+</div>
+<span class="font-label-md text-[10px] text-center text-on-surface-variant">Import</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">magic_button</span>
+</div>
+<span class="font-label-md text-[10px] text-center text-on-surface-variant">AI Remaster</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">translate</span>
+</div>
+<span class="font-label-md text-[10px] text-center text-on-surface-variant">Translate</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high text-on-surface flex items-center justify-center group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</div>
+<span class="font-label-md text-[10px] text-center text-on-surface-variant">More</span>
+</button>
+</div>
+</section>
+<!-- Featured Templates Carousel -->
+<section class="flex flex-col gap-stack-md">
+<div class="flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg text-on-surface">Featured Templates</h3>
+<button class="text-primary font-label-md text-label-md hover:underline">See all</button>
+</div>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<!-- Template 1 -->
+<div class="flex-shrink-0 w-64 flex flex-col gap-2">
+<div class="h-36 rounded-xl bg-surface-container-highest overflow-hidden relative group">
+<img alt="Corporate Pitch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjAtjGfZKgU0NIt6ykoF53xievmQbG6Eod3TKEAlY06PEXaRg-UP4jd-Fk77PhkhPCncm5Z08U9hlOI-29VB95SBvjjhJ1udgCMcCr16q4yCKa7LWon1_oQybnTCNhG-As_KIN0XkynEoxPRMX76s1Jaa_DXcUJ8QAdWtA53Lt3KGAHhChof9z5xw8l3Ja0ToLCT26XatGhgIz6aN7UUyOB8c_fHt4Ilow3pdLHeDFfkqYBNgMQZSF"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+<span class="absolute top-2 right-2 px-2 py-1 rounded bg-primary text-white text-[10px] font-bold">POPULAR</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md font-semibold text-on-surface">Corporate Pitch Deck</span>
+<span class="font-label-md text-on-surface-variant">12 Slides • Modern</span>
+</div>
+</div>
+<!-- Template 2 -->
+<div class="flex-shrink-0 w-64 flex flex-col gap-2">
+<div class="h-36 rounded-xl bg-surface-container-highest overflow-hidden relative group">
+<img alt="Data Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxteYyaYKHEGJf8_BtBLoa5kr5a-kM4r592nLO5UesEW9gmDiiZc_H0BvD3GlWrGb2nI0yGsUERVvBtxhA4hil3u2_ei23ClA31_TdHPhTu3tIVqoEj54DIkDBvTcVuhyCe-jmhxiNbrjKgR1GxpX4cl_H_LlbXHkXMPcypw9yE8wD774ao71zvdd1lg61BMkHEPpvmdml3_RGfHfxFtxybIAfRKcFzKDs9RLm2C65Wy0iSX86c_tx"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md font-semibold text-on-surface">Annual Report 2024</span>
+<span class="font-label-md text-on-surface-variant">8 Pages • Minimal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Projects (Enhanced) -->
+<section class="flex flex-col gap-stack-md mb-8">
+<div class="flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg text-on-surface">Recent Projects</h3>
+<button class="text-primary font-label-md text-label-md hover:underline">View all</button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Project Item 1 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:bg-surface-container transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl">slideshow</span>
+<div class="absolute inset-0 bg-primary/5"></div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-start">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Q3 Strategy Proposal</h4>
+<span class="font-label-md text-[10px] bg-primary-container text-white px-2 py-0.5 rounded">V2.4</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant">
+<span class="font-body-md text-body-md">Presentation</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">4.2 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">2h ago</span>
+</div>
+</div>
+<button class="material-symbols-outlined text-outline p-2 hover:bg-surface-container-highest rounded-full transition-colors">more_vert</button>
+</div>
+<!-- Project Item 2 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:bg-surface-container transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl">article</span>
+<div class="absolute inset-0 bg-secondary/5"></div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-start">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Project Phoenix Roadmap</h4>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant">
+<span class="font-body-md text-body-md">Document</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">1.8 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">5h ago</span>
+</div>
+</div>
+<button class="material-symbols-outlined text-outline p-2 hover:bg-surface-container-highest rounded-full transition-colors">more_vert</button>
+</div>
+<!-- Project Item 3 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low border border-outline-variant/30 rounded-2xl hover:bg-surface-container transition-all cursor-pointer group shadow-sm hover:shadow-md">
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary relative overflow-hidden">
+<span class="material-symbols-outlined text-3xl">analytics</span>
+<div class="absolute inset-0 bg-tertiary/5"></div>
+</div>
+<div class="flex-grow min-w-0">
+<div class="flex justify-between items-start">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface truncate">Annual Report Analysis</h4>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant">
+<span class="font-body-md text-body-md">Presentation</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">12.5 MB</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-body-md text-body-md">Yesterday</span>
+</div>
+</div>
+<button class="material-symbols-outlined text-outline p-2 hover:bg-surface-container-highest rounded-full transition-colors">more_vert</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container/95 backdrop-blur-md border-t border-outline-variant/30 dark:bg-inverse-surface rounded-t-2xl">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-5 py-1 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<!-- Templates -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 rounded-full transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-label-md text-label-md">Templates</span>
+</a>
+<!-- Storage -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 rounded-full transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">cloud_queue</span>
+<span class="font-label-md text-label-md">Storage</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 rounded-full transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</a>
+</nav>
+<!-- Contextual FAB -->
+<button class="fixed bottom-24 right-6 w-16 h-16 bg-primary text-white rounded-2xl shadow-xl flex items-center justify-center active:scale-90 transition-transform z-40">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<script>
+    // Micro-interactions for input focus
+    const searchInput = document.querySelector('input[type="text"]');
+    const searchContainer = searchInput.parentElement;
+    
+    searchInput.addEventListener('focus', () => {
+        searchContainer.classList.add('scale-[1.01]');
+        searchContainer.querySelector('.ai-pulse').classList.remove('ai-pulse');
+    });
+    
+    searchInput.addEventListener('blur', () => {
+        searchContainer.classList.remove('scale-[1.01]');
+        searchContainer.querySelector('span').classList.add('ai-pulse');
+    });
+
+    // Handle scroll shadow for header
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 10) {
+            header.classList.add('shadow-sm', 'border-b', 'border-outline-variant/20');
+        } else {
+            header.classList.remove('shadow-sm', 'border-b', 'border-outline-variant/20');
+        }
+    });
+</script>
+</body></html>
+
+<!-- Templates & Storage -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO - Templates &amp; Storage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#354282",
+                    "inverse-surface": "#2e3132",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#293ca0",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#454652",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#4355b9",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#003f5f",
+                    "primary-fixed": "#dee0ff",
+                    "on-secondary-fixed": "#001e30",
+                    "secondary-container": "#00affe",
+                    "on-primary-fixed": "#00105c",
+                    "tertiary-fixed-dim": "#b9c3ff",
+                    "on-tertiary-container": "#c9d0ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-primary": "#bac3ff",
+                    "surface-container-high": "#e7e8e9",
+                    "outline-variant": "#c5c5d4",
+                    "outline": "#757684",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#313e7e",
+                    "tertiary-fixed": "#dee1ff",
+                    "tertiary-container": "#495697",
+                    "primary-container": "#3f51b5",
+                    "on-secondary-fixed-variant": "#004b70",
+                    "secondary-fixed-dim": "#8dcdff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006493",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#021355",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#24389c",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#bac3ff",
+                    "on-primary-container": "#cacfff",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "margin-tablet": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Geist"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .active-tab { border-bottom: 2px solid #24389c; color: #24389c; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 175, 254, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-24">
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-40 flex justify-between items-center px-margin-mobile h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 duration-100">menu</span>
+<h1 class="font-display-lg text-headline-lg-mobile font-bold text-primary tracking-tight">KEKO</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-[18px] text-secondary animate-pulse" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Synced</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer active:scale-95 duration-100">notifications</span>
+</div>
+</header>
+<main class="px-margin-mobile pt-4">
+<!-- Search & Filter Section -->
+<section class="mb-stack-lg">
+<div class="relative flex items-center group">
+<span class="material-symbols-outlined absolute left-4 text-outline group-focus-within:text-secondary-container transition-colors">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-highest border-none rounded-xl focus:ring-2 focus:ring-secondary-container font-body-md text-body-md" placeholder="Search documents &amp; themes..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex gap-3 mt-4 overflow-x-auto no-scrollbar pb-2">
+<button class="flex items-center gap-2 px-4 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md whitespace-nowrap active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">filter_list</span> All Files
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Date
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Type
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full font-label-md text-label-md whitespace-nowrap hover:bg-surface-variant transition-colors">
+                    Shared
+                </button>
+</div>
+</section>
+<!-- Tab Navigation -->
+<div class="flex border-b border-outline-variant mb-6">
+<button class="flex-1 py-3 font-title-lg text-title-lg text-primary border-b-2 border-primary transition-all" id="btn-templates" onclick="switchTab('templates')">Templates</button>
+<button class="flex-1 py-3 font-title-lg text-title-lg text-on-surface-variant border-b-2 border-transparent transition-all" id="btn-storage" onclick="switchTab('storage')">Storage</button>
+</div>
+<!-- Templates View -->
+<div class="space-y-stack-lg" id="view-templates">
+<div class="flex justify-between items-end">
+<h2 class="font-headline-sm text-headline-sm-mobile text-on-surface">Modern Themes</h2>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline">See all</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Template Card 1 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden hover:shadow-md transition-all cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional presentation template preview featuring minimalist geometric layouts in indigo and crisp white. High-end modern UI design for business decks with clean sans-serif typography and plenty of negative space. The mood is corporate, reliable, and sophisticated, reflecting a premium productivity tool ecosystem." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZSyJudflN69f-eF8nc2azY0TuSoGebbpLHXtgWkIw18s9EnylnkUt2yYkNBrqAbxZ-8Va7ZzxvoZWk8-Sq-fP8cprjAITRKLKbeCnnQBzOWBE4XuYXLPDQO0eOE4z0tPs4R7MXvPP4VrwtzJojSFoHd6RjsOgfD1nPCwAk_UA06zYtuR7dtAo6VhYJwIZqpYy2444OWa14SXrKRsjscB0XULmO0KgFqdAYT95in4ZKmwdrB9MyrBN')">
+</div>
+<div class="p-3">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Visionary Deck</p>
+<p class="font-label-md text-[10px] text-outline">Presentation • 12 slides</p>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary/90 text-white p-1 rounded-full"><span class="material-symbols-outlined text-[18px]">add</span></div>
+</div>
+</div>
+<!-- Template Card 2 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden hover:shadow-md transition-all cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A clean document template preview for creative proposals, showing a structured layout with elegant headers and subtle secondary blue accents. Minimalist aesthetic with high-quality spacing and a sophisticated editorial feel. Soft natural lighting suggests a modern home office environment, creating an atmosphere of calm focus and professional intelligence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjDFNtLUj0IYir4nZj-6PryyZ49xZCZzUNNcHX3Dm26AAEoTGA-SHobhEmw80NEAteqRDU8spbCd1CS7KfQx2X0-xrf2Penlb42a17yPhckodh-llcc5Hv3hjHeHyZo8-EGdGA7ORgV1P1HNTBi8_xWrsJl1iC1y9omfiUtHF6wVgvMFR4BrNgiMCsXoA4G0jxC3H2pvXdLxTszHlKiloX6DviAz3sbXd138AykruG6bEoqRETCsJt')">
+</div>
+<div class="p-3">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Creative Brief</p>
+<p class="font-label-md text-[10px] text-outline">Document • 4 pages</p>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary/90 text-white p-1 rounded-full"><span class="material-symbols-outlined text-[18px]">add</span></div>
+</div>
+</div>
+<!-- Template Card 3 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden hover:shadow-md transition-all cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A modern data visualization report template featuring sleek dark mode elements with vibrant electric blue highlights. Circular charts and line graphs are displayed with precision, using a grid-based minimalist design. The style is tech-forward and analytical, perfect for high-growth startups and intelligence platforms in a productivity setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMkFeqpuFun4JfB2Q0gplFd2_6FIjgR7QknrFQScL3hMwVSu1xVmI7iUpOgQrawavA2D-CT0-KqA3KWEjxcupym0gOHWLPZUBV5yFEDZ-ElRVTkvlHlx-evRvjlyXfEq9zcOsC-gj5u9JUWHeet1s4Q8LjJTE_443l7DlSPPZtknCn1Z-vYFd_pV7ahreBC8C5vDfE6m3pfyEsRXafwhY0WIxb4Yi-TXGTwA6cl7I0RT5daxunH96N')">
+</div>
+<div class="p-3">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Data Insight</p>
+<p class="font-label-md text-[10px] text-outline">Report • 8 pages</p>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary/90 text-white p-1 rounded-full"><span class="material-symbols-outlined text-[18px]">add</span></div>
+</div>
+</div>
+<!-- Template Card 4 -->
+<div class="group relative bg-surface-container-low rounded-xl overflow-hidden hover:shadow-md transition-all cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A minimalist resume or CV template featuring a sophisticated two-column layout. It uses a palette of soft greys and deep indigo for headings, emphasizing a professional yet approachable aesthetic. The lighting is bright and even, highlighting the clean typography and structured arrangement. Ideal for high-level professional branding within a modern AI-powered suite." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPB2x897oDm_4SgNKlN6o688ia4usGECJz_JZV1FTDHyg_ZlpHeT3a5Qbh7OhtpsSmJ0Luxn6pOUC7a8l32WLufpuMxzEq2_SSzosOThvQfDRC0yqeKN3WCmqZCQ2EUffPhJrmu89j5wUZQ60yd9EDc4y7n9zgB0_4zEgeEOavhF8-nwD286WtxqBcl1XbImMCq_LiU-t0uP4DTv1a3dRY4eOR12OHXaT_nloXUT41FsrJ3aYDfGWv')">
+</div>
+<div class="p-3">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Executive CV</p>
+<p class="font-label-md text-[10px] text-outline">Resume • 2 pages</p>
+</div>
+<div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-primary/90 text-white p-1 rounded-full"><span class="material-symbols-outlined text-[18px]">add</span></div>
+</div>
+</div>
+</div>
+<!-- AI Suggestion Glass Card -->
+<div class="glass-card p-5 rounded-2xl mt-8 flex gap-4 items-start">
+<div class="bg-secondary-container/20 p-3 rounded-xl">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="flex-1">
+<h3 class="font-label-md text-label-md font-bold text-on-secondary-container">AI Recommendation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug">Based on your recent 'Project Nebula' documents, we suggest the <span class="font-semibold">Future Tech</span> template for your next report.</p>
+<button class="mt-3 px-4 py-2 bg-primary text-on-primary rounded-lg font-label-md text-label-md active:scale-95 duration-200">View Template</button>
+</div>
+</div>
+</div>
+<!-- Storage View (Hidden by Default) -->
+<div class="hidden space-y-4" id="view-storage">
+<div class="flex items-center gap-2 mb-2 px-2">
+<span class="material-symbols-outlined text-outline text-[18px]">folder_open</span>
+<p class="font-label-md text-label-md text-outline">My Drive &gt; Documents</p>
+</div>
+<!-- Folders -->
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-3 p-4 bg-surface-container rounded-2xl hover:bg-surface-variant transition-colors cursor-pointer border border-transparent hover:border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">folder</span>
+<span class="font-label-md text-label-md font-semibold truncate">Work Projects</span>
+</div>
+<div class="flex items-center gap-3 p-4 bg-surface-container rounded-2xl hover:bg-surface-variant transition-colors cursor-pointer border border-transparent hover:border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">folder</span>
+<span class="font-label-md text-label-md font-semibold truncate">Personal</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm-mobile text-on-surface mb-2">Recent Files</h2>
+<!-- File List -->
+<div class="space-y-1">
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-low rounded-xl transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-secondary-container/10 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary">description</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">Q3 Marketing Plan.pdf</p>
+<p class="font-label-md text-label-md text-outline">Modified 2h ago • 4.2 MB</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-low rounded-xl transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-tertiary-container/10 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-tertiary">present_to_all</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">Product Roadmap v2</p>
+<p class="font-label-md text-label-md text-outline">Modified yesterday • 12.8 MB</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-low rounded-xl transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-primary-container/10 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary">table_chart</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">Budget_Forecast_2024</p>
+<p class="font-label-md text-label-md text-outline">Modified Dec 12 • 840 KB</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container-low rounded-xl transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-secondary-container/10 flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary">image</span>
+</div>
+<div>
+<p class="font-body-lg text-body-lg text-on-surface font-medium">Brand_Assets_Hero.png</p>
+<p class="font-label-md text-label-md text-outline">Modified Dec 10 • 15.5 MB</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary">more_vert</span>
+</div>
+</div>
+</div>
+</main>
+<!-- FAB for Create -->
+<button class="fixed bottom-24 right-margin-mobile w-14 h-14 bg-primary text-on-primary rounded-[28px] shadow-lg flex items-center justify-center z-50 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container dark:bg-inverse-surface rounded-t-xl shadow-sm">
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#" id="nav-templates" onclick="switchTab('templates')">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-label-md text-label-md mt-1">Templates</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#" id="nav-storage" onclick="switchTab('storage')">
+<span class="material-symbols-outlined">cloud_queue</span>
+<span class="font-label-md text-label-md mt-1">Storage</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md mt-1">Profile</span>
+</a>
+</nav>
+<script>
+        function switchTab(tab) {
+            const templatesView = document.getElementById('view-templates');
+            const storageView = document.getElementById('view-storage');
+            const btnTemplates = document.getElementById('btn-templates');
+            const btnStorage = document.getElementById('btn-storage');
+            const navTemplates = document.getElementById('nav-templates');
+            const navStorage = document.getElementById('nav-storage');
+
+            const activeClass = 'bg-primary-container text-on-primary-container rounded-full';
+            const inactiveClass = 'text-on-surface-variant';
+
+            if (tab === 'templates') {
+                templatesView.classList.remove('hidden');
+                storageView.classList.add('hidden');
+                
+                btnTemplates.classList.add('text-primary', 'border-primary');
+                btnTemplates.classList.remove('text-on-surface-variant', 'border-transparent');
+                
+                btnStorage.classList.add('text-on-surface-variant', 'border-transparent');
+                btnStorage.classList.remove('text-primary', 'border-primary');
+
+                // Update bottom nav
+                navTemplates.className = `flex flex-col items-center justify-center ${activeClass} px-5 py-1 transition-all active:scale-90 duration-200`;
+                navStorage.className = `flex flex-col items-center justify-center ${inactiveClass} px-5 py-1 transition-all active:scale-90 duration-200`;
+            } else {
+                templatesView.classList.add('hidden');
+                storageView.classList.remove('hidden');
+                
+                btnStorage.classList.add('text-primary', 'border-primary');
+                btnStorage.classList.remove('text-on-surface-variant', 'border-transparent');
+                
+                btnTemplates.classList.add('text-on-surface-variant', 'border-transparent');
+                btnTemplates.classList.remove('text-primary', 'border-primary');
+
+                // Update bottom nav
+                navStorage.className = `flex flex-col items-center justify-center ${activeClass} px-5 py-1 transition-all active:scale-90 duration-200`;
+                navTemplates.className = `flex flex-col items-center justify-center ${inactiveClass} px-5 py-1 transition-all active:scale-90 duration-200`;
+            }
+        }
+
+        // Micro-interactions for list items
+        document.querySelectorAll('#view-storage .group').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.add('bg-primary-container/10');
+                setTimeout(() => item.classList.remove('bg-primary-container/10'), 200);
+            });
+        });
+    </script>
+</body></html>
+
+<!-- Design System -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KEKO Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#354282",
+                    "inverse-surface": "#2e3132",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface": "#f8f9fa",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#293ca0",
+                    "surface-container": "#edeeef",
+                    "surface-dim": "#d9dadb",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-surface-variant": "#454652",
+                    "background": "#f8f9fa",
+                    "surface-tint": "#4355b9",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#003f5f",
+                    "primary-fixed": "#dee0ff",
+                    "on-secondary-fixed": "#001e30",
+                    "secondary-container": "#00affe",
+                    "on-primary-fixed": "#00105c",
+                    "tertiary-fixed-dim": "#b9c3ff",
+                    "on-tertiary-container": "#c9d0ff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e1e3e4",
+                    "inverse-primary": "#bac3ff",
+                    "surface-container-high": "#e7e8e9",
+                    "outline-variant": "#c5c5d4",
+                    "outline": "#757684",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#313e7e",
+                    "tertiary-fixed": "#dee1ff",
+                    "tertiary-container": "#495697",
+                    "primary-container": "#3f51b5",
+                    "on-secondary-fixed-variant": "#004b70",
+                    "secondary-fixed-dim": "#8dcdff",
+                    "surface-container-low": "#f3f4f5",
+                    "secondary": "#006493",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-fixed": "#021355",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#24389c",
+                    "on-surface": "#191c1d",
+                    "primary-fixed-dim": "#bac3ff",
+                    "on-primary-container": "#cacfff",
+                    "on-background": "#191c1d",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "unit": "4px",
+                    "stack-sm": "8px",
+                    "stack-lg": "32px",
+                    "margin-tablet": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-md": ["Geist"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-sm": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": "500"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.25px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #f8f9fa;
+            color: #191c1d;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .ai-gradient-button {
+            background: linear-gradient(135deg, #24389c 0%, #00affe 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 175, 254, 0.1);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col pb-24">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-dim flex justify-between items-center px-margin-mobile h-16 w-full docked full-width top-0 sticky z-40">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-100">
+                menu
+            </button>
+<span class="font-display-lg text-headline-lg-mobile font-bold text-primary dark:text-primary-fixed tracking-tight">KEKO</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-100">
+                notifications
+            </button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a creative professional in a bright, modern office setting with soft indigo lighting accents. The style is clean, corporate but modern, emphasizing a sense of 'Quiet Intelligence' and productivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzmRyMjuIR_JFKCrr8nC-76EgDQ2PeCPb93eY3E3yT2a2jIjd1NSYyeHLuOCuAxfS1P3rdglLbpLU4vmlE1MbdIWBh2n5Zf1PhqaFujROq6ibNYt_856yum33Y26pXtZXaIE8aRtD7SX1RNZDFpgScbz5Dwf8I0fkOaAr8Gyby8NUfKKVS_jmcqocTjSG7tjDWnUYMzw7sFpBWPd81fIqDI8y8XxO5c9tDey_G2fOL-DE0w6iOmGjg"/>
+</div>
+</div>
+</header>
+<main class="flex-grow px-margin-mobile pt-stack-md flex flex-col gap-stack-lg">
+<!-- Search/AI Prompt Section -->
+<section class="flex flex-col gap-stack-sm">
+<h1 class="font-headline-sm text-headline-sm-mobile text-on-surface">Good morning, Designer</h1>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-surface-container-lowest border-none rounded-xl shadow-sm focus:ring-2 focus:ring-secondary-container font-body-lg text-body-lg text-on-surface placeholder-outline transition-all" placeholder="What do you want to create today?" type="text"/>
+<button class="absolute inset-y-2 right-2 px-4 ai-gradient-button text-white rounded-lg font-label-md text-label-md flex items-center gap-2 active:scale-95 duration-100">
+                    Generate
+                </button>
+</div>
+</section>
+<!-- Feature Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- AI Generate PowerPoint -->
+<div class="relative overflow-hidden group cursor-pointer active:scale-[0.98] transition-transform duration-200">
+<div class="h-48 rounded-xl bg-primary-container p-6 flex flex-col justify-between text-white relative z-10">
+<div class="flex justify-between items-start">
+<div class="bg-white/20 p-3 rounded-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-3xl">present_to_all</span>
+</div>
+<span class="material-symbols-outlined text-white/50 group-hover:text-white transition-colors">arrow_forward_ios</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm-mobile">AI Generate PowerPoint</h2>
+<p class="font-body-md text-body-md text-white/80">Convert your notes into professional slides instantly.</p>
+</div>
+</div>
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+
+</div>
+</div>
+<!-- AI Generate Word -->
+<div class="relative overflow-hidden group cursor-pointer active:scale-[0.98] transition-transform duration-200">
+<div class="h-48 rounded-xl bg-secondary-container p-6 flex flex-col justify-between text-on-secondary-container relative z-10">
+<div class="flex justify-between items-start">
+<div class="bg-black/10 p-3 rounded-lg backdrop-blur-md">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">description</span>
+</div>
+<span class="material-symbols-outlined text-on-secondary-container/50 group-hover:text-on-secondary-container transition-colors">arrow_forward_ios</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm-mobile">AI Generate Word</h2>
+<p class="font-body-md text-body-md text-on-secondary-container/80">Draft reports, articles, and briefs from prompts.</p>
+</div>
+</div>
+<!-- Glass overlay effect -->
+<div class="absolute inset-0 bg-white/10 backdrop-blur-[2px] pointer-events-none"></div>
+</div>
+</section>
+<!-- AI Suggestion Chip Bar (Special Component) -->
+<section class="flex gap-stack-sm overflow-x-auto hide-scrollbar -mx-margin-mobile px-margin-mobile">
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">lightbulb</span>
+<span class="font-label-md text-label-md text-on-surface">Summarize meeting notes</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">auto_stories</span>
+<span class="font-label-md text-label-md text-on-surface">Create pitch deck</span>
+</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full glass-card flex items-center gap-2 border-secondary-container/30">
+<span class="material-symbols-outlined text-secondary text-sm">edit_note</span>
+<span class="font-label-md text-label-md text-on-surface">Polish technical spec</span>
+</button>
+</section>
+<!-- Recent Activities -->
+<section class="flex flex-col gap-stack-md mb-8">
+<div class="flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg text-on-surface">Recent Activities</h3>
+<button class="text-primary font-label-md text-label-md hover:underline">View all</button>
+</div>
+<div class="flex flex-col gap-stack-sm">
+<!-- Activity Item 1 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">slideshow</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface">Q3 Strategy Proposal</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Presentation • Edited 2h ago</p>
+</div>
+<button class="material-symbols-outlined text-outline opacity-0 group-hover:opacity-100 transition-opacity">more_vert</button>
+</div>
+<!-- Activity Item 2 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">article</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface">Project Phoenix Roadmap</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Document • Edited 5h ago</p>
+</div>
+<button class="material-symbols-outlined text-outline opacity-0 group-hover:opacity-100 transition-opacity">more_vert</button>
+</div>
+<!-- Activity Item 3 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-body-lg text-body-lg font-semibold text-on-surface">Annual Report Analysis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Presentation • Edited Yesterday</p>
+</div>
+<button class="material-symbols-outlined text-outline opacity-0 group-hover:opacity-100 transition-opacity">more_vert</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-4 pt-2 bg-surface-container dark:bg-inverse-surface docked full-width rounded-t-xl shadow-sm">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</a>
+<!-- Templates -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">dashboard_customize</span>
+<span class="font-label-md text-label-md">Templates</span>
+</a>
+<!-- Storage -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">cloud_queue</span>
+<span class="font-label-md text-label-md">Storage</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-5 py-1 hover:bg-surface-variant/50 transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md text-label-md">Profile</span>
+</a>
+</nav>
+<!-- Contextual FAB (Hidden on specific subpages, but relevant here for "New" action) -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-primary text-white rounded-[28px] shadow-lg flex items-center justify-center active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<script>
+        // Micro-interactions for input focus
+        const searchInput = document.querySelector('input[type="text"]');
+        const searchContainer = searchInput.parentElement;
+        
+        searchInput.addEventListener('focus', () => {
+            searchContainer.classList.add('scale-[1.02]');
+            searchContainer.classList.add('shadow-md');
+        });
+        
+        searchInput.addEventListener('blur', () => {
+            searchContainer.classList.remove('scale-[1.02]');
+            searchContainer.classList.remove('shadow-md');
+        });
+
+        // Simple parallax or hover effect for bento cards
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

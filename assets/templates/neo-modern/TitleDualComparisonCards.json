@@ -1,0 +1,65 @@
+{
+  "layoutId": "title-dual-comparison-cards",
+  "name": "Title Dual Comparison Cards",
+  "description": "A comparison slide with a centered title and two equal-sized cards below. Each card contains a heading, decorative accent line, and detailed description. The symmetrical layout emphasizes balanced evaluation of two items.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#FFFFFF",
+    "fontFamily": "Montserrat"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#FFFFFF",
+        "borderRadius": 4
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#1F4CD9",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 20,
+        "y": 20,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#F0F0F0",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "mainTitle": "Text Comparison"
+  },
+  "_cssVars": {
+    "background-color": "#FFFFFF",
+    "background-text": "#111827",
+    "card-color": "#F7F8FF",
+    "stroke": "#F0F0F0",
+    "primary-color": "#1F4CD9"
+  }
+}

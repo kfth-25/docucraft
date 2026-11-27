@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .slide-wrap { width: 100%; max-width: 1280px; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+    .slide { width: 100%; height: 100%; position: relative; font-family: 'Albert Sans', sans-serif; background: #FFFFFF; }
+    .diamond { width: 12px; height: 12px; background: #111827; transform: rotate(45deg); flex-shrink: 0; }
+    .header { padding: 24px 48px 8px 48px; display: flex; align-items: center; gap: 12px; }
+    /* ── TSX: px-12 pt-6 grid grid-cols-[36%_64%] gap-8 ── */
+    .content-grid { display: grid; grid-template-columns: 36% 64%; gap: 32px; padding: 24px 48px 0 48px; }
+    .left-title { font-size: 56px; font-weight: 600; line-height: 1.05; color: #111827; margin: 0; }
+    .left-desc { font-size: 16px; line-height: 1.8; color: #6B7280; margin: 32px 0 0 0; max-width: 300px; }
+    /* ── TSX: grid grid-cols-3 gap-10 ── */
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .img-card { display: flex; flex-direction: column; align-items: stretch; }
+    /* ── TSX: h-[180px] rounded-t-md ── */
+    .img-block { height: 180px; border-radius: 6px 6px 0 0; overflow: hidden; }
+    .img-block img { width: 100%; height: 100%; object-fit: cover; }
+    /* ── TSX: rounded-b-[28px] px-6 pt-6 pb-7 bg BFF4FF ── */
+    .panel {
+      background: #BFF4FF; margin-top: -1px;
+      border-radius: 0 0 28px 28px; padding: 24px 24px 28px 24px;
+    }
+    .panel-title { font-size: 20px; font-weight: 600; color: #111827; margin: 0; }
+    .panel-desc { font-size: 14px; line-height: 1.7; color: #6B7280; margin: 12px 0 0 0; }
+    /* ── Footer ── */
+    .footer { position: absolute; bottom: 32px; left: 48px; right: 48px; display: flex; align-items: center; gap: 24px; }
+    .footer-line { height: 2px; flex: 1; background: #E5E7EB; }
+    .diamond-br { position: absolute; bottom: 28px; right: 24px; width: 32px; height: 32px; background: #111827; transform: rotate(45deg); }
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      body { align-items: flex-start; }
+      .slide { padding: 4.5vw; }
+      .content-grid { grid-template-columns: 1fr; padding: 24px 0 0 0; gap: 24px; }
+      .left-title { font-size: 7.5vw; }
+      .left-desc { max-width: 100%; }
+      .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+      .footer { left: 0; right: 0; padding: 0 4.5vw; }
+      .diamond-br { right: 2vw; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide-wrap">
+  <div class="slide">
+
+    <!-- ── Header ── -->
+    <div class="header"><div class="diamond"></div></div>
+
+    <!-- ── Grid: 36% / 64% ── -->
+    <div class="content-grid">
+
+      <!-- Left: title + description -->
+      <div>
+        <div class="left-title">Meet Our<br/>Team</div>
+        <p class="left-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <!-- Right: 3 image cards -->
+      <div class="cards-grid">
+        <div class="img-card">
+          <div class="img-block"><img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=600&q=80" alt="abstract gradient background"/></div>
+          <div class="panel">
+            <div class="panel-title">Sample Title</div>
+            <p class="panel-desc">Short description for the image or item.</p>
+          </div>
+        </div>
+        <div class="img-card">
+          <div class="img-block"><img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=600&q=80" alt="abstract gradient background"/></div>
+          <div class="panel">
+            <div class="panel-title">Another Item</div>
+            <p class="panel-desc">Concise supporting text.</p>
+          </div>
+        </div>
+        <div class="img-card">
+          <div class="img-block"><img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=600&q=80" alt="abstract gradient background"/></div>
+          <div class="panel">
+            <div class="panel-title">Third Item</div>
+            <p class="panel-desc">Concise supporting text.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Footer ── -->
+    <div class="footer">
+      <span style="color: #6B7280; font-size: 14px; white-space: nowrap;">www.yourwebsite.com</span>
+      <div class="footer-line"></div>
+    </div>
+    <div class="diamond-br"></div>
+
+  </div>
+</div>
+
+</body>
+</html>

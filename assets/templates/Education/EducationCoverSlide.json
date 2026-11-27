@@ -1,0 +1,53 @@
+{
+  "layoutId": "cover-slide",
+  "name": "Cover Slide",
+  "description": "Opening/cover/intro slide with  organization/institution/presenter, presentation title/heading , and supporting subtitle.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#2e0a8a",
+    "fontFamily": "Source Serif 4"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#2e0a8a",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#3b0bb6",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "backgroundImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80",
+    "__image_prompt__": "City business district buildings",
+    "name": "Name",
+    "description": "PowerPoint Template"
+  },
+  "_cssVars": {
+    "background-color": "#2e0a8a",
+    "body-font-family": "Source Serif 4",
+    "primary-color": "#3b0bb6",
+    "primary-text": "#ffffff"
+  }
+}

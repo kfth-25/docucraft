@@ -1,0 +1,66 @@
+{
+  "layoutId": "horizontal-height-spanning-images-with-title-slide",
+  "name": "Horizontal Height Spanning Images with Title Slide",
+  "description": "A slide of portrait cards placed side by side from edge to edge. Each card uses a full-height image background with a content overlay at the bottom containing a short subtext line and a larger title line.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#ffffff",
+    "fontFamily": "Source Sans 3"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#ffffff",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 480,
+        "width": 100,
+        "height": 240
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "decoration",
+      "position": {
+        "x": 0,
+        "y": 670,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "image": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/images/placeholder.jpg",
+    "__image_prompt__": "Professional portrait of a team member",
+    "description": "https://presenton-public.s3.ap-southeast-1.amazonaws.com/static/images/placeholder.jpg"
+  },
+  "_cssVars": {
+    "background-color": "#ffffff",
+    "body-font-family": "Source Sans 3",
+    "graph-1": "#4d4ef3",
+    "primary-text": "#ffffff"
+  }
+}

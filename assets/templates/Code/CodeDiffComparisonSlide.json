@@ -1,0 +1,50 @@
+{
+  "layoutId": "code-diff-comparison-slide",
+  "name": "Side-by-Side Code Comparison Slide",
+  "description": "A title and summary layout with labeled code panels and a bottom note.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#101B37",
+    "fontFamily": "Nunito Sans"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#101B37",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#2B7FFF66",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "title": "Before / After Refactor",
+    "description": "This slide compares the old implementation with the improved version."
+  },
+  "_cssVars": {
+    "background-color": "#101B37",
+    "background-text": "#d2d9ff",
+    "primary-color": "#2B7FFF66"
+  }
+}

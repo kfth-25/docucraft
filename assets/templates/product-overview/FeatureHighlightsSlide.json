@@ -1,0 +1,40 @@
+{
+  "layoutId": "card-grid-with-labels-slide",
+  "name": "Card Grid with Labels Slide",
+  "description": "A title and subtitle layout with cards containing a heading, body text, and compact label.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#DAE1DE",
+    "fontFamily": "Bricolage Grotesque"
+  },
+  "elements": [
+    {
+      "id": "el_1",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#DAE1DE",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "benefit": "Highlights Highlights Highlights",
+    "description": "A concise view of the main items, what each one does, and the value each one adds.Bring planning, customer signals, and launch tasks into one shared product view. ring planning, customer signals, and launch tasks into one shared product view."
+  },
+  "_cssVars": {
+    "background-color": "#DAE1DE",
+    "body-font-family": "Bricolage Grotesque",
+    "primary-color": "#15342D",
+    "background-text": "#15342DCC",
+    "card-color": "#ffffff",
+    "stroke": "#c5cccb",
+    "primary-text": "#edf2f1"
+  }
+}

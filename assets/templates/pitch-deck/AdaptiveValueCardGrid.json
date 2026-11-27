@@ -1,0 +1,98 @@
+{
+  "layoutId": "adaptive-value-card-grid",
+  "name": "Adaptive Value Card Grid",
+  "description": "A card grid that supports even layouts and odd-count variants with an emphasized trailing card.",
+  "canvas": {
+    "width": 1280,
+    "height": 720,
+    "backgroundColor": "#27292d",
+    "fontFamily": "DM Serif Display"
+  },
+  "elements": [
+    {
+      "id": "txt_h2_0",
+      "type": "text",
+      "position": {
+        "x": 48,
+        "y": 0,
+        "width": 400,
+        "height": 46
+      },
+      "style": {
+        "color": "#F5F5F5",
+        "fontSize": 100,
+        "fontWeight": "normal"
+      },
+      "content": "Presentation Title"
+    },
+    {
+      "id": "el_2",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#dddac7",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_3",
+      "type": "shape",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
+      },
+      "style": {
+        "color": "#27292d",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_4",
+      "type": "decoration",
+      "position": {
+        "x": 36,
+        "y": 200,
+        "width": 100,
+        "height": 50
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    },
+    {
+      "id": "el_5",
+      "type": "decoration",
+      "position": {
+        "x": 36,
+        "y": 200,
+        "width": 100,
+        "height": 490
+      },
+      "style": {
+        "color": "#000000",
+        "borderRadius": 0
+      }
+    }
+  ],
+  "_schema": {
+    "description": "Highlights",
+    "icon": {}
+  },
+  "_cssVars": {
+    "border-color": "#8d8a7d",
+    "background-text": "#d7d3be",
+    "primary-color": "#dddac7",
+    "background-color": "#27292d",
+    "primary-text": "#27292d",
+    "body-font-family": "DM Serif Display",
+    "heading-font-family": "DM Serif Display"
+  }
+}

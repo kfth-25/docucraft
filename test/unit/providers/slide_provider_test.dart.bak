@@ -1,0 +1,390 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive/hive.dart';
+import 'package:mockito/mockito.dart';
+import 'package:docucraft_app/providers/slide_provider.dart';
+import 'package:docucraft_app/models/slide.dart';
+// import 'package:docucraft_app/models/slide.g.dart'; // Removed: orphaned generated file
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
+
+void main() {
+  group('SlideProvider', () {
+    late SlideProvider provider;
+
+    setUpAll(() async {
+      // Mock path_provider for Hive initialization
+      PathProviderPlatform.instance = MockPathProviderPlatform();
+
+      // Initialize in-memory Hive for testing
+      await Hive.initFlutter();
+
+      // Register adapters
+      Hive.registerAdapter(SlideAdapter());
+      Hive.registerAdapter(SlideElementAdapter());
+      Hive.registerAdapter(TextStyleDataAdapter());
+      Hive.registerAdapter(ShapeStyleDataAdapter());
+      Hive.registerAdapter(ImageStyleDataAdapter());
+      Hive.registerAdapter(ElementTypeAdapter());
+
+      // Open test box
+      await Hive.openBox<dynamic>('_test_slides');
+      await Hive.openBox<dynamic>('_test_projects');
+    });
+
+    tearDownAll(() async {
+      await Hive.close();
+    });
+
+    setUp(() {
+      provider = SlideProvider();
+    });
+
+    tearDown(() {
+      provider.dispose();
+    });
+
+    test('initial state has empty slides', () {
+      expect(provider.slides, isEmpty);
+      expect(provider.currentSlideIndex, 0);
+      expect(provider.currentSlide, null);
+      expect(provider.canUndo, false);
+      expect(provider.canRedo, false);
+    });
+
+    test('addSlide creates new slide and selects it', () {
+      provider.addSlide();
+
+      expect(provider.slides.length, 1);
+      expect(provider.currentSlideIndex, 0);
+      expect(provider.currentSlide!.title, 'Slide Baru');
+      expect(provider.currentSlide!.subtitle, 'Subtitle');
+    });
+
+    test('multiple addSlide creates sequential slides', () {
+      provider.addSlide(); // Slide 1
+      provider.addSlide(); // Slide 2
+      provider.addSlide(); // Slide 3
+
+      expect(provider.slides.length, 3);
+      expect(provider.currentSlideIndex, 2);
+      expect(provider.currentSlide!.title, 'Slide Baru');
+    });
+
+    test('switchSlide changes current slide', () {
+      provider.addSlide(); // Slide 1
+      provider.addSlide(); // Slide 2
+      provider.addSlide(); // Slide 3
+
+      provider.switchSlide(0);
+      expect(provider.currentSlideIndex, 0);
+      expect(provider.currentSlide!.title, 'Slide Baru');
+
+      provider.switchSlide(2);
+      expect(provider.currentSlideIndex, 2);
+    });
+
+    test('switchSlide ignores invalid index', () {
+      provider.addSlide();
+      provider.switchSlide(5); // Out of bounds
+      expect(provider.currentSlideIndex, 0);
+
+      provider.switchSlide(-1); // Negative
+      expect(provider.currentSlideIndex, 0);
+    });
+
+    test('duplicateSlide creates copy and selects it', () {
+      provider.addSlide();
+      provider.currentSlide!.title = 'Original';
+      provider.currentSlide!.elements.add(
+        SlideElement(type: ElementType.text, content: 'Test', x: 100, y: 100),
+      );
+
+      provider.duplicateSlide();
+
+      expect(provider.slides.length, 2);
+      expect(provider.currentSlideIndex, 1);
+      expect(provider.currentSlide!.title, 'Original (Copy)');
+      expect(provider.currentSlide!.elements.length, 1);
+    });
+
+    test('deleteSlide removes slide and selects previous', () {
+      provider.addSlide(); // Slide 1
+      provider.addSlide(); // Slide 2
+      provider.addSlide(); // Slide 3
+
+      provider.switchSlide(1); // Select middle
+      provider.deleteSlide(null);
+
+      expect(provider.slides.length, 2);
+      expect(provider.currentSlideIndex, 1); // Should select next (was index 2, now index 1)
+    });
+
+    test('deleteSlide does nothing if only one slide', () {
+      provider.addSlide();
+      provider.deleteSlide(null);
+
+      expect(provider.slides.length, 1);
+    });
+
+    test('deleteSlide with index removes specific slide', () {
+      provider.addSlide(); // 0
+      provider.addSlide(); // 1
+      provider.addSlide(); // 2
+
+      provider.deleteSlide(0); // Delete first
+
+      expect(provider.slides.length, 2);
+      expect(provider.currentSlideIndex, 0);
+    });
+
+    test('reorderSlide moves slide correctly', () {
+      provider.addSlide(); // 0: A
+      provider.slides[0].title = 'A';
+      provider.addSlide(); // 1: B
+      provider.slides[1].title = 'B';
+      provider.addSlide(); // 2: C
+      provider.slides[2].title = 'C';
+
+      // Move C (index 2) to index 0
+      provider.reorderSlide(2, 0);
+
+      expect(provider.slides[0].title, 'C');
+      expect(provider.slides[1].title, 'A');
+      expect(provider.slides[2].title, 'B');
+    });
+
+    test('reorderSlide updates currentSlideIndex if current moved', () {
+      provider.addSlide(); // 0
+      provider.addSlide(); // 1
+      provider.addSlide(); // 2
+      provider.switchSlide(1); // Select middle
+
+      provider.reorderSlide(1, 2); // Move current to end
+
+      expect(provider.currentSlideIndex, 2);
+    });
+
+    test('toggleHideSlide hides slide and selects previous', () {
+      provider.addSlide(); // 0
+      provider.addSlide(); // 1
+      provider.switchSlide(1);
+
+      provider.toggleHideSlide();
+
+      expect(provider.slides[1].hidden, true);
+      expect(provider.currentSlideIndex, 0);
+    });
+
+    test('toggleHideSlide on first slide hides but stays', () {
+      provider.addSlide();
+      provider.switchSlide(0);
+
+      provider.toggleHideSlide();
+
+      expect(provider.slides[0].hidden, true);
+      expect(provider.currentSlideIndex, 0);
+    });
+
+    test('addElement adds element to current slide', () {
+      provider.addSlide();
+
+      provider.addElement(SlideElement(
+        type: ElementType.text,
+        content: 'New Element',
+        x: 100, y: 100, width: 200, height: 50,
+      ));
+
+      expect(provider.currentSlide!.elements.length, 1);
+      expect(provider.currentSlide!.elements.first.content, 'New Element');
+      expect(provider.selectedElementId, isNotNull);
+    });
+
+    test('updateElementPosition moves element', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(
+        type: ElementType.text, content: 'Test', x: 0, y: 0,
+      ));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.updateElementPosition(id, 500, 300);
+
+      expect(provider.currentSlide!.elements.first.x, 500);
+      expect(provider.currentSlide!.elements.first.y, 300);
+    });
+
+    test('updateElementSize resizes element', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(
+        type: ElementType.shape, x: 0, y: 0, width: 100, height: 100,
+      ));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.updateElementSize(id, 400, 200);
+
+      expect(provider.currentSlide!.elements.first.width, 400);
+      expect(provider.currentSlide!.elements.first.height, 200);
+    });
+
+    test('updateElementContent updates text content', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(
+        type: ElementType.text, content: 'Old', x: 0, y: 0,
+        textStyle: TextStyleData(fontSize: 16),
+      ));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.updateElementContent(id, 'New Content');
+
+      expect(provider.currentSlide!.elements.first.content, 'New Content');
+    });
+
+    test('updateElementStyle updates text style', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(
+        type: ElementType.text, content: 'Test', x: 0, y: 0,
+        textStyle: TextStyleData(fontSize: 16, fontWeight: 'normal'),
+      ));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.updateElementStyle(id, {'fontWeight': 'bold', 'fontSize': 24});
+
+      final el = provider.currentSlide!.elements.first;
+      expect(el.textStyle!.fontWeight, 'bold');
+      expect(el.textStyle!.fontSize, 24);
+    });
+
+    test('deleteElement removes element', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(type: ElementType.text, content: 'A', x: 0, y: 0));
+      provider.addElement(SlideElement(type: ElementType.text, content: 'B', x: 0, y: 0));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.deleteElement(id);
+
+      expect(provider.currentSlide!.elements.length, 1);
+      expect(provider.currentSlide!.elements.first.content, 'B');
+    });
+
+    test('undo/redo works for slide operations', () {
+      provider.addSlide(); // 1 slide
+      provider.addSlide(); // 2 slides
+
+      provider.undo(); // Back to 1 slide
+
+      expect(provider.slides.length, 1);
+
+      provider.redo(); // Forward to 2 slides
+
+      expect(provider.slides.length, 2);
+    });
+
+    test('undo/redo works for element operations', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(type: ElementType.text, content: 'A', x: 0, y: 0));
+
+      provider.undo(); // Element removed
+
+      expect(provider.currentSlide!.elements, isEmpty);
+
+      provider.redo(); // Element restored
+
+      expect(provider.currentSlide!.elements.length, 1);
+    });
+
+    test('updateSlideTitle updates current slide', () {
+      provider.addSlide();
+      provider.updateSlideTitle('New Title');
+
+      expect(provider.currentSlide!.title, 'New Title');
+    });
+
+    test('updateSlideBackground updates current slide', () {
+      provider.addSlide();
+      provider.updateSlideBackground('purple');
+
+      expect(provider.currentSlide!.backgroundGradient, 'purple');
+    });
+
+    test('updateSlideBackgroundCustom creates custom gradient', () {
+      provider.addSlide();
+      provider.updateSlideBackgroundCustom(
+        const Color(0xFF6366F1),
+        const Color(0xFFEC4899),
+      );
+
+      expect(provider.currentSlide!.backgroundGradient, startsWith('custom_'));
+      expect(provider.currentSlide!.backgroundGradient, contains('6366F1'));
+      expect(provider.currentSlide!.backgroundGradient, contains('EC4899'));
+    });
+
+    test('selectElement sets selected element', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(type: ElementType.text, content: 'Test', x: 0, y: 0));
+      final id = provider.currentSlide!.elements.first.id;
+
+      provider.selectElement(id);
+      expect(provider.selectedElementId, id);
+
+      provider.selectElement(null);
+      expect(provider.selectedElementId, null);
+    });
+
+    test('visibleSlides filters hidden slides', () {
+      provider.addSlide(); // 0
+      provider.addSlide(); // 1
+      provider.slides[1].hidden = true;
+
+      expect(provider.visibleSlides.length, 1);
+      expect(provider.visibleSlides.first.id, provider.slides[0].id);
+    });
+
+    test('presenter notes persist per slide', () {
+      provider.addSlide(); // 0
+      provider.setPresenterNotes('Notes for slide 1');
+      provider.addSlide(); // 1
+      provider.setPresenterNotes('Notes for slide 2');
+      provider.switchSlide(0);
+
+      expect(provider.getPresenterNotes(), 'Notes for slide 1');
+      provider.switchSlide(1);
+      expect(provider.getPresenterNotes(), 'Notes for slide 2');
+    });
+
+    test('hasDrawStrokes detects draw elements', () {
+      provider.addSlide();
+      expect(provider.hasDrawStrokes, false);
+
+      provider.addElement(SlideElement(
+        type: ElementType.draw,
+        x: 0, y: 0, width: 1920, height: 1080,
+        drawData: DrawData(strokes: [
+          DrawStroke(points: [[0.0, 0.0], [100.0, 100.0]]),
+        ]),
+      ));
+
+      expect(provider.hasDrawStrokes, true);
+    });
+
+    test('applyTemplate applies gradient and font sizes', () {
+      provider.addSlide();
+      provider.addElement(SlideElement(
+        type: ElementType.text, content: 'Title', x: 0, y: 0,
+        textStyle: TextStyleData(fontSize: 48),
+      ));
+      provider.addElement(SlideElement(
+        type: ElementType.text, content: 'Body', x: 0, y: 100,
+        textStyle: TextStyleData(fontSize: 16),
+      ));
+
+      provider.applyTemplate('blue-corporate');
+
+      expect(provider.currentSlide!.backgroundGradient, 'blue');
+      // Title (>=30) should be 42, body (<30) should be 18
+      final titleEl = provider.currentSlide!.elements.firstWhere((e) => e.textStyle!.fontSize >= 30);
+      final bodyEl = provider.currentSlide!.elements.firstWhere((e) => e.textStyle!.fontSize < 30);
+      expect(titleEl.textStyle!.fontSize, 42);
+      expect(bodyEl.textStyle!.fontSize, 18);
+    });
+  });
+}

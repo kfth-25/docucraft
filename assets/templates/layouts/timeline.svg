@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1280 720"
+     data-pptx-layout="timeline"
+     data-pptx-theme-color-primary="accent1"
+     data-pptx-theme-font-major="major">
+
+  <rect x="0" y="0" width="1280" height="720"
+        fill="url(#slideBgGradient)"
+        data-pptx-object="shape" data-pptx-prst="rect"/>
+
+  <g data-pptx-slot="header" data-pptx-object="group">
+    <text x="96" y="48" width="400" height="40"
+          data-pptx-slot="companyName"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="tx1"
+          font-size="16" font-weight="normal">
+      {{companyName}}
+    </text>
+  </g>
+
+  <g data-pptx-slot="mainContent" data-pptx-object="group">
+    <text x="96" y="140" width="1088" height="80"
+          data-pptx-slot="title"
+          data-pptx-object="text"
+          data-pptx-theme-font="major"
+          data-pptx-theme-color="dk1"
+          font-size="56" font-weight="bold">
+      {{title}}
+    </text>
+
+    <text x="96" y="240" width="1088" height="40"
+          data-pptx-slot="subtitle"
+          data-pptx-object="text"
+          data-pptx-theme-font="minor"
+          data-pptx-theme-color="tx1"
+          font-size="20">
+      {{subtitle}}
+    </text>
+
+    <!-- Timeline Line -->
+    <line x1="200" y1="200" x2="200" y2="600"
+          stroke="var(--theme-accent1)" stroke-width="4"
+          data-pptx-object="shape" data-pptx-prst="rect"/>
+
+    <!-- Event Cards -->
+    <g data-pptx-slot="events" data-pptx-object="group">
+      <g data-pptx-slot="event-0" data-pptx-object="group" transform="translate(250, 180)">
+        <!-- Timeline dot -->
+        <circle cx="0" cy="0" r="16"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <!-- Year badge -->
+        <rect x="-120" y="-16" width="100" height="32"
+              fill="var(--theme-accent1)" rx="8" ry="8"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="-70" y="6" text-anchor="middle"
+              fill="white" font-size="14" font-weight="bold"
+              data-pptx-slot="events[0].year"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{events[0].year}}
+        </text>
+        <!-- Event card -->
+        <rect x="40" y="-60" width="900" height="80"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="60" y="-30" width="860" height="40"
+              data-pptx-slot="events[0].heading"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="24" font-weight="bold">
+          {{events[0].heading}}
+        </text>
+        <text x="60" y="5" width="860" height="40"
+              data-pptx-slot="events[0].body"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{events[0].body}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="event-1" data-pptx-object="group" transform="translate(250, 300)">
+        <circle cx="0" cy="0" r="16"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <rect x="-120" y="-16" width="100" height="32"
+              fill="var(--theme-accent1)" rx="8" ry="8"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="-70" y="6" text-anchor="middle"
+              fill="white" font-size="14" font-weight="bold"
+              data-pptx-slot="events[1].year"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{events[1].year}}
+        </text>
+        <rect x="40" y="-60" width="900" height="80"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="60" y="-30" width="860" height="40"
+              data-pptx-slot="events[1].heading"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="24" font-weight="bold">
+          {{events[1].heading}}
+        </text>
+        <text x="60" y="5" width="860" height="40"
+              data-pptx-slot="events[1].body"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{events[1].body}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="event-2" data-pptx-object="group" transform="translate(250, 420)">
+        <circle cx="0" cy="0" r="16"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <rect x="-120" y="-16" width="100" height="32"
+              fill="var(--theme-accent1)" rx="8" ry="8"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="-70" y="6" text-anchor="middle"
+              fill="white" font-size="14" font-weight="bold"
+              data-pptx-slot="events[2].year"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{events[2].year}}
+        </text>
+        <rect x="40" y="-60" width="900" height="80"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="60" y="-30" width="860" height="40"
+              data-pptx-slot="events[2].heading"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="24" font-weight="bold">
+          {{events[2].heading}}
+        </text>
+        <text x="60" y="5" width="860" height="40"
+              data-pptx-slot="events[2].body"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{events[2].body}}
+        </text>
+      </g>
+
+      <g data-pptx-slot="event-3" data-pptx-object="group" transform="translate(250, 540)">
+        <circle cx="0" cy="0" r="16"
+                fill="var(--theme-accent1)"
+                data-pptx-object="shape" data-pptx-prst="ellipse"/>
+        <rect x="-120" y="-16" width="100" height="32"
+              fill="var(--theme-accent1)" rx="8" ry="8"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="-70" y="6" text-anchor="middle"
+              fill="white" font-size="14" font-weight="bold"
+              data-pptx-slot="events[3].year"
+              data-pptx-object="text"
+              data-pptx-theme-font="major">
+          {{events[3].year}}
+        </text>
+        <rect x="40" y="-60" width="900" height="80"
+              fill="var(--theme-card-color)"
+              stroke="var(--theme-stroke)" stroke-width="1"
+              rx="12" ry="12"
+              data-pptx-object="shape" data-pptx-prst="rect"/>
+        <text x="60" y="-30" width="860" height="40"
+              data-pptx-slot="events[3].heading"
+              data-pptx-object="text"
+              data-pptx-theme-font="major"
+              data-pptx-theme-color="dk1"
+              font-size="24" font-weight="bold">
+          {{events[3].heading}}
+        </text>
+        <text x="60" y="5" width="860" height="40"
+              data-pptx-slot="events[3].body"
+              data-pptx-object="text"
+              data-pptx-theme-font="minor"
+              data-pptx-theme-color="tx1"
+              font-size="16">
+          {{events[3].body}}
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="slideBgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--theme-accent1)"/>
+      <stop offset="100%" stop-color="var(--theme-dk1)"/>
+    </linearGradient>
+  </defs>
+</svg>
